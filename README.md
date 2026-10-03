@@ -1,50 +1,67 @@
-# girlogy — Shopify theme
+# The Girlogist — girlogyshop.com
 
-Custom Shopify theme for **girlogyshop.com**, built from the girlogy shop design
-(cream, near-black and rust palette, Archivo Black + Hind, italic serif wordmark).
-Written from scratch. Validated with Shopify Theme Check: 0 errors, 0 warnings.
+Online shop for the girlogy brand. Plain HTML, CSS and JavaScript, hosted for free on
+**Netlify**, with payments through **Revolut** (hosted checkout page).
 
-## Connect it to Shopify
+> Why Netlify and not GitHub Pages? GitHub's rules say Pages "is not intended for or allowed
+> to be used as a free web-hosting service to run your online business, e-commerce site".
+> Netlify's free plan allows commercial sites, deploys straight from this repository,
+> accepts your own domain and can run the small server code that card payments need.
 
-1. Shopify admin: **Online Store → Themes → Add theme → Connect from GitHub**.
-2. Choose the account **O-Agyekum**, the repository **girlogyshop**, branch **main**.
-3. The theme arrives in your theme library as a draft. Click **Customize** to preview it.
-4. When happy, click **Publish**.
+## How it works
 
-Every change pushed to `main` updates the connected theme. Changes made in the theme
-editor are committed back to GitHub by Shopify.
+| Part | Where | What it does |
+|---|---|---|
+| Website | `public/` | Pages, styles, images, fonts, translations (EN, FR, ES) |
+| Catalogue | `public/data/catalog.json` | Products, prices, colours, sizes, bundles, delivery prices |
+| Payment | `netlify/functions/create-order.mjs` | Recalculates the total from the catalogue, then asks Revolut for a payment page |
+| Payment check | `netlify/functions/order-status.mjs` | After payment, asks Revolut whether the order is paid |
+| Promo codes | `netlify/functions/check-promo.mjs` | Checks codes stored in the `PROMO_CODES` setting |
+| Forms | Netlify Forms | Contact form, newsletter and an "order" notification with the delivery address |
+| Legal pages | `public/legal/` | Mentions légales, CGV, droit de rétractation, confidentialité |
 
-## What's inside
+Prices shown in the browser are only for display. The server never trusts them: it reprices
+every order from `catalog.json` before sending the amount to Revolut.
 
-| Page | Sections |
-|---|---|
-| Home | Split banner, perks strip, featured collection, caption marquee, collection list, image with text, rich text, newsletter. Slideshow also available. |
-| Product | Gallery, colour swatches and size pills, quantity, add to cart, express checkout, size guide, collapsible rows, related products |
-| Collection | Chip filters (colour, size, category…), sorting, pagination |
-| Cart | Slide-out drawer (default) or full cart page, order note |
-| Other | Search, pages, contact form (`page.contact`), blog, article, 404, password page, gift card |
+## Put the site online (one time)
 
-English and French translations are included (`locales/`).
+1. Create a free account on **netlify.com** (sign in with GitHub).
+2. **Add new site → Import an existing project → GitHub → O-Agyekum/girlogyshop**.
+   Netlify reads `netlify.toml`, so leave the build settings as they are and deploy.
+3. **Site configuration → Environment variables**, add:
+   - `REVOLUT_SECRET_KEY`: your Revolut Merchant API **secret** key
+     (Revolut Business → Merchant → APIs). Never put it in the code.
+   - `PROMO_CODES`: for example `BIENVENUE10:10` (code:percent, separated by commas).
+   - Optional: `REVOLUT_ENV` = `sandbox` to test with Revolut's sandbox key first.
+4. **Forms → enable form detection**, then **Forms → notifications**: add an email
+   notification for the `order` and `contact` forms so you receive each order's address.
+5. **Domain management → Add a domain → girlogyshop.com**. Netlify shows the DNS records
+   to add at OVH (Web Cloud → Domain names → girlogyshop.com → DNS zone). HTTPS is free
+   and automatic once the domain points to Netlify.
+6. Redeploy once after adding the variables.
 
-## Shopify settings to make it look like the design
+## Test a payment before going live
 
-- **Menus** (Online Store → Navigation): `main-menu` for the header, `footer` for the footer.
-- **Filters**: install Shopify's free *Search & Discovery* app and add Colour, Size and
-  Product type filters. They appear as chips on collection pages.
-- **Product tagline**: Settings → Custom data → Products → add a definition named
-  `Tagline`, namespace and key `custom.tagline`, type *Single line text*.
-- **Product badges**: add a tag like `badge:New`, `badge:Best seller` or `badge:Drop 02`.
-- **Product details list** (optional): definition `custom.details`, type
-  *List of single line text*.
-- **Colour swatches**: name the variant option `Colour` (or `Color` / `Couleur`).
-  Values like Rust, Cream, Black, Chocolate, Sage, Blush, Butter, Denim, White, Gold,
-  Marble get the brand swatch colours.
-- **Size guide**: shown automatically on products with a `Size` option.
-- **Legal pages**: Settings → Policies (refund, privacy, terms, shipping, contact) are
-  linked in the footer automatically. Put your *Mentions légales* page in a menu and
-  select it as the footer's *Legal menu*.
+Set `REVOLUT_ENV=sandbox` and use a sandbox secret key, place an order with a Revolut test
+card, check you are sent back to the site with the confirmation, then switch to the live key
+and remove `REVOLUT_ENV`.
 
-## Privacy
+## Day-to-day
 
-Fonts are self-hosted in `assets/` and served from Shopify's CDN, so no visitor data is
-sent to Google Fonts. Font licences: see `FONT-LICENSES.md` (SIL Open Font License 1.1).
+- **Change a price, add a product or a photo**: edit `public/data/catalog.json` and add the
+  images in `public/images/products/`. Each commit to `main` redeploys the site.
+- **Orders**: payments appear in your Revolut Business account; the delivery details arrive
+  by email through the `order` form. Match them with the reference `TG-…`.
+- **Text**: all wording is in `public/js/i18n.js` (English, French, Spanish).
+- **Social links and contact email**: `public/js/config.js`.
+
+## Before launch: complete the legal pages
+
+Fill in every highlighted blank in `public/legal/` (name, SIREN, address, VAT mention,
+mediator, return address). French law requires these for any shop selling to consumers.
+Have them checked by a professional (CCI, lawyer or accountant).
+
+## Fonts
+
+Self-hosted in `public/fonts/` (Jost, Fraunces, Parisienne, SIL Open Font License 1.1), so no
+visitor data is sent to Google Fonts.
