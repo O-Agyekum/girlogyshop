@@ -12,16 +12,22 @@ Online shop for the girlogy brand. Plain HTML, CSS and JavaScript, hosted for fr
 
 | Part | Where | What it does |
 |---|---|---|
-| Website | `public/` | Pages, styles, images, fonts, translations (EN, FR, ES) |
-| Catalogue | `public/data/catalog.json` | Products, prices, colours, sizes, bundles, delivery prices |
+| Website | Root folder (`index.html`, `css/`, `js/`, `images/`, `fonts/`) | Pages, styles, images, fonts, translations (EN, FR, ES) |
+| Catalogue | `data/catalog.json` | Products, prices, colours, sizes, bundles, delivery prices |
 | Payment | `netlify/functions/create-order.mjs` | Recalculates the total from the catalogue, then asks Revolut for a payment page |
 | Payment check | `netlify/functions/order-status.mjs` | After payment, asks Revolut whether the order is paid |
 | Promo codes | `netlify/functions/check-promo.mjs` | Checks codes stored in the `PROMO_CODES` setting |
 | Forms | Netlify Forms | Contact form, newsletter and an "order" notification with the delivery address |
-| Legal pages | `public/legal/` | Mentions légales, CGV, droit de rétractation, confidentialité |
+| Legal pages | `legal/` | Mentions légales, CGV, droit de rétractation, confidentialité |
 
 Prices shown in the browser are only for display. The server never trusts them: it reprices
 every order from `catalog.json` before sending the amount to Revolut.
+
+## Orders switch
+
+Online orders are **closed** for now: visitors can browse and fill their bag, but the
+checkout button reads "Online orders opening soon". When Revolut is set up and tested,
+open orders by changing `ordersOpen: false` to `ordersOpen: true` in `js/config.js`.
 
 ## Put the site online (one time)
 
@@ -48,20 +54,20 @@ and remove `REVOLUT_ENV`.
 
 ## Day-to-day
 
-- **Change a price, add a product or a photo**: edit `public/data/catalog.json` and add the
-  images in `public/images/products/`. Each commit to `main` redeploys the site.
+- **Change a price, add a product or a photo**: edit `data/catalog.json` and add the
+  images in `images/products/`. Each commit to `main` redeploys the site.
 - **Orders**: payments appear in your Revolut Business account; the delivery details arrive
   by email through the `order` form. Match them with the reference `TG-…`.
-- **Text**: all wording is in `public/js/i18n.js` (English, French, Spanish).
-- **Social links and contact email**: `public/js/config.js`.
+- **Text**: all wording is in `js/i18n.js` (English, French, Spanish).
+- **Social links and contact email**: `js/config.js`.
 
 ## Before launch: complete the legal pages
 
-Fill in every highlighted blank in `public/legal/` (name, SIREN, address, VAT mention,
+Fill in every highlighted blank in `legal/` (name, SIREN, address, VAT mention,
 mediator, return address). French law requires these for any shop selling to consumers.
 Have them checked by a professional (CCI, lawyer or accountant).
 
 ## Fonts
 
-Self-hosted in `public/fonts/` (Jost, Fraunces, Parisienne, SIL Open Font License 1.1), so no
+Self-hosted in `fonts/` (Jost, Fraunces, Parisienne, SIL Open Font License 1.1), so no
 visitor data is sent to Google Fonts.

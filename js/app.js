@@ -12,6 +12,7 @@ const CAT = await fetch("/data/catalog.json", {cache: "no-cache"}).then(r => r.j
 const SW = CAT.swatches, SIZES = CAT.sizes, GUIDES = CAT.guides, DEPT_CATS = CAT.deptCats;
 const BUNDLES = CAT.bundles, SHIP = CAT.shipping;
 const products = CAT.products;
+const ORDERS_OPEN = SHOP.ordersOpen === true;
 
 /* ---------- state ---------- */
 const store = {
@@ -315,7 +316,7 @@ $("#bagLines").addEventListener("click", e => {
   if(q){ const l = cart.find(x => x.key === q.dataset.q); l.qty += +q.dataset.d; if(l.qty <= 0) cart = cart.filter(x => x !== l); saveCart(); }
   if(r){ cart = cart.filter(x => x.key !== r.dataset.rm); saveCart(); }
 });
-$("#toCheckout").onclick = () => { if(!cart.length){ $("#bagErr").textContent = t("addFirst"); return; } go("checkout"); };
+$("#toCheckout").onclick = () => { if(!ORDERS_OPEN) return; if(!cart.length){ $("#bagErr").textContent = t("addFirst"); return; } go("checkout"); };
 
 /* ---------- checkout ----------
    Same formula as the server (netlify/functions/lib/pricing.mjs), in cents. */
@@ -356,6 +357,7 @@ REQ.forEach(id => $("#"+id).addEventListener("input", () => $("#coErr").textCont
 $("#cgvOk").onchange = () => $("#cgvErr").textContent = "";
 
 $("#pay").onclick = async () => {
+  if(!ORDERS_OPEN) return;
   const err = $("#coErr"), miss = REQ.find(id => !$("#"+id).value.trim());
   if(miss){ err.textContent = t("errFields"); $("#"+miss).focus(); return; }
   if(!/^\S+@\S+\.\S+$/.test($("#em").value.trim())){ err.textContent = t("errEmail"); $("#em").focus(); return; }
@@ -455,7 +457,7 @@ $("#nlE").oninput = () => $("#nlM").textContent = "";
 /* ---------- routing ---------- */
 const VIEWS = ["home","plp","pdp","favs","bag","checkout","done","help","about"];
 function go(v){
-  if(v === "checkout" && !cart.length) v = "bag";
+  if(v === "checkout" && (!cart.length || !ORDERS_OPEN)) v = "bag";
   view = v;
   VIEWS.forEach(x => $("#v-"+x).hidden = x !== v);
   $$("#depts > button").forEach(b => b.classList.toggle("on", (v === "plp" && !query && b.dataset.dept === dept) || (v === "pdp" && current && b.dataset.dept === current.dept)));
@@ -499,6 +501,14 @@ function toast(m){ const el = $("#toast"); el.textContent = m; el.classList.add(
 
 /* ship radio buttons carry a method name; prices come from the catalogue */
 $$('input[name="ship"]').forEach((r, i) => { r.dataset.method = i === 0 ? "pickup" : "home"; r.value = r.dataset.method; });
+
+/* Orders closed: no checkout, no payment logos, "opening soon" wording */
+if(!ORDERS_OPEN){
+  $(".promo").dataset.t = "promoSoon";
+  const b = $("#toCheckout"); b.dataset.t = "soonBtn"; b.disabled = true;
+  b.insertAdjacentHTML("afterend", '<p class="fine" data-t="soonNote" style="margin-top:10px"></p>');
+  $$(".pays").forEach(el => el.hidden = true);
+}
 
 applyLang();
 await handleReturn();

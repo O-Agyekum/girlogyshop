@@ -1,6 +1,9 @@
 /* Translations for The Girlogist. Edit text here; keys must exist in en. */
 window.T = {
  "en": {
+  "promoSoon": "Online orders open soon. Join the newsletter to hear first.",
+  "soonBtn": "Online orders opening soon",
+  "soonNote": "Your bag is saved on this device. Join the newsletter at the bottom of the page to know when orders open.",
   "madeToOrder": "Made to order by Gelato",
   "promo": "Free delivery from 45 €. New here? Get 10% off with code BIENVENUE10",
   "help": "Customer service",
@@ -212,6 +215,9 @@ window.T = {
   "orderRef": "Order reference"
  },
  "fr": {
+  "promoSoon": "Les commandes en ligne ouvrent bientôt. Inscris-toi à la newsletter pour le savoir en premier.",
+  "soonBtn": "Commandes en ligne bientôt ouvertes",
+  "soonNote": "Ton panier reste enregistré sur cet appareil. Inscris-toi à la newsletter en bas de page pour savoir quand les commandes ouvrent.",
   "madeToOrder": "Fabriqué à la commande par Gelato",
   "promo": "Livraison offerte dès 45 €. Nouvelle ici ? -10 % avec le code BIENVENUE10",
   "help": "Service client",
@@ -423,6 +429,9 @@ window.T = {
   "orderRef": "Référence de commande"
  },
  "es": {
+  "promoSoon": "Los pedidos en línea abren pronto. Suscríbete a la newsletter para enterarte primero.",
+  "soonBtn": "Pedidos en línea muy pronto",
+  "soonNote": "Tu cesta queda guardada en este dispositivo. Suscríbete a la newsletter al final de la página para saber cuándo abren los pedidos.",
   "madeToOrder": "Fabricado bajo pedido por Gelato",
   "promo": "Envío gratis desde 45 €. ¿Nueva por aquí? 10 % de descuento con el código BIENVENUE10",
   "help": "Atención al cliente",

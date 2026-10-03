@@ -5,6 +5,9 @@
 window.SHOP = {
   name: "The Girlogist",
   contactEmail: "contact@girlogyshop.com",
+  /* false: visitors can browse and fill a bag, but checkout is closed
+     ("online orders open soon"). Set to true once Revolut is set up. */
+  ordersOpen: false,
   social: {
     Instagram: "",
     TikTok: "",

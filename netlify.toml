@@ -8,44 +8,14 @@
   node_bundler = "esbuild"
   included_files = ["data/catalog.json"]
 
-# Keep code, docs and the old Shopify files off the public website
+# Keep server code and the README off the public website
 [[redirects]]
   from = "/netlify/*"
   to = "/404"
   status = 404
   force = true
 [[redirects]]
-  from = "/assets/*"
-  to = "/404"
-  status = 404
-  force = true
-[[redirects]]
-  from = "/config/*"
-  to = "/404"
-  status = 404
-  force = true
-[[redirects]]
-  from = "/layout/*"
-  to = "/404"
-  status = 404
-  force = true
-[[redirects]]
-  from = "/locales/*"
-  to = "/404"
-  status = 404
-  force = true
-[[redirects]]
-  from = "/sections/*"
-  to = "/404"
-  status = 404
-  force = true
-[[redirects]]
-  from = "/snippets/*"
-  to = "/404"
-  status = 404
-  force = true
-[[redirects]]
-  from = "/templates/*"
+  from = "/README.md"
   to = "/404"
   status = 404
   force = true
