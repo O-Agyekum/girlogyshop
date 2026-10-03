@@ -1,0 +1,119 @@
+<footer class="footer">
+  <div class="page-width">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        {% render 'wordmark', text: shop.name %}
+        {%- if section.settings.tagline != blank -%}
+          <p>{{ section.settings.tagline | escape }}</p>
+        {%- endif -%}
+
+        {%- liquid
+          assign has_social = false
+          if settings.social_instagram != blank or settings.social_tiktok != blank or settings.social_pinterest != blank or settings.social_facebook != blank
+            assign has_social = true
+          endif
+        -%}
+        {%- if has_social -%}
+          <div class="footer__social">
+            {%- if settings.social_instagram != blank -%}
+              <a href="{{ settings.social_instagram }}" target="_blank" rel="noopener" aria-label="Instagram">{% render 'icon', name: 'instagram' %}</a>
+            {%- endif -%}
+            {%- if settings.social_tiktok != blank -%}
+              <a href="{{ settings.social_tiktok }}" target="_blank" rel="noopener" aria-label="TikTok">{% render 'icon', name: 'tiktok' %}</a>
+            {%- endif -%}
+            {%- if settings.social_pinterest != blank -%}
+              <a href="{{ settings.social_pinterest }}" target="_blank" rel="noopener" aria-label="Pinterest">{% render 'icon', name: 'pinterest' %}</a>
+            {%- endif -%}
+            {%- if settings.social_facebook != blank -%}
+              <a href="{{ settings.social_facebook }}" target="_blank" rel="noopener" aria-label="Facebook">{% render 'icon', name: 'facebook' %}</a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- if section.settings.menu != blank and section.settings.menu.links.size > 0 -%}
+        <div>
+          <h3>{{ section.settings.menu.title | escape }}</h3>
+          <ul>
+            {%- for link in section.settings.menu.links -%}
+              <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+
+      <div>
+        <h3>{{ 'sections.footer.legal' | t }}</h3>
+        <ul>
+          {%- if section.settings.legal_menu != blank -%}
+            {%- for link in section.settings.legal_menu.links -%}
+              <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+            {%- endfor -%}
+          {%- endif -%}
+          {%- for policy in shop.policies -%}
+            {%- if policy != blank -%}
+              <li><a href="{{ policy.url }}">{{ policy.title | escape }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      {%- if section.settings.show_newsletter -%}
+        <div>
+          <h3>{{ section.settings.newsletter_heading | escape }}</h3>
+          {%- form 'customer', id: 'FooterNewsletter', class: 'newsletter__form' -%}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            {%- if form.posted_successfully? -%}
+              <p class="form-message form-message--success">{{ 'sections.newsletter.success' | t }}</p>
+            {%- elsif form.errors -%}
+              <p class="form-message form-message--error">{{ form.errors.messages['email'] | default: form.errors.translated_fields['email'] }}</p>
+            {%- endif -%}
+            <label class="visually-hidden" for="FooterNewsletterEmail">{{ 'sections.newsletter.label' | t }}</label>
+            <input
+              class="input"
+              id="FooterNewsletterEmail"
+              type="email"
+              name="contact[email]"
+              autocomplete="email"
+              required
+              placeholder="{{ 'sections.newsletter.label' | t }}"
+            >
+            <button type="submit" class="button button--light">{{ 'sections.newsletter.submit' | t }}</button>
+          {%- endform -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name | link_to: routes.root_url }}</p>
+      {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
+        <ul class="footer__payments" aria-label="{{ 'sections.footer.payment' | t }}">
+          {%- for type in shop.enabled_payment_types -%}
+            <li>{{ type | payment_type_svg_tag: class: 'payment-icon' }}</li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "section-footer",
+  "settings": [
+    { "type": "text", "id": "tagline", "label": "Tagline", "default": "The study of being a girl. Low social battery, high iced coffee intake." },
+    { "type": "link_list", "id": "menu", "label": "Menu", "default": "footer" },
+    {
+      "type": "link_list",
+      "id": "legal_menu",
+      "label": "Legal menu",
+      "info": "Add your Mentions légales and other legal pages here. Policies from Settings > Policies are added automatically."
+    },
+    { "type": "checkbox", "id": "show_newsletter", "label": "Show newsletter signup", "default": true },
+    { "type": "text", "id": "newsletter_heading", "label": "Newsletter heading", "default": "Join the study group" },
+    { "type": "checkbox", "id": "show_payment_icons", "label": "Show payment icons", "default": true }
+  ],
+  "enabled_on": { "groups": ["footer"] }
+}
+{% endschema %}

@@ -1,0 +1,58 @@
+<section class="section">
+  <div class="page-width">
+    <h1>{{ 'cart.title' | t }}</h1>
+
+    {%- if cart.item_count > 0 -%}
+      <form action="{{ routes.cart_url }}" method="post" class="cart-page">
+        <div>
+          {% render 'cart-lines', mode: 'page' %}
+          <button type="submit" name="update" class="button button--secondary" style="margin-top:16px;">{{ 'cart.update' | t }}</button>
+        </div>
+
+        <div class="cart-summary">
+          {%- if settings.cart_note_label != blank -%}
+            <p class="shipping-bar" style="border-radius:var(--radius-button);margin:0 0 16px;">{{ settings.cart_note_label | escape }}</p>
+          {%- endif -%}
+
+          {%- for discount in cart.cart_level_discount_applications -%}
+            <div class="cart-summary__row">
+              <span>{{ discount.title | escape }}</span>
+              <span>&minus;{{ discount.total_allocated_amount | money }}</span>
+            </div>
+          {%- endfor -%}
+
+          <div class="cart-summary__row cart-summary__total">
+            <span>{{ 'cart.subtotal' | t }}</span>
+            <span>{{ cart.total_price | money_with_currency }}</span>
+          </div>
+          <small>{{ 'cart.taxes_shipping' | t }}</small>
+
+          {%- if settings.cart_show_note -%}
+            <div class="field">
+              <label for="CartNote">{{ 'cart.note' | t }}</label>
+              <textarea class="textarea" id="CartNote" name="note">{{ cart.note }}</textarea>
+            </div>
+          {%- endif -%}
+
+          <button type="submit" name="checkout" class="button button--full">{{ 'cart.checkout' | t }}</button>
+          {%- if additional_checkout_buttons -%}
+            <div style="margin-top:12px;">{{ content_for_additional_checkout_buttons }}</div>
+          {%- endif -%}
+        </div>
+      </form>
+    {%- else -%}
+      <div class="cart-empty">
+        <p>{{ 'cart.empty' | t }}</p>
+        <a href="{{ routes.all_products_collection_url }}" class="button">{{ 'cart.continue' | t }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Cart page",
+  "tag": "div",
+  "settings": []
+}
+{% endschema %}

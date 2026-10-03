@@ -1,0 +1,48 @@
+{%- comment -%}
+  Size guide tables carried over from the girlogy shop design.
+  The table is chosen from the product's first size value:
+  letters (XS, S...) = apparel, 24 to 32 = denim, 35 to 41 = shoes.
+  Usage: {% render 'size-guide', first_size: 'M' %}
+{%- endcomment -%}
+{%- liquid
+  assign kind = 'apparel'
+  assign size_number = first_size | plus: 0
+  if size_number >= 34
+    assign kind = 'shoe'
+  elsif size_number >= 20
+    assign kind = 'denim'
+  endif
+-%}
+<table class="size-table">
+  {%- case kind -%}
+    {%- when 'denim' -%}
+      <thead><tr><th>Size</th><th>UK</th><th>Waist (in)</th><th>Hip (in)</th><th>Inseam (in)</th></tr></thead>
+      <tbody>
+        <tr><td>24</td><td>6</td><td>24</td><td>34</td><td>30</td></tr>
+        <tr><td>26</td><td>8</td><td>26</td><td>36</td><td>30</td></tr>
+        <tr><td>28</td><td>10</td><td>28</td><td>38</td><td>31</td></tr>
+        <tr><td>30</td><td>12</td><td>30</td><td>40</td><td>31</td></tr>
+        <tr><td>32</td><td>14</td><td>32</td><td>42</td><td>32</td></tr>
+      </tbody>
+    {%- when 'shoe' -%}
+      <thead><tr><th>EU</th><th>UK</th><th>US</th><th>Foot length (cm)</th></tr></thead>
+      <tbody>
+        <tr><td>35</td><td>2.5</td><td>5</td><td>22.5</td></tr>
+        <tr><td>36</td><td>3.5</td><td>6</td><td>23.0</td></tr>
+        <tr><td>37</td><td>4</td><td>6.5</td><td>23.5</td></tr>
+        <tr><td>38</td><td>5</td><td>7.5</td><td>24.5</td></tr>
+        <tr><td>39</td><td>6</td><td>8.5</td><td>25.0</td></tr>
+        <tr><td>40</td><td>6.5</td><td>9</td><td>25.5</td></tr>
+        <tr><td>41</td><td>7.5</td><td>10</td><td>26.5</td></tr>
+      </tbody>
+    {%- else -%}
+      <thead><tr><th>Size</th><th>UK</th><th>Bust (in)</th><th>Waist (in)</th><th>Hip (in)</th></tr></thead>
+      <tbody>
+        <tr><td>XS</td><td>6</td><td>31-32</td><td>24-25</td><td>34-35</td></tr>
+        <tr><td>S</td><td>8</td><td>33-34</td><td>26-27</td><td>36-37</td></tr>
+        <tr><td>M</td><td>10</td><td>35-36</td><td>28-29</td><td>38-39</td></tr>
+        <tr><td>L</td><td>12</td><td>37-39</td><td>30-32</td><td>40-42</td></tr>
+        <tr><td>XL</td><td>14</td><td>40-42</td><td>33-35</td><td>43-45</td></tr>
+      </tbody>
+  {%- endcase -%}
+</table>

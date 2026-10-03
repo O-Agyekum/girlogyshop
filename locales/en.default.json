@@ -1,0 +1,133 @@
+{
+  "accessibility": {
+    "skip_to_content": "Skip to content"
+  },
+  "general": {
+    "close": "Close",
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    },
+    "pagination": {
+      "label": "Pagination",
+      "next": "Next page",
+      "previous": "Previous page"
+    },
+    "password": {
+      "enter": "Enter",
+      "label": "Password",
+      "owner": "Are you the store owner? Log in here"
+    },
+    "search": {
+      "title": "Search",
+      "placeholder": "Search tees, sets, laptop bags…",
+      "submit": "Search",
+      "results_count": {
+        "one": "{{ count }} result for \"{{ terms }}\"",
+        "other": "{{ count }} results for \"{{ terms }}\""
+      }
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to cart",
+      "added": "Added to cart",
+      "choose": "Choose",
+      "details": "Details",
+      "on_sale": "Sale",
+      "one_size": "One size",
+      "photo_count": {
+        "one": "{{ count }} photo",
+        "other": "{{ count }} photos"
+      },
+      "price_from": "From {{ price }}",
+      "quick_add": "Add",
+      "regular_price": "Regular price",
+      "shipping_link": "Shipping",
+      "size_guide": "Size guide",
+      "sold_out": "Sold out",
+      "taxes_included": "Tax included.",
+      "taxes_excluded": "Tax excluded.",
+      "unavailable": "Unavailable"
+    }
+  },
+  "cart": {
+    "title": "Your bag",
+    "checkout": "Check out",
+    "continue": "Continue shopping",
+    "decrease": "Decrease quantity for {{ product }}",
+    "increase": "Increase quantity for {{ product }}",
+    "empty": "Your bag is empty. Girl math says that's a saving.",
+    "error": "Something went wrong. Please try again.",
+    "note": "Order note",
+    "quantity": "Quantity",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "taxes_shipping": "Taxes included. Shipping calculated at checkout.",
+    "update": "Update bag",
+    "view": "View bag"
+  },
+  "collections": {
+    "clear_filters": "Clear filters",
+    "empty": "Nothing matches that combination. Try clearing a filter.",
+    "product_count": {
+      "one": "{{ count }} item",
+      "other": "{{ count }} items"
+    },
+    "sort_by": "Sort by"
+  },
+  "contact": {
+    "email": "Email",
+    "message": "Message",
+    "name": "Name",
+    "order": "Order number (optional)",
+    "send": "Send",
+    "success": "Thanks. We'll get back to you soon."
+  },
+  "blogs": {
+    "back": "Back to {{ title }}"
+  },
+  "gift_card": {
+    "title": "Your gift card",
+    "balance": "Remaining balance: {{ balance }}",
+    "code_label": "Use this code at checkout:",
+    "expired": "This gift card is no longer valid.",
+    "shop_link": "Start shopping"
+  },
+  "sections": {
+    "announcement": {
+      "label": "Announcements"
+    },
+    "collection_list": {
+      "placeholder": "Collection"
+    },
+    "featured_collection": {
+      "placeholder_title": "Your product",
+      "view_all": "View all"
+    },
+    "footer": {
+      "legal": "Legal",
+      "payment": "Payment methods"
+    },
+    "header": {
+      "account": "Account",
+      "cart": "Bag",
+      "main_nav": "Main menu",
+      "menu": "Menu"
+    },
+    "newsletter": {
+      "label": "Email address",
+      "submit": "Subscribe",
+      "success": "You're in. Welcome to the study group."
+    },
+    "slideshow": {
+      "go_to": "Go to slide {{ index }}"
+    }
+  },
+  "templates": {
+    "404": {
+      "title": "Page not found",
+      "subtext": "This page doesn't exist or has moved. Overthinking it won't help."
+    }
+  }
+}

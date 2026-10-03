@@ -1,0 +1,47 @@
+<div class="drawer" id="CartDrawer" role="dialog" aria-modal="true" aria-label="{{ 'cart.title' | t }}">
+  <div class="drawer__overlay" data-close></div>
+  <div class="drawer__panel" data-panel data-drawer-content data-item-count="{{ cart.item_count }}">
+    <div class="drawer__header">
+      <h2>{{ 'cart.title' | t }}</h2>
+      <button type="button" class="icon-button" data-close aria-label="{{ 'general.close' | t }}">
+        {% render 'icon', name: 'close' %}
+      </button>
+    </div>
+
+    {%- if settings.cart_note_label != blank -%}
+      <p class="shipping-bar">{{ settings.cart_note_label | escape }}</p>
+    {%- endif -%}
+
+    <div class="drawer__body">
+      {%- if cart.item_count > 0 -%}
+        {% render 'cart-lines', mode: 'drawer' %}
+      {%- else -%}
+        <div class="cart-empty">
+          <p>{{ 'cart.empty' | t }}</p>
+          <a href="{{ routes.all_products_collection_url }}" class="button">{{ 'cart.continue' | t }}</a>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if cart.item_count > 0 -%}
+      <div class="drawer__footer">
+        <div class="cart-summary__row cart-summary__total">
+          <span>{{ 'cart.subtotal' | t }}</span>
+          <span>{{ cart.total_price | money_with_currency }}</span>
+        </div>
+        <small>{{ 'cart.taxes_shipping' | t }}</small>
+        <form action="{{ routes.cart_url }}" method="post">
+          <button type="submit" name="checkout" class="button button--full">{{ 'cart.checkout' | t }}</button>
+        </form>
+        <p style="text-align:center;margin:12px 0 0;"><a href="{{ routes.cart_url }}">{{ 'cart.view' | t }}</a></p>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Cart drawer",
+  "settings": []
+}
+{% endschema %}

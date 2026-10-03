@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "hero": {
+      "type": "split-hero",
+      "settings": {
+        "eyebrow": "Drop 01 · the study of being a girl",
+        "heading": "Wear the overthinking.",
+        "text": "<p>Slit dresses, oversized tops, wide-leg denim, tracksuits, laptop bags and the little extras. Every piece shot from three angles.</p>",
+        "button_label": "Shop the drop",
+        "button_2_label": "Our story"
+      }
+    },
+    "perks": {
+      "type": "perks",
+      "blocks": {
+        "perk-1": { "type": "perk", "settings": { "icon": "truck", "text": "Free shipping over €75" } },
+        "perk-2": { "type": "perk", "settings": { "icon": "return", "text": "14-day returns" } },
+        "perk-3": { "type": "perk", "settings": { "icon": "sparkle", "text": "Limited weekly drops" } }
+      },
+      "block_order": ["perk-1", "perk-2", "perk-3"]
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": { "eyebrow": "Just dropped", "heading": "Shop all", "products_to_show": 6, "columns": "3" }
+    },
+    "quotes": {
+      "type": "quotes-marquee",
+      "blocks": {
+        "q-1": { "type": "quote", "settings": { "quote": "Operating strictly on caffeine and peaceful denial." } },
+        "q-2": { "type": "quote", "settings": { "quote": "Weekend mode: activated. Adulting: paused." } },
+        "q-3": { "type": "quote", "settings": { "quote": "I'm not doing too much. You're just witnessing enough." } },
+        "q-4": { "type": "quote", "settings": { "quote": "Be picky. Everything you want exists." } }
+      },
+      "block_order": ["q-1", "q-2", "q-3", "q-4"]
+    },
+    "collections": {
+      "type": "collection-list",
+      "blocks": {
+        "c-1": { "type": "collection", "settings": { "title": "Tops" } },
+        "c-2": { "type": "collection", "settings": { "title": "Sets" } },
+        "c-3": { "type": "collection", "settings": { "title": "Bags" } },
+        "c-4": { "type": "collection", "settings": { "title": "Accessories" } }
+      },
+      "block_order": ["c-1", "c-2", "c-3", "c-4"],
+      "settings": { "eyebrow": "Shop by category", "heading": "Find your fit", "columns": 4 }
+    },
+    "story": {
+      "type": "image-with-text",
+      "settings": {
+        "eyebrow": "About girlogy",
+        "heading": "The study of being a girl.",
+        "script_line": "new illustrated overthinking every day",
+        "button_label": "Shop the captions"
+      }
+    },
+    "bundle": {
+      "type": "rich-text",
+      "settings": {
+        "eyebrow": "girl math approved",
+        "heading": "Buy it together, save together.",
+        "text": "<p>Bundles cost less than buying the pieces apart. Technically that means you made money.</p>"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": { "eyebrow": "Weekly drops", "heading": "Join the study group" }
+    }
+  },
+  "order": ["hero", "perks", "featured", "quotes", "collections", "story", "bundle", "newsletter"]
+}

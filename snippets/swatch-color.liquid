@@ -1,0 +1,19 @@
+{%- comment -%}
+  Returns a CSS colour for a colour option value, using the girlogy palette.
+  Usage: {% render 'swatch-color', name: value %}
+{%- endcomment -%}
+{%- assign key = name | handle -%}
+{%- case key -%}
+  {%- when 'rust', 'rouille', 'terracotta' -%}#B4553A
+  {%- when 'cream', 'creme', 'ecru' -%}#EFE3D2
+  {%- when 'black', 'noir', 'charcoal' -%}#1E1C1B
+  {%- when 'chocolate', 'chocolat', 'brown', 'marron', 'cocoa' -%}#4A2F23
+  {%- when 'sage', 'sauge', 'green', 'vert' -%}#A9BBA0
+  {%- when 'blush', 'pink', 'rose' -%}#E9C6C2
+  {%- when 'butter', 'yellow', 'jaune' -%}#F2DFA0
+  {%- when 'denim', 'blue', 'bleu', 'light-wash' -%}#B9CDE0
+  {%- when 'white', 'blanc' -%}#FAF7F3
+  {%- when 'gold', 'or' -%}#C9A227
+  {%- when 'marble', 'marbre' -%}#DCCFC2
+  {%- else -%}{{ name | handle | replace: '-', '' }}
+{%- endcase -%}

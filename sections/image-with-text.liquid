@@ -1,0 +1,44 @@
+<section class="section">
+  <div class="page-width image-text{% if section.settings.image_right %} image-text--reverse{% endif %}">
+    <div class="image-text__media">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1400 | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 50vw, 100vw', widths: '600, 900, 1200, 1400', alt: section.settings.image.alt }}
+      {%- else -%}
+        <span class="card__placeholder">{% render 'icon', name: 'girl' %}</span>
+      {%- endif -%}
+    </div>
+    <div>
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="eyebrow">{{ section.settings.eyebrow | escape }}</p>
+      {%- endif -%}
+      <h2>
+        {{ section.settings.heading | escape }}
+        {%- if section.settings.script_line != blank -%}
+          <span class="script" style="display:block;font-size:.8em;margin-top:.2em;">{{ section.settings.script_line | escape }}</span>
+        {%- endif -%}
+      </h2>
+      <div class="rte text-soft">{{ section.settings.text }}</div>
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link | default: routes.all_products_collection_url }}" class="button">{{ section.settings.button_label | escape }}</a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Image with text",
+  "tag": "div",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Image" },
+    { "type": "checkbox", "id": "image_right", "label": "Image on the right", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Small text above heading", "default": "About girlogy" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "The study of being a girl." },
+    { "type": "text", "id": "script_line", "label": "Script line", "default": "new illustrated overthinking every day" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>girlogy started as daily illustrated captions about the small, loud, relatable moments of being a girl. Now you can wear them.</p>" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop the captions" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "presets": [{ "name": "Image with text" }]
+}
+{% endschema %}

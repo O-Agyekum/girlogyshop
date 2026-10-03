@@ -1,0 +1,77 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "girlogy",
+    "theme_version": "1.0.0",
+    "theme_author": "girlogy",
+    "theme_documentation_url": "https://github.com/O-Agyekum/girlogyshop",
+    "theme_support_url": "https://github.com/O-Agyekum/girlogyshop"
+  },
+  {
+    "name": "Colours",
+    "settings": [
+      { "type": "color", "id": "color_background", "label": "Background", "default": "#FAF7F1" },
+      { "type": "color", "id": "color_surface", "label": "Cards and panels", "default": "#FFFDF9" },
+      { "type": "color", "id": "color_secondary", "label": "Soft section background", "default": "#F5E6DB" },
+      { "type": "color", "id": "color_text", "label": "Text", "default": "#18130E" },
+      { "type": "color", "id": "color_text_soft", "label": "Secondary text", "default": "#5E534B" },
+      { "type": "color", "id": "color_accent", "label": "Buttons", "default": "#18130E" },
+      { "type": "color", "id": "color_on_accent", "label": "Text on buttons", "default": "#FCFAF6" },
+      { "type": "color", "id": "color_rust", "label": "Rust (logo heart, highlights)", "default": "#76382E" },
+      { "type": "color", "id": "color_blush", "label": "Blush (badges)", "default": "#FBD4CD" },
+      { "type": "color", "id": "color_border", "label": "Borders", "default": "#E1D7CD" }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      { "type": "range", "id": "page_width", "label": "Page width", "min": 1000, "max": 1600, "step": 20, "unit": "px", "default": 1200 },
+      { "type": "range", "id": "corner_radius", "label": "Card corner radius", "min": 0, "max": 32, "step": 2, "unit": "px", "default": 16 },
+      { "type": "range", "id": "button_radius", "label": "Button corner radius", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 10 },
+      { "type": "image_picker", "id": "favicon", "label": "Favicon", "info": "Square image, 32 x 32 px minimum" }
+    ]
+  },
+  {
+    "name": "Product cards",
+    "settings": [
+      { "type": "checkbox", "id": "card_show_second_image", "label": "Show second image on hover", "default": true },
+      { "type": "checkbox", "id": "card_show_quick_add", "label": "Show quick add button", "default": true },
+      {
+        "type": "select",
+        "id": "card_image_ratio",
+        "label": "Image shape",
+        "options": [
+          { "value": "portrait", "label": "Portrait" },
+          { "value": "square", "label": "Square" }
+        ],
+        "default": "square"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "Cart type",
+        "options": [
+          { "value": "drawer", "label": "Drawer" },
+          { "value": "page", "label": "Page" }
+        ],
+        "default": "drawer"
+      },
+      { "type": "text", "id": "cart_note_label", "label": "Free shipping message", "default": "Free shipping over €75" },
+      { "type": "checkbox", "id": "cart_show_note", "label": "Allow order note", "default": true }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      { "type": "text", "id": "social_instagram", "label": "Instagram URL" },
+      { "type": "text", "id": "social_tiktok", "label": "TikTok URL" },
+      { "type": "text", "id": "social_pinterest", "label": "Pinterest URL" },
+      { "type": "text", "id": "social_facebook", "label": "Facebook URL" }
+    ]
+  }
+]
