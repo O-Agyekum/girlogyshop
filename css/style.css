@@ -74,7 +74,7 @@ nav.depts > button.sale{color:var(--rust)}
 h1,h2{font-weight:500;letter-spacing:-.01em}
 .serif{font-family:var(--serif);font-style:italic;font-weight:400}
 .hero{position:relative;background:#B4553A;color:#FBF3EC;margin:0 0 8px;overflow:hidden}
-.hero .in{display:grid;grid-template-columns:1fr 1fr;min-height:clamp(520px,38vw,720px);align-items:center}
+.hero .in{display:grid;grid-template-columns:1fr 1fr;min-height:540px;align-items:center}
 .hero .copy{padding:48px 24px 48px 0}
 .hero h1{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(40px,5.4vw,76px);line-height:1;margin:0 0 18px;max-width:11ch}
 .hero p{font-size:17px;max-width:40ch;margin:0 0 28px;opacity:.92}
@@ -115,17 +115,15 @@ h1,h2{font-weight:500;letter-spacing:-.01em}
 .colors button.ph i{position:absolute;right:4px;bottom:4px;width:14px;height:14px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.2)}
 .gal .full{grid-column:1/-1;aspect-ratio:1/1}
 .im > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-/* Portrait photo (2:3) pinned to the right edge of the screen, as tall as the banner and at most
-   half the screen wide, so it is never stretched and leaves no empty space. */
-.hero .art{position:absolute;top:0;right:0;bottom:0;aspect-ratio:2/3;max-width:50vw;background:#FAF0E8}
-.hero .heroimg{position:absolute;top:0;left:0;height:100%;width:auto;max-width:none}
-/* Text sits centred in the rust panel left of the photo */
-@media (min-width:821px){
-  .hero .in{max-width:none;padding:0 calc(min(clamp(520px,38vw,720px) * 2 / 3, 50vw) + 24px) 0 24px;grid-template-columns:1fr}
-  .hero .copy{justify-self:center;padding:48px 0}
-}
-.hero .art .card1{top:auto;bottom:40px;left:-60px}
-@media (min-width:821px) and (max-width:960px){.hero .art .card1{left:14px}}
+/* Photo shown as a framed picture (4:5) centred in the right half of the page width,
+   lined up with the header; the quote card overlaps its lower-left corner. */
+.hero .art{align-self:center;justify-self:center;position:relative;margin:36px 0}
+.hero .heroimg{display:block;height:468px;width:auto;max-width:100%;object-fit:cover;object-position:left top;border-radius:4px;box-shadow:0 18px 40px rgba(40,15,5,.25)}
+.hero .art .card1{top:auto;bottom:24px;left:-120px;width:200px;padding:14px 16px}
+.hero .art .card1 q{font-size:18px}
+.hero .art .card1 small{font-size:20px;margin-top:6px}
+@media (min-width:821px) and (max-width:1320px){.hero .art .card1{left:-40px}}
+@media (min-width:821px) and (max-width:960px){.hero .art .card1{left:12px;bottom:12px}}
 .tile .cap{position:relative;padding:28px;width:100%}
 .tile .cap b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:38px;line-height:1.05;margin-bottom:10px}
 .tile .cap span{text-decoration:underline;text-underline-offset:4px;font-weight:500}
@@ -278,8 +276,8 @@ footer .base{border-top:1px solid var(--line);margin-top:34px;padding-top:18px;d
   .head{grid-template-columns:auto 1fr auto}
   .logo{font-size:32px;justify-self:center}
   .hero .in,.duo,.pdp,.bagp{grid-template-columns:1fr}
-  .hero .art{position:relative;aspect-ratio:auto;max-width:none;min-height:420px;margin:0 -24px;overflow:hidden}
-  .hero .heroimg{width:100%;object-fit:cover;object-position:top}
+  .hero .art{justify-self:stretch;align-self:stretch;min-height:420px;margin:0 -24px;overflow:hidden}
+  .hero .heroimg{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:top;border-radius:0;box-shadow:none}
   .hero .art .card1{left:14px;bottom:14px}
   .hero .copy{padding:40px 0 10px}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
