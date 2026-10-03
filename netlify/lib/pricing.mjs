@@ -2,7 +2,7 @@
   Server-side pricing. Every amount sent to Revolut is computed here from
   data/catalog.json, never taken from the browser.
 */
-import catalog from "../../public/data/catalog.json" with { type: "json" };
+import catalog from "../../data/catalog.json" with { type: "json" };
 
 export { catalog };
 
