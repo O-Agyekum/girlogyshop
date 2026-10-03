@@ -115,11 +115,17 @@ h1,h2{font-weight:500;letter-spacing:-.01em}
 .colors button.ph i{position:absolute;right:4px;bottom:4px;width:14px;height:14px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.2)}
 .gal .full{grid-column:1/-1;aspect-ratio:1/1}
 .im > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-/* Photo column runs to the right edge of the screen; the photo keeps its full height on the left
-   and the column is filled with the photo's own cream colour, so nothing is cropped or stretched. */
-.hero .art{background:#FAF0E8;margin-right:calc(-24px - max(0px, (100vw - 1320px) / 2))}
+/* Portrait photo (2:3) pinned to the right edge of the screen, as tall as the banner and at most
+   half the screen wide, so it is never stretched and leaves no empty space. */
+.hero .art{position:absolute;top:0;right:0;bottom:0;aspect-ratio:2/3;max-width:50vw;background:#FAF0E8}
 .hero .heroimg{position:absolute;top:0;left:0;height:100%;width:auto;max-width:none}
+/* Text sits centred in the rust panel left of the photo */
+@media (min-width:821px){
+  .hero .in{max-width:none;padding:0 calc(min(clamp(520px,38vw,720px) * 2 / 3, 50vw) + 24px) 0 24px;grid-template-columns:1fr}
+  .hero .copy{justify-self:center;padding:48px 0}
+}
 .hero .art .card1{top:auto;bottom:40px;left:-60px}
+@media (min-width:821px) and (max-width:960px){.hero .art .card1{left:14px}}
 .tile .cap{position:relative;padding:28px;width:100%}
 .tile .cap b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:38px;line-height:1.05;margin-bottom:10px}
 .tile .cap span{text-decoration:underline;text-underline-offset:4px;font-weight:500}
@@ -272,7 +278,8 @@ footer .base{border-top:1px solid var(--line);margin-top:34px;padding-top:18px;d
   .head{grid-template-columns:auto 1fr auto}
   .logo{font-size:32px;justify-self:center}
   .hero .in,.duo,.pdp,.bagp{grid-template-columns:1fr}
-  .hero .art{min-height:420px;margin:0 -24px;overflow:hidden}
+  .hero .art{position:relative;aspect-ratio:auto;max-width:none;min-height:420px;margin:0 -24px;overflow:hidden}
+  .hero .heroimg{width:100%;object-fit:cover;object-position:top}
   .hero .art .card1{left:14px;bottom:14px}
   .hero .copy{padding:40px 0 10px}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
