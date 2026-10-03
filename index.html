@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Girlogist · the study of being a girl</title>
+<meta name="description" content="Illustrated captions you can wear. Soft fleece, rust prints and the captions your group chat already knows by heart. Printed to order.">
+<meta property="og:title" content="The Girlogist">
+<meta property="og:description" content="The study of being a girl, now in your wardrobe.">
+<meta property="og:image" content="/images/hero.webp">
+<link rel="preload" href="/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/parisienne-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div id="site">
+<div class="promo" data-t="promo"></div>
+
+<header>
+  <div class="wrap">
+    <div class="util">
+      <div class="l">
+        <button data-go="help" data-t="help"></button>
+        <button data-go="about" data-t="about"></button>
+      </div>
+      <div class="r">
+        <div class="langs" role="group" aria-label="Language">
+          <button data-lang="en">EN</button><button data-lang="fr">FR</button><button data-lang="es">ES</button>
+        </div>
+      </div>
+    </div>
+    <div class="head">
+      <div style="display:flex;align-items:center;gap:8px">
+        <button class="ib menu-btn" id="menuBtn" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+        <label class="searchbox"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" data-tp="search" aria-label="Search"></label>
+      </div>
+      <button class="logo" data-go="home" aria-label="The Girlogist">The Girl<span>o</span>gist</button>
+      <div class="icons">
+        <button class="ib" data-go="favs" aria-label="Favourites"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg><span class="t" data-t="favs"></span><span class="n" id="favN" hidden></span></button>
+        <button class="ib" data-go="bag" aria-label="Shopping bag"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="t" data-t="bag"></span><span class="n" id="bagN" hidden></span></button>
+      </div>
+    </div>
+  </div>
+  <nav class="depts" id="depts">
+    <button data-dept="new" data-t="d_new"></button>
+    <button data-dept="her" data-t="d_her"></button>
+    <button data-dept="plus" data-t="d_plus"></button>
+    <button data-dept="acc" data-t="d_acc"></button>
+    <button data-dept="couples" data-t="d_couples"></button>
+    <button data-dept="sale" class="sale" data-t="d_sale"></button>
+  </nav>
+  <div class="mega" id="mega"><div class="wrap in" id="megaIn"></div></div>
+</header>
+
+<main>
+<!-- HOME -->
+<section id="v-home">
+  <div class="hero">
+    <div class="wrap in">
+      <div class="copy">
+        <h1 data-t="heroT"></h1>
+        <p data-t="heroS"></p>
+        <div class="acts">
+          <button class="btn light" data-dept-go="her" data-t="shopHer"></button>
+          <button class="outline" style="border-color:#FBF3EC;color:#FBF3EC" data-dept-go="new" data-t="shopNew"></button>
+        </div>
+      </div>
+      <div class="art" aria-hidden="true">
+        <img class="heroimg" id="heroImg" alt="">
+        <div class="card1"><q data-t="q1"></q><small>girlogy</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="stories" id="stories"></div>
+
+    <div class="sec">
+      <div class="sechead"><h2 data-t="newIn"></h2><button class="linkb" data-dept-go="new" data-t="seeAll"></button></div>
+      <div class="rail" id="railNew"></div>
+    </div>
+
+    <div class="duo">
+      <button class="tile" style="background:#EFE3D2;color:#3B2418" data-dept-go="her" data-cat-go="Sets">
+        <div class="bgart" id="tileA"></div>
+        <div class="cap"><b data-t="tileA"></b><span data-t="shopNow"></span></div>
+      </button>
+      <button class="tile" style="background:#2E2A27;color:#FBF3EC" data-dept-go="plus">
+        <div class="bgart" id="tileB"></div>
+        <div class="cap"><b data-t="tileB"></b><span data-t="shopNow"></span></div>
+      </button>
+    </div>
+
+    <div class="sec">
+      <div class="sechead"><h2 data-t="best"></h2><button class="linkb" data-dept-go="her" data-t="seeAll"></button></div>
+      <div class="grid" id="gridBest"></div>
+    </div>
+
+    <div class="sec">
+      <div class="sechead"><h2 data-t="couplesT"></h2><button class="linkb" data-dept-go="couples" data-t="seeAll"></button></div>
+      <div class="bundles" id="homeBundles"></div>
+    </div>
+  </div>
+</section>
+
+<!-- LISTING -->
+<section id="v-plp" class="wrap page plp" hidden>
+  <div class="crumbs"><button data-go="home" data-t="home"></button> / <span id="plpCrumb"></span></div>
+  <h1 id="plpTitle"></h1>
+  <div class="cats" id="plpCats"></div>
+  <div class="fbar">
+    <div class="l">
+      <button class="fbtn" id="openFilters"><span data-t="filter"></span> <span id="fCount"></span></button>
+      <span id="activeChips" style="display:flex;gap:6px;flex-wrap:wrap"></span>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center">
+      <span class="fine" id="plpCount"></span>
+      <select id="sort" aria-label="Sort"></select>
+    </div>
+  </div>
+  <div class="grid" id="plpGrid"></div>
+  <div id="plpBundles" class="bundles" hidden></div>
+</section>
+
+<!-- PRODUCT -->
+<section id="v-pdp" class="wrap page" hidden>
+  <div class="crumbs" id="pdpCrumbs"></div>
+  <div class="pdp">
+    <div class="gal" id="gal"></div>
+    <div class="buy">
+      <h1 id="pName"></h1>
+      <div class="price" id="pPrice"></div>
+      <div class="lbl"><span><span data-t="colour"></span>: <strong id="pColName"></strong></span></div>
+      <div class="colors" id="pColors"></div>
+      <div id="pSizeBox">
+        <div class="lbl"><span data-t="selSize"></span><button class="linkb" id="guideBtn" data-t="sizeGuide"></button></div>
+        <div class="sizes" id="pSizes"></div>
+        <div id="guide" hidden></div>
+      </div>
+      <div class="addrow">
+        <button class="btn" id="pAdd"></button>
+        <button class="fav" id="pFav" aria-label="Favourite"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></button>
+      </div>
+      <p class="err" id="pErr" role="alert"></p>
+      <p class="stock" id="pStock"></p>
+      <div class="info"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg><span data-t="shipInfo"></span></div>
+      <div class="acc">
+        <details open><summary data-t="descFit"></summary><p id="pDesc"></p></details>
+        <details><summary data-t="materials"></summary><ul id="pDetails"></ul></details>
+        <details><summary data-t="delRet"></summary><p data-t="delRetTxt"></p></details>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="sechead"><h2 data-t="alsoLike"></h2></div>
+    <div class="rail" id="railRel"></div>
+  </div>
+</section>
+
+<!-- FAVOURITES -->
+<section id="v-favs" class="wrap page" hidden>
+  <h1 style="font-size:30px;margin:0 0 6px" data-t="favs"></h1>
+  <p class="fine" data-t="favsSub"></p>
+  <div class="grid" id="favGrid" style="margin-top:22px"></div>
+</section>
+
+<!-- BAG -->
+<section id="v-bag" class="wrap page" hidden>
+  <h1 style="font-size:30px;margin:0 0 18px" data-t="bag"></h1>
+  <div class="bagp">
+    <div id="bagLines"></div>
+    <div class="panel" id="bagSum">
+      <div class="progress" id="prog"></div>
+      <div class="row"><span data-t="orderVal"></span><span id="bSub"></span></div>
+      <div class="row"><span data-t="delivery"></span><span data-t="calcNext"></span></div>
+      <div class="row total"><span data-t="total"></span><span id="bTot"></span></div>
+      <button class="btn" style="width:100%;margin-top:14px;padding:15px" id="toCheckout" data-t="toCheckout"></button>
+      <p class="err" id="bagErr" role="alert"></p>
+      <div class="pays" style="margin-top:14px"><span>Visa</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span><span>Revolut Pay</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKOUT -->
+<section id="v-checkout" class="wrap page" hidden>
+  <h1 style="font-size:30px;margin:0 0 18px" data-t="checkout"></h1>
+  <div class="bagp">
+    <div>
+      <div class="panel" style="margin-bottom:14px">
+        <h2 data-t="contact"></h2>
+        <div class="field"><label for="em" data-t="email"></label><input id="em" type="email" placeholder="amina@exemple.fr" autocomplete="email"></div>
+        <div class="field"><label for="ph" data-t="phone"></label><input id="ph" type="tel" placeholder="06 12 34 56 78" autocomplete="tel"></div>
+      </div>
+      <div class="panel" style="margin-bottom:14px">
+        <h2 data-t="address"></h2>
+        <div class="g2">
+          <div class="field"><label for="fn" data-t="first"></label><input id="fn" autocomplete="given-name"></div>
+          <div class="field"><label for="ln" data-t="last"></label><input id="ln" autocomplete="family-name"></div>
+        </div>
+        <div class="field"><label for="ad" data-t="street"></label><input id="ad" autocomplete="street-address"></div>
+        <div class="g2">
+          <div class="field"><label for="zp" data-t="zip"></label><input id="zp" autocomplete="postal-code"></div>
+          <div class="field"><label for="ct" data-t="city"></label><input id="ct" autocomplete="address-level2"></div>
+        </div>
+        <div class="field"><label for="co" data-t="country"></label><select id="co"></select></div>
+      </div>
+      <div class="panel">
+        <h2 data-t="delMethod"></h2>
+        <label class="opt"><input type="radio" name="ship" value="3.9" checked><span><span data-t="pickup"></span><br><small class="fine" data-t="pickupD"></small></span><b id="s1"></b></label>
+        <label class="opt"><input type="radio" name="ship" value="4.9"><span><span data-t="home_d"></span><br><small class="fine" data-t="homeD"></small></span><b id="s2"></b></label>
+        <p class="err" id="coErr" role="alert"></p>
+      </div>
+    </div>
+    <div class="panel" style="position:sticky;top:130px">
+      <h2 data-t="summary"></h2>
+      <div id="coLines"></div>
+      <div class="inline" style="margin:14px 0 4px"><input id="code" data-tp="promo_ph" aria-label="Promo code"><button class="outline" id="applyCode" style="padding:8px 14px" data-t="apply"></button></div>
+      <p class="fine" id="codeMsg" role="status" style="min-height:18px;margin:0 0 6px"></p>
+      <div class="row"><span data-t="orderVal"></span><span id="cSub"></span></div>
+      <div class="row" id="cDiscRow" hidden><span data-t="discount"></span><span id="cDisc"></span></div>
+      <div class="row"><span data-t="delivery"></span><span id="cShip"></span></div>
+      <div class="row total"><span data-t="total"></span><span id="cTot"></span></div>
+      <label class="check"><input type="checkbox" id="cgvOk"><span id="cgvLabel"></span></label>
+      <p class="err" id="cgvErr" role="alert"></p>
+      <button class="pay" id="pay"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span data-t="paySecure"></span></button>
+      <p class="fine" style="text-align:center;margin-top:10px" data-t="payNote"></p>
+    </div>
+  </div>
+</section>
+
+<!-- DONE -->
+<section id="v-done" class="wrap page" hidden>
+  <div class="done">
+    <div class="mk" data-t="thanks"></div>
+    <h1 style="font-size:32px;margin:8px 0" data-t="confirmed"></h1>
+    <p id="doneMsg"></p>
+    <div class="steps" id="doneSteps"></div>
+    <div class="panel" style="text-align:left;margin:22px 0" id="doneSum"></div>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+      <button class="btn" data-go="home" data-t="keepShopping"></button>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- HELP -->
+<section id="v-help" class="wrap page" hidden>
+  <h1 style="font-size:30px;margin:0 0 18px" data-t="help"></h1>
+  <div class="bagp">
+    <div class="acc faq" style="margin-top:0" id="faq"></div>
+    <div class="panel">
+      <h2 data-t="writeUs"></h2>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hp"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field"><label for="cn" data-t="name"></label><input id="cn" name="name" autocomplete="name"></div>
+      <div class="field"><label for="ce" data-t="email"></label><input id="ce" name="email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="co2" data-t="orderRef"></label><input id="co2" name="order"></div>
+      <div class="field"><label for="cm" data-t="message"></label><textarea id="cm" name="message" rows="4"></textarea></div>
+      <button class="btn" id="cBtn" type="submit" data-t="send"></button>
+      </form>
+      <p class="err" id="cMsg" role="status"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="v-about" class="wrap page" hidden>
+  <div class="duo" style="padding-top:0;align-items:center">
+    <div>
+      <h1 class="serif" style="font-size:52px;margin:0 0 16px;line-height:1" data-t="about"></h1>
+      <p style="font-size:17px;max-width:52ch" data-t="about1"></p>
+      <p style="font-size:17px;max-width:52ch;color:var(--ink-2)" data-t="about2"></p>
+      <button class="btn" data-dept-go="her" data-t="shopHer" style="margin-top:8px"></button>
+    </div>
+    <div class="tile" style="background:#E9C6C2;color:#3B2418;min-height:460px"><div class="bgart" id="aboutArt"></div></div>
+  </div>
+</section>
+
+
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fc">
+      <div><h4 data-t="shop"></h4><button class="fl" data-dept-go="her" data-t="d_her"></button><button class="fl" data-dept-go="plus" data-t="d_plus"></button><button class="fl" data-dept-go="acc" data-t="d_acc"></button><button class="fl" data-dept-go="couples" data-t="d_couples"></button><button class="fl" data-dept-go="sale" data-t="d_sale"></button></div>
+      <div><h4 data-t="help"></h4><button class="fl" data-go="help" data-t="delRet"></button><button class="fl" data-go="help" data-t="sizeGuide"></button><button class="fl" data-go="help" data-t="writeUs"></button></div>
+      <div><h4 data-t="legal"></h4><a class="fl" href="/legal/mentions-legales.html" data-t="mentions"></a><a class="fl" href="/legal/cgv.html" data-t="cgv"></a><a class="fl" href="/legal/retractation.html" data-t="withdrawal"></a><a class="fl" href="/legal/confidentialite.html" data-t="privacy"></a><button class="fl" data-go="about" data-t="about"></button></div>
+      <div id="followCol"><h4 data-t="follow"></h4><div id="socialLinks"></div></div>
+      <div>
+        <h4 data-t="newsT"></h4>
+        <p class="fine" style="margin:0" data-t="newsS"></p>
+        <form class="news" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="newsForm">
+          <input type="hidden" name="form-name" value="newsletter">
+          <p class="hp"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <input id="nlE" name="email" type="email" placeholder="amina@exemple.fr" aria-label="Email" autocomplete="email"><button class="btn" id="nlB" type="submit" data-t="subscribe"></button>
+        </form>
+        <p class="err" id="nlM" role="status"></p>
+      </div>
+    </div>
+    <div class="base">
+      <span>© <span id="year">2026</span> The Girlogist</span>
+      <label style="display:flex;gap:8px;align-items:center"><span data-t="language"></span>
+        <select id="langSel" style="border:1px solid var(--line);background:var(--panel);padding:5px 8px"><option value="en">English</option><option value="fr">Français</option><option value="es">Español</option></select>
+      </label>
+      <div class="pays"><span>Visa</span><span>Mastercard</span><span>Apple Pay</span><span>Google Pay</span><span>Revolut Pay</span></div>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer right" id="fDrawer" aria-hidden="true">
+  <div class="dh"><h2 data-t="filter"></h2><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div class="db" id="fBody"></div>
+  <div class="df"><button class="outline" id="fClear" data-t="clear"></button><button class="btn" id="fApply"></button></div>
+</aside>
+
+<aside class="drawer left mnav" id="mDrawer" aria-hidden="true">
+  <div class="dh"><span class="logo" style="font-size:28px">The Girl<span>o</span>gist</span><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div class="db">
+    <div class="inline" style="margin-bottom:10px"><input id="mq" type="search" data-tp="search" aria-label="Search"></div>
+    <div id="mList"></div>
+    <div class="langs" style="margin-top:18px;display:inline-flex"><button data-lang="en">EN</button><button data-lang="fr">FR</button><button data-lang="es">ES</button></div>
+  </div>
+</aside>
+
+
+<!-- Order details for the shop owner (Netlify Forms). Filled in by app.js just before payment. -->
+<form name="order" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="order">
+  <input name="bot-field"><input name="reference"><input name="revolut_order"><input name="total"><input name="items">
+  <input name="shipping"><input name="email"><input name="name"><input name="phone"><input name="address">
+  <input name="postcode"><input name="city"><input name="country"><input name="lang">
+</form>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="/js/config.js"></script>
+<script src="/js/i18n.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
