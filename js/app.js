@@ -41,6 +41,7 @@ const catName = c => T[lang].cats[c] || c;
 const colName = c => T[lang].cols[c] || c;
 const shown = () => products.filter(p => p.visible !== false);
 const sizesOf = p => SIZES[p.sk] || [];
+const hasSale = () => shown().some(p => p.was);
 
 /* ---------- product images ---------- */
 function art(p, colorKey, mode){
@@ -96,10 +97,10 @@ function applyLang(){
   $("#co").innerHTML = T[lang].countries.map(c => `<option>${esc(c)}</option>`).join("");
   $("#faq").innerHTML = T[lang].faq.map(([q,a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("");
   $("#cgvLabel").innerHTML = esc(t("acceptCgv")).replace("{cgv}", `<a href="/legal/cgv.html" target="_blank" rel="noopener">${esc(t("cgv"))}</a>`).replace("{priv}", `<a href="/legal/confidentialite.html" target="_blank" rel="noopener">${esc(t("privacy").toLowerCase())}</a>`);
-  const storyMap = [["new",null],["her","Tops"],["acc","Tech"],["acc","Accessories"],["her","Sets"],["sale",null],["plus",null]];
+  const storyMap = [["new",null],["her","Tops"],["acc","Tech"],["acc","Accessories"],["her","Sets"],[hasSale()?"sale":"her",null,hasSale()?null:"low"],["plus",null]];
   const storyIds = ["dress-slit","crewneck-rust","laptop-bag-14","bracelets","gym-set","tote","po-cap"];
   $("#heroImg").src = CAT.heroImage;
-  $("#stories").innerHTML = T[lang].stories.map((s,i) => { const p = byId(storyIds[i]); return `<button class="story" data-dept-go="${storyMap[i][0]}" ${storyMap[i][1]?`data-cat-go="${storyMap[i][1]}"`:""}><span class="ring"><span class="dot">${p ? art(p) : ""}</span></span>${esc(s)}</button>`; }).join("");
+  $("#stories").innerHTML = T[lang].stories.map((s,i) => { const p = byId(storyIds[i]); return `<button class="story" data-dept-go="${storyMap[i][0]}" ${storyMap[i][1]?`data-cat-go="${storyMap[i][1]}"`:""} ${storyMap[i][2]?`data-sort-go="${storyMap[i][2]}"`:""}><span class="ring"><span class="dot">${p ? art(p) : ""}</span></span>${esc(s)}</button>`; }).join("");
   const tA = byId("tracksuit-rust"), tB = byId("po-hoodie"), ab = byId("hoodie-cream");
   $("#tileA").innerHTML = tA ? art(tA) : "";
   $("#tileB").innerHTML = tB ? art(tB) : "";
@@ -125,7 +126,7 @@ function megaFor(d){
   if(d === "new" || d === "sale" || d === "couples"){ $("#mega").classList.remove("open"); return; }
   const cats = DEPT_CATS[d];
   const colsHtml = `<div><h4>${t("d_"+d)}</h4><button data-dept-go="${d}">${t("seeAll")}</button>${cats.map(c => `<button data-dept-go="${d}" data-cat-go="${c}">${catName(c)}</button>`).join("")}</div>`;
-  const hl = `<div><h4>${t("newIn")}</h4><button data-dept-go="new">${t("d_new")}</button><button data-dept-go="sale">${t("d_sale")}</button><button data-dept-go="couples">${t("d_couples")}</button></div>`;
+  const hl = `<div><h4>${t("newIn")}</h4><button data-dept-go="new">${t("d_new")}</button>${hasSale()?`<button data-dept-go="sale">${t("d_sale")}</button>`:""}<button data-dept-go="couples">${t("d_couples")}</button></div>`;
   const cols = `<div><h4>${t("colours")}</h4>${["rust","cream","chocolate","sage","black"].map(c=>`<button data-dept-go="${d}" data-col-go="${c}">${colName(c)}</button>`).join("")}</div>`;
   const help = `<div><h4>${t("help")}</h4><button data-go="help">${t("sizeGuide")}</button><button data-go="help">${t("delRet")}</button><button data-go="help">${t("writeUs")}</button></div>`;
   $("#megaIn").innerHTML = colsHtml + hl + cols + help + `<button class="feat" data-dept-go="${d}" style="border:0;text-align:left"><b>${d==="plus"?t("tileB"):d==="acc"?t("d_acc"):t("tileA")}</b><span style="text-decoration:underline;margin-top:8px">${t("shopNow")}</span></button>`;
@@ -140,15 +141,16 @@ $("header").addEventListener("mouseleave", () => { megaTimer = setTimeout(() => 
 $("#mega").addEventListener("mouseenter", () => clearTimeout(megaTimer));
 
 function buildMobileNav(){
-  $("#mList").innerHTML = ["new","her","plus","acc","couples","sale"].map(d =>
+  $("#mList").innerHTML = ["new","her","plus","acc","couples"].concat(hasSale()?["sale"]:[]).map(d =>
     `<button class="it" data-dept-go="${d}" ${d==="sale"?'style="color:var(--rust)"':""}>${t("d_"+d)}<span>›</span></button>` +
     (DEPT_CATS[d] ? DEPT_CATS[d].map(c => `<button class="sub" data-dept-go="${d}" data-cat-go="${c}">${catName(c)}</button>`).join("") : "")
   ).join("") + `<button class="it" data-go="favs">${t("favs")}<span>›</span></button><button class="it" data-go="help">${t("help")}<span>›</span></button><button class="it" data-go="about">${t("about")}<span>›</span></button>`;
 }
 
 /* ---------- listing ---------- */
-function openDept(d, c, col){
+function openDept(d, c, col, so){
   dept = d; cat = c || "all"; fSizes = []; fColors = col ? [col] : []; query = ""; $("#q").value = "";
+  if(so){ sort = so; $("#sort").value = so; }
   go("plp");
 }
 function listFor(){
@@ -181,7 +183,7 @@ function renderPLP(){
   $("#activeChips").innerHTML = [...fColors.map(c => `<button class="chipx" data-rmc="${c}">${colName(c)} ×</button>`), ...fSizes.map(s => `<button class="chipx" data-rms="${s}">${s} ×</button>`)].join("");
   fill($("#plpGrid"), list, t("items_n",{n:0}));
 }
-$("#plpCats").addEventListener("click", e => { const b = e.target.closest("[data-cat]"); if(b){ cat = b.dataset.cat; renderPLP(); } });
+$("#plpCats").addEventListener("click", e => { const b = e.target.closest("[data-cat]"); if(b){ cat = b.dataset.cat; renderPLP(); syncUrl(); updateMeta(); } });
 $("#activeChips").addEventListener("click", e => {
   const c = e.target.closest("[data-rmc]"), s = e.target.closest("[data-rms]");
   if(c) fColors = fColors.filter(x => x !== c.dataset.rmc);
@@ -242,7 +244,6 @@ function renderPDP(){
   $("#pFav").classList.toggle("on", on); $("#pFav").setAttribute("aria-pressed", on);
   const rel = shown().filter(x => x.id !== p.id && x.cat === p.cat).concat(shown().filter(x => x.id !== p.id && x.cat !== p.cat && x.dept === p.dept)).slice(0,8);
   fill($("#railRel"), rel);
-  document.title = `${pName(p)} · ${SHOP.name || "The Girlogist"}`;
 }
 $("#pColors").addEventListener("click", e => { const b = e.target.closest("[data-col]"); if(b){ pColor = b.dataset.col; renderPDP(); } });
 $("#pSizes").addEventListener("click", e => { const b = e.target.closest("[data-size]"); if(!b || b.disabled) return; pSize = b.dataset.size; $("#pErr").textContent = ""; $$("#pSizes button").forEach(x => { x.classList.toggle("on", x === b); x.setAttribute("aria-pressed", x === b); }); });
@@ -454,17 +455,82 @@ $("#newsForm").addEventListener("submit", async e => {
 });
 $("#nlE").oninput = () => $("#nlM").textContent = "";
 
+/* ---------- addresses ----------
+   Every page has its own address (/her/tops, /product/tee-black, /bag ...), so links can be
+   shared, the browser's Back button works and search engines can see each page.
+   netlify/functions/page.mjs serves index.html for these addresses with the right title. */
+const DEPT_SLUG = {new:"new", her:"her", plus:"plus-one", acc:"accessories", couples:"couples", sale:"sale"};
+const VIEW_SLUG = {favs:"favourites", bag:"bag", checkout:"checkout", help:"help", about:"about"};
+const flip = o => Object.fromEntries(Object.entries(o).map(([k, v]) => [v, k]));
+const SLUG_DEPT = flip(DEPT_SLUG), SLUG_VIEW = flip(VIEW_SLUG);
+const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-");
+const catsOf = d => DEPT_CATS[d] || [...new Set(products.map(p => p.cat))];
+const SITE = (SHOP.siteUrl || location.origin).replace(/\/$/, "");
+
+function pathFor(v){
+  if(v === "pdp" && current) return "/product/" + current.id;
+  if(v === "plp") return query ? "/search?q=" + encodeURIComponent(query) : "/" + DEPT_SLUG[dept] + (cat !== "all" ? "/" + slug(cat) : "");
+  return VIEW_SLUG[v] ? "/" + VIEW_SLUG[v] : "/";
+}
+function syncUrl(replace){
+  const path = pathFor(view);
+  if(path !== location.pathname + location.search) history[replace ? "replaceState" : "pushState"](null, "", path);
+}
+function routeFrom(loc){
+  const parts = loc.pathname.split("/").filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch(e){ return x; } });
+  const opt = {push: false};
+  if(!parts.length) return go("home", opt);
+  if(parts[0] === "product" && parts.length === 2){
+    current = byId(parts[1]);
+    if(current && current.visible !== false){ pColor = current.colors[0]; pSize = null; return go("pdp", opt); }
+    return go("nf", opt);
+  }
+  if(parts[0] === "search" && parts.length === 1){
+    query = (new URLSearchParams(loc.search).get("q") || "").trim(); $("#q").value = query;
+    cat = "all"; fSizes = []; fColors = [];
+    return go(query ? "plp" : "home", opt);
+  }
+  const d = SLUG_DEPT[parts[0]];
+  if(d && parts.length <= 2 && (d !== "sale" || hasSale())){
+    const c = parts[1] ? catsOf(d).find(x => slug(x) === parts[1]) : "all";
+    if(c){ dept = d; cat = c; fSizes = []; fColors = []; query = ""; $("#q").value = ""; return go("plp", opt); }
+  }
+  if(SLUG_VIEW[parts[0]] && parts.length === 1) return go(SLUG_VIEW[parts[0]], opt);
+  go("nf", opt);
+}
+window.addEventListener("popstate", () => routeFrom(location));
+
+/* Title, description and canonical address of the page being shown */
+function setMeta(sel, attr, val){ const el = document.querySelector(sel); if(el) el.setAttribute(attr, val); }
+function updateMeta(){
+  const brand = SHOP.name || "The Girlogist";
+  let title = `${brand} · ${t("metaTag")}`, desc = t("metaDesc");
+  if(view === "pdp" && current){ title = `${pName(current)} · ${brand}`; desc = pDesc(current); }
+  else if(view === "plp"){ const h = query ? `"${query}"` : cat !== "all" ? `${catName(cat)} · ${t("d_"+dept)}` : t("d_"+dept); title = `${h} · ${brand}`; }
+  else if(view === "nf") title = `${t("nfT")} · ${brand}`;
+  else if(VIEW_SLUG[view]) title = `${t({favs:"favs", bag:"bag", checkout:"checkout", help:"help", about:"about"}[view])} · ${brand}`;
+  document.title = title;
+  const url = SITE + pathFor(view);
+  setMeta('meta[name="description"]', "content", desc);
+  setMeta('link[rel="canonical"]', "href", url);
+  setMeta('meta[property="og:title"]', "content", title);
+  setMeta('meta[property="og:description"]', "content", desc);
+  setMeta('meta[property="og:url"]', "content", url);
+}
+
 /* ---------- routing ---------- */
-const VIEWS = ["home","plp","pdp","favs","bag","checkout","done","help","about"];
-function go(v){
+const VIEWS = ["home","plp","pdp","favs","bag","checkout","done","help","about","nf"];
+function go(v, opt = {}){
   if(v === "checkout" && (!cart.length || !ORDERS_OPEN)) v = "bag";
   view = v;
   VIEWS.forEach(x => $("#v-"+x).hidden = x !== v);
   $$("#depts > button").forEach(b => b.classList.toggle("on", (v === "plp" && !query && b.dataset.dept === dept) || (v === "pdp" && current && b.dataset.dept === current.dept)));
   $("#mega").classList.remove("open");
   closeDrawers();
-  if(v !== "pdp") document.title = "The Girlogist · the study of being a girl";
   refresh();
+  /* following a link adds a history entry; arriving from an address or Back/Forward
+     keeps the entry and only tidies the address (e.g. /checkout -> /bag) */
+  if(v !== "done") syncUrl(opt.push === false);
   window.scrollTo(0,0);
 }
 function refresh(){
@@ -479,12 +545,13 @@ function refresh(){
   if(view === "favs") fill($("#favGrid"), favs.map(byId).filter(Boolean), t("favsEmpty"));
   if(view === "bag") renderBag();
   if(view === "checkout") renderCheckout();
+  updateMeta();
 }
 document.addEventListener("click", e => {
   const fav = e.target.closest("[data-fav]"); if(fav){ e.preventDefault(); toggleFav(fav.dataset.fav); return; }
   const op = e.target.closest("[data-open]"); if(op){ openProduct(op.dataset.open); return; }
   const bu = e.target.closest("[data-bundle]"); if(bu){ addBundle(bu.dataset.bundle); return; }
-  const dg = e.target.closest("[data-dept-go]"); if(dg){ openDept(dg.dataset.deptGo, dg.dataset.catGo, dg.dataset.colGo); return; }
+  const dg = e.target.closest("[data-dept-go]"); if(dg){ openDept(dg.dataset.deptGo, dg.dataset.catGo, dg.dataset.colGo, dg.dataset.sortGo); return; }
   const g = e.target.closest("[data-go]"); if(g){ e.preventDefault(); go(g.dataset.go); return; }
   if(e.target.closest("[data-close]") || e.target === $("#overlay")) closeDrawers();
 });
@@ -492,7 +559,7 @@ function openDrawer(sel){ $(sel).classList.add("open"); $(sel).setAttribute("ari
 function closeDrawers(){ $$(".drawer").forEach(d => { d.classList.remove("open"); d.setAttribute("aria-hidden","true"); }); $("#overlay").classList.remove("open"); }
 $("#menuBtn").onclick = () => openDrawer("#mDrawer");
 document.addEventListener("keydown", e => { if(e.key === "Escape"){ closeDrawers(); $("#mega").classList.remove("open"); } });
-function doSearch(v){ query = v.trim(); if(!query){ if(view === "plp") renderPLP(); return; } cat = "all"; fSizes = []; fColors = []; if(view !== "plp") go("plp"); else renderPLP(); }
+function doSearch(v){ query = v.trim(); if(!query){ if(view === "plp"){ renderPLP(); syncUrl(true); updateMeta(); } return; } cat = "all"; fSizes = []; fColors = []; if(view !== "plp") go("plp"); else { renderPLP(); syncUrl(true); updateMeta(); } }
 $("#q").addEventListener("input", e => doSearch(e.target.value));
 $("#mq").addEventListener("keydown", e => { if(e.key === "Enter"){ $("#q").value = e.target.value; doSearch(e.target.value); closeDrawers(); } });
 
@@ -510,6 +577,8 @@ if(!ORDERS_OPEN){
   $$(".pays").forEach(el => el.hidden = true);
 }
 
+$$('[data-dept="sale"], [data-dept-go="sale"]').forEach(el => el.hidden = !hasSale());
+
 applyLang();
-await handleReturn();
+if(!(await handleReturn())) routeFrom(location);
 })();
