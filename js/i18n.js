@@ -1,6 +1,11 @@
 /* Translations for The Girlogist. Edit text here; keys must exist in en. */
 window.T = {
  "en": {
+  "metaTag": "the study of being a girl",
+  "metaDesc": "Illustrated captions you can wear. Soft fleece, rust prints and the captions your group chat already knows by heart. Printed to order.",
+  "nfT": "Page not found",
+  "nfS": "This page or product doesn't exist, or it has moved.",
+  "nfBtn": "Back to the shop",
   "promoSoon": "Online orders open soon. Join the newsletter to hear first.",
   "soonBtn": "Online orders opening soon",
   "soonNote": "Your bag is saved on this device. Join the newsletter at the bottom of the page to know when orders open.",
@@ -26,7 +31,7 @@ window.T = {
   "q3": "Overthinking, but make it illustrated.",
   "newIn": "New in",
   "seeAll": "See all",
-  "best": "Bestsellers",
+  "best": "Our picks",
   "shopNow": "Shop now",
   "tileA": "Matching sets for doing absolutely nothing",
   "tileB": "Plus One, the line for the man holding the bags",
@@ -215,6 +220,11 @@ window.T = {
   "orderRef": "Order reference"
  },
  "fr": {
+  "metaTag": "l'étude d'être une fille",
+  "metaDesc": "Des légendes illustrées à porter. Molleton tout doux, imprimés rouille et les phrases que ton groupe de copines connaît par cœur. Imprimé à la commande.",
+  "nfT": "Page introuvable",
+  "nfS": "Cette page ou ce produit n'existe pas, ou a été déplacé.",
+  "nfBtn": "Retour à la boutique",
   "promoSoon": "Les commandes en ligne ouvrent bientôt. Inscris-toi à la newsletter pour le savoir en premier.",
   "soonBtn": "Commandes en ligne bientôt ouvertes",
   "soonNote": "Ton panier reste enregistré sur cet appareil. Inscris-toi à la newsletter en bas de page pour savoir quand les commandes ouvrent.",
@@ -240,7 +250,7 @@ window.T = {
   "q3": "Je réfléchis trop, mais en version illustrée.",
   "newIn": "Nouveautés",
   "seeAll": "Tout voir",
-  "best": "Meilleures ventes",
+  "best": "Notre sélection",
   "shopNow": "Découvrir",
   "tileA": "Des ensembles assortis pour ne rien faire du tout",
   "tileB": "Plus One, la ligne pour celui qui porte les sacs",
@@ -429,6 +439,11 @@ window.T = {
   "orderRef": "Référence de commande"
  },
  "es": {
+  "metaTag": "el estudio de ser chica",
+  "metaDesc": "Frases ilustradas para llevar puestas. Felpa suave, estampados óxido y las frases que tu grupo de amigas ya se sabe de memoria. Impreso bajo pedido.",
+  "nfT": "Página no encontrada",
+  "nfS": "Esta página o producto no existe, o se ha movido.",
+  "nfBtn": "Volver a la tienda",
   "promoSoon": "Los pedidos en línea abren pronto. Suscríbete a la newsletter para enterarte primero.",
   "soonBtn": "Pedidos en línea muy pronto",
   "soonNote": "Tu cesta queda guardada en este dispositivo. Suscríbete a la newsletter al final de la página para saber cuándo abren los pedidos.",
@@ -454,7 +469,7 @@ window.T = {
   "q3": "Pienso demasiado, pero en versión ilustrada.",
   "newIn": "Novedades",
   "seeAll": "Ver todo",
-  "best": "Lo más vendido",
+  "best": "Nuestra selección",
   "shopNow": "Comprar",
   "tileA": "Conjuntos a juego para no hacer absolutamente nada",
   "tileB": "Plus One, la línea para el que lleva las bolsas",

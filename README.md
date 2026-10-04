@@ -61,6 +61,31 @@ and remove `REVOLUT_ENV`.
 - **Text**: all wording is in `js/i18n.js` (English, French, Spanish).
 - **Social links and contact email**: `js/config.js`.
 
+## Page addresses, Google and link previews
+
+Every page has its own address, so the Back button works and links can be shared:
+`/her`, `/her/tops`, `/plus-one`, `/accessories/bags`, `/couples`, `/new`,
+`/product/<product id>` (for example `/product/tee-black`), `/help`, `/about`, `/bag`.
+
+- `netlify/functions/page.mjs` serves the site for these addresses with the page's title,
+  description and sharing image already in the HTML (for Google and WhatsApp/Instagram previews).
+  An address that matches nothing returns "Page not found" (`404.html`).
+- `/sitemap.xml` is built automatically from `data/catalog.json`; `robots.txt` points to it.
+  Once the site is live, add it in Google Search Console (Sitemaps).
+- Icons: `favicon.ico`, `favicon-192.png`, `apple-touch-icon.png`. Sharing image: `images/og-girlogy.jpg`.
+
+## Honest prices and badges (French consumer law)
+
+- **Crossed-out prices** (`"was"` in `data/catalog.json`): only use one when the crossed-out price is
+  the lowest price you actually charged in the 30 days before the reduction
+  (Code de la consommation, art. L112-1-1). The "Sale" section and links appear only when at least
+  one product has a `"was"` price.
+- **Badges** (`"badge"`): `"b_new"` and `"b_plus"` are descriptive. Only add `"b_best"`
+  ("Best seller"), `"b_teen"` or `"b_lim"` ("Limited") when it is true and you can show it
+  (sales figures, a real limited run). False claims are misleading commercial practices (art. L121-2).
+- **Sold out** (`"soldOut"`): products are printed to order, so only mark a size sold out if the
+  printer genuinely cannot make it.
+
 ## Before launch: complete the legal pages
 
 Fill in every highlighted blank in `legal/` (name, SIREN, address, VAT mention,

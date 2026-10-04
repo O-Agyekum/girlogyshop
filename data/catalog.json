@@ -237,7 +237,7 @@
    ],
    "sk": "apparel",
    "price": 32,
-   "badge": "b_best",
+   "badge": null,
    "det": [
     "Heavyweight cotton, 240 g/m²",
     "White italic serif print",
@@ -355,7 +355,7 @@
    ],
    "sk": "crop",
    "price": 28,
-   "badge": "b_teen",
+   "badge": null,
    "det": [
     "Stretch cotton",
     "Cropped length",
@@ -394,7 +394,6 @@
    ],
    "sk": "apparel",
    "price": 49,
-   "was": 56,
    "det": [
     "Brushed fleece inside",
     "Cropped boxy body",
@@ -433,7 +432,7 @@
    ],
    "sk": "apparel",
    "price": 68,
-   "badge": "b_best",
+   "badge": null,
    "det": [
     "400 g/m² brushed fleece",
     "Oversized fit",
@@ -584,8 +583,7 @@
    ],
    "sk": "crop",
    "price": 39,
-   "was": 46,
-   "badge": "b_teen",
+   "badge": null,
    "det": [
     "Built-in shorts",
     "Knife pleats",
@@ -737,7 +735,7 @@
    ],
    "sk": "apparel",
    "price": 128,
-   "badge": "b_best",
+   "badge": null,
    "det": [
     "Two-piece set",
     "Soft velour",
@@ -815,7 +813,7 @@
    ],
    "sk": "apparel",
    "price": 165,
-   "badge": "b_lim",
+   "badge": null,
    "det": [
     "Wool blend body",
     "Leather sleeves",
@@ -853,7 +851,7 @@
    ],
    "sk": "onesize",
    "price": 52,
-   "badge": "b_best",
+   "badge": null,
    "det": [
     "Water-resistant nylon",
     "Adjustable strap",
@@ -1042,7 +1040,7 @@
    ],
    "sk": "onesize",
    "price": 18,
-   "badge": "b_best",
+   "badge": null,
    "det": [
     "Set of three",
     "Mulberry silk",
@@ -1123,10 +1121,6 @@
    "price": 34,
    "badge": "b_new",
    "isNew": 1,
-   "soldOut": [
-    "35",
-    "41"
-   ],
    "det": [
     "Pillow-soft footbed",
     "Padded strap",
