@@ -98,11 +98,11 @@ function applyLang(){
   $("#faq").innerHTML = T[lang].faq.map(([q,a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("");
   $("#lnFine").innerHTML = esc(t("launchFine")).replace("{priv}", `<a href="/legal/confidentialite.html">${esc(t("privacy").toLowerCase())}</a>`);
   $("#cgvLabel").innerHTML = esc(t("acceptCgv")).replace("{cgv}", `<a href="/legal/cgv.html" target="_blank" rel="noopener">${esc(t("cgv"))}</a>`).replace("{priv}", `<a href="/legal/confidentialite.html" target="_blank" rel="noopener">${esc(t("privacy").toLowerCase())}</a>`);
-  const storyMap = [["new",null],["her","Tops"],["acc","Tech"],["acc","Accessories"],["her","Sets"],[hasSale()?"sale":"her",null,hasSale()?null:"low"],["plus",null]];
-  const storyIds = ["dress-slit","crewneck-rust","laptop-bag-14","bracelets","gym-set","tote","po-cap"];
+  const storyMap = [["new",null],["her","Tops"],["acc","Accessories"],["her","Tops"],["her","Bottoms"],[hasSale()?"sale":"her",null,hasSale()?null:"low"],["plus",null]];
+  const storyIds = ["heart-tee","crewneck-rust","mug","tee-colors","heart-sweatpants","tote","po-cap"];
   $("#heroImg").src = CAT.heroImage;
   $("#stories").innerHTML = T[lang].stories.map((s,i) => { const p = byId(storyIds[i]); return `<button class="story" data-dept-go="${storyMap[i][0]}" ${storyMap[i][1]?`data-cat-go="${storyMap[i][1]}"`:""} ${storyMap[i][2]?`data-sort-go="${storyMap[i][2]}"`:""}><span class="ring"><span class="dot">${p ? art(p) : ""}</span></span>${esc(s)}</button>`; }).join("");
-  const tA = byId("tracksuit-rust"), tB = byId("po-hoodie"), ab = byId("hoodie-cream");
+  const tA = byId("heart-hoodie"), tB = byId("po-hoodie"), ab = byId("hoodie-cream");
   $("#tileA").innerHTML = tA ? art(tA) : "";
   $("#tileB").innerHTML = tB ? art(tB) : "";
   $("#aboutArt").innerHTML = ab ? art(ab, null, "plain") : "";
@@ -222,8 +222,9 @@ $("#fApply").onclick = () => { fSizes = tmpS; fColors = tmpC; closeDrawers(); re
    Optional "colorImages": {"rust": [...], ...} gives a colour its own photos;
    colours without photos get a plain swatch and a note saying which colour is shown. */
 const photoColor = p => p.photoColor || p.colors[0];
-const photosFor = (p, c) => (p.colorImages && p.colorImages[c] && p.colorImages[c].length) ? p.colorImages[c] : (p.images || []);
-const hasPhotosOf = (p, c) => !!(p.colorImages && p.colorImages[c] && p.colorImages[c].length) || c === photoColor(p);
+const ownPhotos = (p, c) => (p.colorImages && p.colorImages[c] && p.colorImages[c].length) ? p.colorImages[c] : null;
+const photosFor = (p, c) => ownPhotos(p, c) || ownPhotos(p, photoColor(p)) || p.images || [];
+const hasPhotosOf = (p, c) => !!ownPhotos(p, c) || c === photoColor(p);
 
 function openProduct(id){ current = byId(id); if(!current) return; pColor = current.colors[0]; pSize = null; go("pdp"); }
 function renderPDP(){

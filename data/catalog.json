@@ -207,21 +207,14 @@
  "deptCats": {
   "her": [
    "Tops",
-   "Bottoms",
-   "Dresses",
-   "Sets",
-   "Outerwear"
+   "Bottoms"
   ],
   "plus": [
    "Tops",
-   "Bottoms",
    "Headwear"
   ],
   "acc": [
    "Bags",
-   "Tech",
-   "Headwear",
-   "Footwear",
    "Accessories"
   ]
  },
@@ -305,122 +298,6 @@
    ]
   },
   {
-   "id": "oversized-top",
-   "dept": "her",
-   "cat": "Tops",
-   "shape": "tee",
-   "colors": [
-    "cream",
-    "black",
-    "chocolate"
-   ],
-   "sk": "apparel",
-   "price": 46,
-   "badge": "b_new",
-   "isNew": 1,
-   "det": [
-    "Oversized boxy fit, size down for relaxed",
-    "Heavy cream jersey",
-    "Elasticated cuffs and hem"
-   ],
-   "txt": {
-    "en": [
-     "Oversized Everything Top",
-     "Deliberately too big. Drop shoulders and a boxy body that works over biker shorts or wide trousers."
-    ],
-    "fr": [
-     "Top Oversize Everything",
-     "Volontairement trop grand. Épaules tombantes et coupe carrée, parfait sur un cycliste ou un pantalon large."
-    ],
-    "es": [
-     "Top Oversize Everything",
-     "Grande a propósito. Hombros caídos y corte amplio que queda bien con mallas ciclistas o pantalón ancho."
-    ]
-   },
-   "rank": 90,
-   "images": [
-    "/images/products/oversized-top-1.webp",
-    "/images/products/oversized-top-2.webp",
-    "/images/products/oversized-top-3.webp"
-   ]
-  },
-  {
-   "id": "croptee-white",
-   "dept": "her",
-   "cat": "Tops",
-   "shape": "crop",
-   "colors": [
-    "white",
-    "blush"
-   ],
-   "sk": "crop",
-   "price": 28,
-   "badge": null,
-   "det": [
-    "Stretch cotton",
-    "Cropped length",
-    "Rust logo print"
-   ],
-   "txt": {
-    "en": [
-     "Baby Crop Tee",
-     "Short, snug and stretchy. Sits right at the waistband of high-rise everything."
-    ],
-    "fr": [
-     "T-shirt Court Baby",
-     "Court, près du corps et stretch. S'arrête pile à la taille de tous tes bas taille haute."
-    ],
-    "es": [
-     "Camiseta Corta Baby",
-     "Corta, ajustada y elástica. Llega justo a la cintura de todo lo que sea de tiro alto."
-    ]
-   },
-   "rank": 210,
-   "images": [
-    "/images/products/croptee-white-1.webp",
-    "/images/products/croptee-white-2.webp",
-    "/images/products/croptee-white-3.webp"
-   ]
-  },
-  {
-   "id": "crop-hoodie-pink",
-   "dept": "her",
-   "cat": "Tops",
-   "shape": "hoodie",
-   "colors": [
-    "blush",
-    "cream",
-    "sage"
-   ],
-   "sk": "apparel",
-   "price": 49,
-   "det": [
-    "Brushed fleece inside",
-    "Cropped boxy body",
-    "Ribbed cuffs and hem"
-   ],
-   "txt": {
-    "en": [
-     "Cropped Hoodie",
-     "Brushed fleece cropped hoodie with a kangaroo pocket and a small rust heart."
-    ],
-    "fr": [
-     "Sweat Court à Capuche",
-     "Sweat court en molleton gratté avec poche kangourou et petit cœur rouille."
-    ],
-    "es": [
-     "Sudadera Corta con Capucha",
-     "Sudadera corta de felpa perchada con bolsillo canguro y un pequeño corazón óxido."
-    ]
-   },
-   "rank": 160,
-   "images": [
-    "/images/products/crop-hoodie-pink-1.webp",
-    "/images/products/crop-hoodie-pink-2.webp",
-    "/images/products/crop-hoodie-pink-3.webp"
-   ]
-  },
-  {
    "id": "hoodie-cream",
    "dept": "her",
    "cat": "Tops",
@@ -497,388 +374,6 @@
    ]
   },
   {
-   "id": "baggy-jeans",
-   "dept": "her",
-   "cat": "Bottoms",
-   "shape": "jeans",
-   "colors": [
-    "denim"
-   ],
-   "sk": "denim",
-   "price": 95,
-   "badge": "b_new",
-   "isNew": 1,
-   "det": [
-    "Extra-wide leg, puddle length",
-    "Rigid cotton denim",
-    "Rust leather waist patch"
-   ],
-   "txt": {
-    "en": [
-     "Baggy Wide-Leg Jeans",
-     "Big, slouchy and puddling at the ankle. Light wash rigid denim with a rust leather patch."
-    ],
-    "fr": [
-     "Jean Baggy Large",
-     "Ample, décontracté et qui tombe sur la cheville. Denim brut délavé avec écusson en cuir rouille."
-    ],
-    "es": [
-     "Vaqueros Baggy Anchos",
-     "Amplios, relajados y largos hasta el tobillo. Denim rígido lavado claro con parche de piel óxido."
-    ]
-   },
-   "rank": 110,
-   "images": [
-    "/images/products/baggy-jeans-1.webp",
-    "/images/products/baggy-jeans-2.webp",
-    "/images/products/baggy-jeans-3.webp"
-   ]
-  },
-  {
-   "id": "wide-trousers",
-   "dept": "her",
-   "cat": "Bottoms",
-   "shape": "trousers",
-   "colors": [
-    "chocolate",
-    "cream",
-    "black"
-   ],
-   "sk": "apparel",
-   "price": 82,
-   "det": [
-    "Fluid drape twill",
-    "Pleated high waist, elastic back",
-    "Wide palazzo leg"
-   ],
-   "txt": {
-    "en": [
-     "Wide-Leg Trousers",
-     "Fluid trousers with a pleated high waist and a wide leg. Office-safe, sofa-approved."
-    ],
-    "fr": [
-     "Pantalon Large",
-     "Pantalon fluide à pinces, taille haute et jambe large. Validé au bureau comme sur le canapé."
-    ],
-    "es": [
-     "Pantalón Ancho",
-     "Pantalón fluido de pinzas, tiro alto y pierna ancha. Apto para la oficina y para el sofá."
-    ]
-   },
-   "rank": 95,
-   "images": [
-    "/images/products/wide-trousers-1.webp",
-    "/images/products/wide-trousers-2.webp",
-    "/images/products/wide-trousers-3.webp"
-   ]
-  },
-  {
-   "id": "tennis-skirt",
-   "dept": "her",
-   "cat": "Bottoms",
-   "shape": "skirt",
-   "colors": [
-    "cream",
-    "rust"
-   ],
-   "sk": "crop",
-   "price": 39,
-   "badge": null,
-   "det": [
-    "Built-in shorts",
-    "Knife pleats",
-    "Rust contrast trim"
-   ],
-   "txt": {
-    "en": [
-     "Pleated Tennis Skirt",
-     "Crisp pleated skirt with rust trim and built-in shorts underneath."
-    ],
-    "fr": [
-     "Jupe de Tennis Plissée",
-     "Jupe plissée nette, liseré rouille et short intégré."
-    ],
-    "es": [
-     "Falda de Tenis Plisada",
-     "Falda plisada con ribete óxido y pantalón corto integrado."
-    ]
-   },
-   "rank": 150,
-   "images": [
-    "/images/products/tennis-skirt-1.webp",
-    "/images/products/tennis-skirt-2.webp",
-    "/images/products/tennis-skirt-3.webp"
-   ]
-  },
-  {
-   "id": "biker-shorts",
-   "dept": "her",
-   "cat": "Bottoms",
-   "shape": "shorts",
-   "colors": [
-    "black",
-    "chocolate"
-   ],
-   "sk": "apparel",
-   "price": 30,
-   "det": [
-    "Buttery four-way stretch",
-    "High no-roll waist",
-    "20 cm inseam"
-   ],
-   "txt": {
-    "en": [
-     "Everyday Biker Shorts",
-     "Buttery soft shorts with a high waistband that doesn't roll down."
-    ],
-    "fr": [
-     "Cycliste Everyday",
-     "Cycliste ultra doux avec une ceinture haute qui ne roule pas."
-    ],
-    "es": [
-     "Mallas Ciclistas Everyday",
-     "Mallas cortas suavísimas con cinturilla alta que no se enrolla."
-    ]
-   },
-   "rank": 190,
-   "images": [
-    "/images/products/biker-shorts-1.webp",
-    "/images/products/biker-shorts-2.webp",
-    "/images/products/biker-shorts-3.webp"
-   ]
-  },
-  {
-   "id": "dress-slit",
-   "dept": "her",
-   "cat": "Dresses",
-   "shape": "dress",
-   "colors": [
-    "rust",
-    "black",
-    "chocolate"
-   ],
-   "sk": "apparel",
-   "price": 92,
-   "badge": "b_new",
-   "isNew": 1,
-   "det": [
-    "Bias-cut satin",
-    "High side slit",
-    "Concealed back zip"
-   ],
-   "txt": {
-    "en": [
-     "High-Slit Satin Dress",
-     "Bias-cut satin midi with a high slit and a wrap front. The dress for a table you'll be photographed at."
-    ],
-    "fr": [
-     "Robe Satin Fendue",
-     "Robe midi en satin coupée en biais, fente haute et devant cache-cœur. Pour les dîners où l'on te prend en photo."
-    ],
-    "es": [
-     "Vestido Satinado con Abertura",
-     "Vestido midi de satén al bies con abertura alta y escote cruzado. Para cenas con fotos."
-    ]
-   },
-   "rank": 70,
-   "images": [
-    "/images/products/dress-slit-1.webp",
-    "/images/products/dress-slit-2.webp",
-    "/images/products/dress-slit-3.webp"
-   ]
-  },
-  {
-   "id": "dress-slip",
-   "dept": "her",
-   "cat": "Dresses",
-   "shape": "dress",
-   "colors": [
-    "black",
-    "cream"
-   ],
-   "sk": "apparel",
-   "price": 64,
-   "det": [
-    "Stretch rib knit",
-    "Mini length",
-    "Hem logo print"
-   ],
-   "txt": {
-    "en": [
-     "Ribbed Mini Dress",
-     "Stretch rib mini dress with a small logo at the hem."
-    ],
-    "fr": [
-     "Robe Courte Côtelée",
-     "Robe courte en maille côtelée stretch avec petit logo à l'ourlet."
-    ],
-    "es": [
-     "Vestido Corto de Canalé",
-     "Vestido corto de punto canalé elástico con pequeño logo en el bajo."
-    ]
-   },
-   "rank": 60,
-   "images": [
-    "/images/products/dress-slip-1.webp",
-    "/images/products/dress-slip-2.webp",
-    "/images/products/dress-slip-3.webp"
-   ]
-  },
-  {
-   "id": "tracksuit-rust",
-   "dept": "her",
-   "cat": "Sets",
-   "shape": "set",
-   "colors": [
-    "rust",
-    "chocolate"
-   ],
-   "sk": "apparel",
-   "price": 128,
-   "badge": null,
-   "det": [
-    "Two-piece set",
-    "Soft velour",
-    "Wide-leg pant, elastic waist"
-   ],
-   "txt": {
-    "en": [
-     "Rust Velour Tracksuit",
-     "Velour zip hoodie and matching wide-leg pants, sold as a set."
-    ],
-    "fr": [
-     "Ensemble Velours Rouille",
-     "Sweat zippé en velours et pantalon large assorti, vendus ensemble."
-    ],
-    "es": [
-     "Chándal de Terciopelo Óxido",
-     "Sudadera con cremallera de terciopelo y pantalón ancho a juego, se vende en conjunto."
-    ]
-   },
-   "rank": 170,
-   "images": [
-    "/images/products/tracksuit-rust-1.webp",
-    "/images/products/tracksuit-rust-2.webp",
-    "/images/products/tracksuit-rust-3.webp"
-   ]
-  },
-  {
-   "id": "gym-set",
-   "dept": "her",
-   "cat": "Sets",
-   "shape": "set",
-   "colors": [
-    "rust",
-    "black",
-    "sage"
-   ],
-   "sk": "apparel",
-   "price": 88,
-   "badge": "b_new",
-   "isNew": 1,
-   "det": [
-    "Two-piece set",
-    "Squat-proof buttery knit",
-    "Hidden waist pocket"
-   ],
-   "txt": {
-    "en": [
-     "Pilates Princess Set",
-     "Matching sports bra and high-waist leggings in buttery stretch."
-    ],
-    "fr": [
-     "Ensemble Pilates Princess",
-     "Brassière et legging taille haute assortis, en maille ultra douce."
-    ],
-    "es": [
-     "Conjunto Pilates Princess",
-     "Top deportivo y mallas de tiro alto a juego, en tejido suavísimo."
-    ]
-   },
-   "rank": 80,
-   "images": [
-    "/images/products/gym-set-1.webp",
-    "/images/products/gym-set-2.webp",
-    "/images/products/gym-set-3.webp"
-   ]
-  },
-  {
-   "id": "varsity-jacket",
-   "dept": "her",
-   "cat": "Outerwear",
-   "shape": "jacket",
-   "colors": [
-    "cream",
-    "rust"
-   ],
-   "sk": "apparel",
-   "price": 165,
-   "badge": null,
-   "det": [
-    "Wool blend body",
-    "Leather sleeves",
-    "Chenille lettering"
-   ],
-   "txt": {
-    "en": [
-     "girlogy Varsity Jacket",
-     "Wool body, rust leather sleeves and chenille lettering. Limited run."
-    ],
-    "fr": [
-     "Veste Varsity girlogy",
-     "Corps en laine, manches en cuir rouille et lettrage en chenille. Série limitée."
-    ],
-    "es": [
-     "Chaqueta Varsity girlogy",
-     "Cuerpo de lana, mangas de piel óxido y letras de chenilla. Edición limitada."
-    ]
-   },
-   "rank": 40,
-   "images": [
-    "/images/products/varsity-jacket-1.webp",
-    "/images/products/varsity-jacket-2.webp",
-    "/images/products/varsity-jacket-3.webp"
-   ]
-  },
-  {
-   "id": "crossbody-rust",
-   "dept": "acc",
-   "cat": "Bags",
-   "shape": "bag",
-   "colors": [
-    "rust",
-    "black"
-   ],
-   "sk": "onesize",
-   "price": 52,
-   "badge": null,
-   "det": [
-    "Water-resistant nylon",
-    "Adjustable strap",
-    "Hidden back pocket"
-   ],
-   "txt": {
-    "en": [
-     "Chest Crossbody Sling",
-     "Nylon chest sling with an adjustable cream webbing strap."
-    ],
-    "fr": [
-     "Sac Banane Bandoulière",
-     "Sac banane en nylon avec sangle crème réglable."
-    ],
-    "es": [
-     "Bandolera de Pecho",
-     "Bandolera de nailon con correa crema ajustable."
-    ]
-   },
-   "rank": 260,
-   "images": [
-    "/images/products/crossbody-rust-1.webp",
-    "/images/products/crossbody-rust-2.webp",
-    "/images/products/crossbody-rust-3.webp"
-   ]
-  },
-  {
    "id": "tote",
    "dept": "acc",
    "cat": "Bags",
@@ -912,239 +407,6 @@
     "/images/products/tote-1.webp",
     "/images/products/tote-2.webp",
     "/images/products/tote-3.webp"
-   ]
-  },
-  {
-   "id": "laptop-bag-14",
-   "dept": "acc",
-   "cat": "Tech",
-   "shape": "laptop",
-   "colors": [
-    "rust",
-    "chocolate"
-   ],
-   "sk": "onesize",
-   "price": 72,
-   "badge": "b_new",
-   "isNew": 1,
-   "det": [
-    "Fits 14 inch laptops",
-    "Quilted padding",
-    "Detachable shoulder strap"
-   ],
-   "txt": {
-    "en": [
-     "14\" Quilted Laptop Bag",
-     "Quilted padded bag for a 14 inch laptop, with a detachable strap."
-    ],
-    "fr": [
-     "Housse Matelassée 14\"",
-     "Sacoche matelassée pour ordinateur 14 pouces, avec bandoulière amovible."
-    ],
-    "es": [
-     "Funda Acolchada 14\"",
-     "Bolso acolchado para portátil de 14 pulgadas, con correa extraíble."
-    ]
-   },
-   "rank": 55,
-   "images": [
-    "/images/products/laptop-bag-14-1.webp",
-    "/images/products/laptop-bag-14-2.webp",
-    "/images/products/laptop-bag-14-3.webp"
-   ]
-  },
-  {
-   "id": "phone-case",
-   "dept": "acc",
-   "cat": "Tech",
-   "shape": "phone",
-   "colors": [
-    "cream",
-    "blush"
-   ],
-   "sk": "onesize",
-   "price": 26,
-   "det": [
-    "Shock-absorbing bumper",
-    "Matte finish",
-    "Raised camera lip"
-   ],
-   "txt": {
-    "en": [
-     "girlogy Phone Case",
-     "Matte shock-absorbing case with the black italic logo and a rust heart."
-    ],
-    "fr": [
-     "Coque de Téléphone girlogy",
-     "Coque mate antichoc avec le logo italique noir et un cœur rouille."
-    ],
-    "es": [
-     "Funda de Móvil girlogy",
-     "Funda mate antigolpes con el logo en cursiva negra y un corazón óxido."
-    ]
-   },
-   "rank": 140,
-   "images": [
-    "/images/products/phone-case-1.webp",
-    "/images/products/phone-case-2.webp",
-    "/images/products/phone-case-3.webp"
-   ]
-  },
-  {
-   "id": "bracelets",
-   "dept": "acc",
-   "cat": "Accessories",
-   "shape": "jewel",
-   "colors": [
-    "gold"
-   ],
-   "sk": "onesize",
-   "price": 38,
-   "badge": "b_new",
-   "isNew": 1,
-   "det": [
-    "Set of three",
-    "18k gold plated brass",
-    "Tarnish resistant"
-   ],
-   "txt": {
-    "en": [
-     "Gold Bracelet Stack",
-     "Three fine gold bangles: one plain, one with a heart bead, one with the girlogy nameplate."
-    ],
-    "fr": [
-     "Trio de Bracelets Dorés",
-     "Trois joncs fins dorés : un simple, un avec perle cœur, un avec la plaque girlogy."
-    ],
-    "es": [
-     "Set de Pulseras Doradas",
-     "Tres pulseras finas doradas: una lisa, una con cuenta de corazón y otra con la placa girlogy."
-    ]
-   },
-   "rank": 90,
-   "images": [
-    "/images/products/bracelets-1.webp",
-    "/images/products/bracelets-2.webp",
-    "/images/products/bracelets-3.webp"
-   ]
-  },
-  {
-   "id": "scrunchies",
-   "dept": "acc",
-   "cat": "Accessories",
-   "shape": "scrunchie",
-   "colors": [
-    "rust",
-    "cream",
-    "blush"
-   ],
-   "sk": "onesize",
-   "price": 18,
-   "badge": null,
-   "det": [
-    "Set of three",
-    "Mulberry silk",
-    "No-crease elastic"
-   ],
-   "txt": {
-    "en": [
-     "Silk Scrunchie Trio",
-     "Three silk scrunchies that hold without creasing your hair."
-    ],
-    "fr": [
-     "Trio de Chouchous en Soie",
-     "Trois chouchous en soie qui tiennent sans marquer les cheveux."
-    ],
-    "es": [
-     "Trío de Coleteros de Seda",
-     "Tres coleteros de seda que sujetan sin marcar el pelo."
-    ]
-   },
-   "rank": 300,
-   "images": [
-    "/images/products/scrunchies-1.webp",
-    "/images/products/scrunchies-2.webp",
-    "/images/products/scrunchies-3.webp"
-   ]
-  },
-  {
-   "id": "beanie",
-   "dept": "acc",
-   "cat": "Headwear",
-   "shape": "beanie",
-   "colors": [
-    "cream",
-    "rust",
-    "chocolate"
-   ],
-   "sk": "onesize",
-   "price": 32,
-   "badge": "b_new",
-   "isNew": 1,
-   "det": [
-    "Chunky rib knit",
-    "Wool blend",
-    "One size"
-   ],
-   "txt": {
-    "en": [
-     "Chunky Knit Beanie",
-     "Chunky rib knit beanie with a rust woven label."
-    ],
-    "fr": [
-     "Bonnet Grosse Maille",
-     "Bonnet en grosse maille côtelée avec étiquette tissée rouille."
-    ],
-    "es": [
-     "Gorro de Punto Grueso",
-     "Gorro de punto canalé grueso con etiqueta tejida óxido."
-    ]
-   },
-   "rank": 65,
-   "images": [
-    "/images/products/beanie-1.webp",
-    "/images/products/beanie-2.webp",
-    "/images/products/beanie-3.webp"
-   ]
-  },
-  {
-   "id": "flipflops",
-   "dept": "acc",
-   "cat": "Footwear",
-   "shape": "flip",
-   "colors": [
-    "rust",
-    "cream",
-    "black"
-   ],
-   "sk": "shoe",
-   "price": 34,
-   "badge": "b_new",
-   "isNew": 1,
-   "det": [
-    "Pillow-soft footbed",
-    "Padded strap",
-    "Water friendly"
-   ],
-   "txt": {
-    "en": [
-     "Cushioned Flip Flops",
-     "Squishy pillow footbed with a soft strap and a girlogy medallion at the heel."
-    ],
-    "fr": [
-     "Tongs Coussinées",
-     "Semelle moelleuse façon coussin, bride douce et médaillon girlogy au talon."
-    ],
-    "es": [
-     "Chanclas Acolchadas",
-     "Plantilla mullida tipo almohada, tira suave y medallón girlogy en el talón."
-    ]
-   },
-   "rank": 50,
-   "images": [
-    "/images/products/flipflops-1.webp",
-    "/images/products/flipflops-2.webp",
-    "/images/products/flipflops-3.webp"
    ]
   },
   {
@@ -1294,40 +556,172 @@
    ]
   },
   {
-   "id": "po-sweats",
-   "dept": "plus",
-   "cat": "Bottoms",
-   "shape": "trousers",
+   "id": "heart-tee",
+   "dept": "her",
+   "cat": "Tops",
+   "shape": "tee",
    "colors": [
-    "black"
+    "cream",
+    "black",
+    "chocolate",
+    "sage",
+    "blush",
+    "butter",
+    "rust",
+    "denim"
    ],
-   "sk": "mens",
-   "price": 52,
+   "sk": "apparel",
+   "price": 32,
+   "badge": "b_new",
    "det": [
-    "Heavyweight cotton fleece",
-    "Drawcord waist, tapered leg",
-    "Cream thigh print"
+    "Heavyweight cotton, 240 g/m²",
+    "girlogy wordmark with a small heart",
+    "Made to order",
+    "Machine wash cold, hang to dry"
    ],
    "txt": {
     "en": [
-     "Okay Sweatpants",
-     "Charcoal sweatpants with the only acceptable response printed on the thigh."
+     "The Heart Tee",
+     "The wordmark you know, with a little heart underneath. Heavyweight cotton in eight soft colours."
     ],
     "fr": [
-     "Jogging Okay",
-     "Jogging anthracite avec la seule réponse acceptable imprimée sur la cuisse."
+     "Le T-shirt Cœur",
+     "Le logo que vous connaissez, avec un petit cœur juste en dessous. Coton épais, en huit couleurs douces."
     ],
     "es": [
-     "Pantalón de Chándal Okay",
-     "Pantalón de chándal gris oscuro con la única respuesta aceptable estampada en el muslo."
+     "La Camiseta Corazón",
+     "El logo de siempre, con un pequeño corazón debajo. Algodón grueso en ocho colores suaves."
     ]
    },
-   "rank": 85,
+   "rank": 150,
    "images": [
-    "/images/products/po-sweats-1.webp",
-    "/images/products/po-sweats-2.webp",
-    "/images/products/po-sweats-3.webp"
-   ]
+    "/images/products/heart-tee-1.webp",
+    "/images/products/heart-tee-2.webp",
+    "/images/products/heart-tee-3.webp"
+   ],
+   "colorImages": {
+    "cream": [
+     "/images/products/heart-tee-1.webp"
+    ],
+    "black": [
+     "/images/products/heart-tee-2.webp"
+    ],
+    "sage": [
+     "/images/products/heart-tee-3.webp"
+    ]
+   }
+  },
+  {
+   "id": "heart-hoodie",
+   "dept": "her",
+   "cat": "Tops",
+   "shape": "hoodie",
+   "colors": [
+    "cream",
+    "black",
+    "chocolate",
+    "sage",
+    "blush",
+    "butter",
+    "rust",
+    "denim"
+   ],
+   "sk": "apparel",
+   "price": 68,
+   "badge": "b_new",
+   "det": [
+    "Brushed cotton fleece",
+    "Front: girlogy wordmark with heart",
+    "Back: chenille G, est. 2026",
+    "Made to order"
+   ],
+   "txt": {
+    "en": [
+     "The Heart Hoodie",
+     "girlogy and a heart on the front, the big chenille G on the back. Pairs with the Heart Sweatpants."
+    ],
+    "fr": [
+     "Le Sweat à Capuche Cœur",
+     "girlogy et un cœur devant, le grand G en chenille dans le dos. Se porte avec le Jogging Cœur."
+    ],
+    "es": [
+     "La Sudadera Corazón",
+     "girlogy y un corazón delante, la gran G de chenilla detrás. Combina con el Jogger Corazón."
+    ]
+   },
+   "rank": 145,
+   "images": [
+    "/images/products/heart-hoodie-1.webp",
+    "/images/products/heart-hoodie-2.webp",
+    "/images/products/heart-hoodie-3.webp"
+   ],
+   "colorImages": {
+    "cream": [
+     "/images/products/heart-hoodie-1.webp"
+    ],
+    "black": [
+     "/images/products/heart-hoodie-2.webp"
+    ],
+    "blush": [
+     "/images/products/heart-hoodie-3.webp"
+    ]
+   }
+  },
+  {
+   "id": "heart-sweatpants",
+   "dept": "her",
+   "cat": "Bottoms",
+   "shape": "trousers",
+   "colors": [
+    "cream",
+    "black",
+    "chocolate",
+    "sage",
+    "blush",
+    "butter",
+    "rust",
+    "denim"
+   ],
+   "sk": "apparel",
+   "price": 58,
+   "badge": "b_new",
+   "det": [
+    "Brushed cotton fleece",
+    "Small girlogy wordmark and heart on the thigh",
+    "Cuffed leg, drawstring waist",
+    "Made to order"
+   ],
+   "txt": {
+    "en": [
+     "The Heart Sweatpants",
+     "Cuffed, cosy and quietly branded: a small wordmark and heart on the thigh. The bottom half of the Heart set."
+    ],
+    "fr": [
+     "Le Jogging Cœur",
+     "Resserré, douillet et discret : un petit logo et un cœur sur la cuisse. Le bas de l'ensemble Cœur."
+    ],
+    "es": [
+     "El Jogger Corazón",
+     "Puño, cómodo y discreto: un pequeño logo y un corazón en el muslo. La parte de abajo del conjunto Corazón."
+    ]
+   },
+   "rank": 140,
+   "images": [
+    "/images/products/heart-sweatpants-1.webp",
+    "/images/products/heart-sweatpants-2.webp",
+    "/images/products/heart-sweatpants-3.webp"
+   ],
+   "colorImages": {
+    "cream": [
+     "/images/products/heart-sweatpants-1.webp"
+    ],
+    "black": [
+     "/images/products/heart-sweatpants-2.webp"
+    ],
+    "sage": [
+     "/images/products/heart-sweatpants-3.webp"
+    ]
+   }
   }
  ],
  "bundles": [
