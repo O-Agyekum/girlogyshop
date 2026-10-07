@@ -16,6 +16,7 @@ export const DEPTS = {
   sale: { slug: "sale", name: "Sale" }
 };
 export const VIEWS = {
+  shop: "Shop",
   favourites: "Favourites",
   bag: "Shopping bag",
   checkout: "Checkout",
@@ -30,7 +31,7 @@ const catsOf = d => catalog.deptCats[d] || [...new Set(catalog.products.map(p =>
 
 /** Every public address of the shop (for the sitemap). */
 export function allPaths() {
-  const paths = ["/"];
+  const paths = ["/", "/shop"];
   for (const [d, { slug: s }] of Object.entries(DEPTS)) {
     if (d === "sale" && !hasSale()) continue;
     paths.push("/" + s);
