@@ -593,7 +593,7 @@
      "El logo de siempre, con un pequeño corazón debajo. Algodón grueso en ocho colores suaves."
     ]
    },
-   "rank": 150,
+   "rank": 360,
    "images": [
     "/images/products/heart-tee-1.webp",
     "/images/products/heart-tee-2.webp",
@@ -609,7 +609,8 @@
     "sage": [
      "/images/products/heart-tee-3.webp"
     ]
-   }
+   },
+   "isNew": 1
   },
   {
    "id": "heart-hoodie",
@@ -649,7 +650,7 @@
      "girlogy y un corazón delante, la gran G de chenilla detrás. Combina con el Jogger Corazón."
     ]
    },
-   "rank": 145,
+   "rank": 355,
    "images": [
     "/images/products/heart-hoodie-1.webp",
     "/images/products/heart-hoodie-2.webp",
@@ -665,7 +666,8 @@
     "blush": [
      "/images/products/heart-hoodie-3.webp"
     ]
-   }
+   },
+   "isNew": 1
   },
   {
    "id": "heart-sweatpants",
@@ -705,7 +707,7 @@
      "Puño, cómodo y discreto: un pequeño logo y un corazón en el muslo. La parte de abajo del conjunto Corazón."
     ]
    },
-   "rank": 140,
+   "rank": 350,
    "images": [
     "/images/products/heart-sweatpants-1.webp",
     "/images/products/heart-sweatpants-2.webp",
@@ -721,7 +723,8 @@
     "sage": [
      "/images/products/heart-sweatpants-3.webp"
     ]
-   }
+   },
+   "isNew": 1
   }
  ],
  "bundles": [
