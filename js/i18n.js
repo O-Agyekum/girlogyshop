@@ -1,6 +1,9 @@
 /* Translations for The Girlogist. Edit text here; keys must exist in en. */
 window.T = {
  "en": {
+  "photoTag": "Shown in {c}",
+  "photoShows": "Photo shows the {c} colour. Photos of this colour are coming soon.",
+  "imgN": "Image {i} of {n}",
   "launchS": "Our first collection is almost ready. Leave your email and we'll tell you the moment orders open.",
   "launchBtn": "Notify me",
   "launchFine": "One email when orders open, then new drops now and then. Unsubscribe anytime. See our {priv}.",
@@ -235,6 +238,9 @@ window.T = {
   "orderRef": "Order reference"
  },
  "fr": {
+  "photoTag": "Coloris photo : {c}",
+  "photoShows": "La photo montre le coloris {c}. Les photos de ce coloris arrivent bientôt.",
+  "imgN": "Image {i} sur {n}",
   "launchS": "Notre première collection est presque prête. Laisse ton e-mail et on te prévient dès l'ouverture des commandes.",
   "launchBtn": "Me prévenir",
   "launchFine": "Un e-mail à l'ouverture des commandes, puis les nouveautés de temps en temps. Désinscription à tout moment. Voir notre {priv}.",
@@ -469,6 +475,9 @@ window.T = {
   "orderRef": "Référence de commande"
  },
  "es": {
+  "photoTag": "Color de la foto: {c}",
+  "photoShows": "La foto muestra el color {c}. Pronto añadiremos fotos de este color.",
+  "imgN": "Imagen {i} de {n}",
   "launchS": "Nuestra primera colección está casi lista. Déjanos tu email y te avisamos en cuanto abran los pedidos.",
   "launchBtn": "Avísame",
   "launchFine": "Un email cuando abran los pedidos y novedades de vez en cuando. Puedes darte de baja cuando quieras. Consulta nuestra {priv}.",

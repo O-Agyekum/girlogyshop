@@ -77,6 +77,15 @@ Every page has its own address, so the Back button works and links can be shared
   Once the site is live, add it in Google Search Console (Sitemaps).
 - Icons: `favicon.ico`, `favicon-192.png`, `apple-touch-icon.png`. Sharing image: `images/og-girlogy.jpg`.
 
+## Product photos per colour
+
+`"images"` are the product's photos; they show its first colour (or the colour named in
+`"photoColor"`). To give another colour its own photos, add for example
+`"colorImages": {"rust": ["/images/products/hoodie-rust-1.webp", "..."]}`. Choosing that colour
+then switches the photos. A colour without photos shows a plain colour swatch and the note
+"Photo shows the cream colour", so customers are never shown the wrong colour as if it were theirs.
+Gelato's mockup generator can produce one photo per colour.
+
 ## Honest prices and badges (French consumer law)
 
 - **Crossed-out prices** (`"was"` in `data/catalog.json`): only use one when the crossed-out price is

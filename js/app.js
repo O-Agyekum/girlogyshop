@@ -217,18 +217,36 @@ $("#openFilters").onclick = () => { tmpS = [...fSizes]; tmpC = [...fColors]; ren
 $("#fClear").onclick = () => { tmpS = []; tmpC = []; renderFilters(); };
 $("#fApply").onclick = () => { fSizes = tmpS; fColors = tmpC; closeDrawers(); renderPLP(); };
 
-/* ---------- product page ---------- */
+/* ---------- product page ----------
+   Photos: "images" show the product's first colour (or "photoColor").
+   Optional "colorImages": {"rust": [...], ...} gives a colour its own photos;
+   colours without photos get a plain swatch and a note saying which colour is shown. */
+const photoColor = p => p.photoColor || p.colors[0];
+const photosFor = (p, c) => (p.colorImages && p.colorImages[c] && p.colorImages[c].length) ? p.colorImages[c] : (p.images || []);
+const hasPhotosOf = (p, c) => !!(p.colorImages && p.colorImages[c] && p.colorImages[c].length) || c === photoColor(p);
+
 function openProduct(id){ current = byId(id); if(!current) return; pColor = current.colors[0]; pSize = null; go("pdp"); }
 function renderPDP(){
   const p = current, imgs = p.images || [];
   $("#pdpCrumbs").innerHTML = `<button data-go="home">${t("home")}</button> / <button data-dept-go="${p.dept}">${t("d_"+p.dept)}</button> / <button data-dept-go="${p.dept}" data-cat-go="${p.cat}">${catName(p.cat)}</button>`;
-  $("#gal").innerHTML = imgs.length > 1
-    ? `<div class="im full">${art(p)}</div><div class="im">${art(p,null,"zoom")}</div><div class="im">${art(p,null,"plain")}</div>`
-    : `<div class="im full">${art(p)}</div>`;
+  const photos = photosFor(p, pColor);
+  const tag = hasPhotosOf(p, pColor) ? "" : `<span class="phototag">${esc(t("photoTag", {c: colName(photoColor(p)).toLowerCase()}))}</span>`;
+  $("#gal").innerHTML = photos.map((src, i) =>
+    `<div class="im ${i === 0 ? "full" : ""}"><img src="${esc(src)}" alt="${esc(pName(p))} – ${esc(t("imgN",{i:i+1, n:photos.length}))}" ${i ? 'loading="lazy"' : ""} decoding="async">${tag}</div>`).join("");
+  $("#gal").scrollLeft = 0;
+  $("#galDots").innerHTML = photos.length > 1 ? photos.map((_, i) => `<i class="${i === 0 ? "on" : ""}"></i>`).join("") : "";
   $("#pName").textContent = pName(p);
   $("#pPrice").innerHTML = priceHtml(p);
   $("#pColName").textContent = colName(pColor);
-  $("#pColors").innerHTML = p.colors.map(c => `<button class="${c===pColor?"on":""} ph" data-col="${c}" aria-label="${esc(colName(c))}" aria-pressed="${c===pColor}">${art(p)}<i style="background:${SW[c]}"></i></button>`).join("");
+  $("#pColors").innerHTML = p.colors.map(c => {
+    const own = hasPhotosOf(p, c) ? photosFor(p, c)[0] : "";
+    return `<button class="${c===pColor?"on":""} ${own ? "ph" : "sw"}" data-col="${c}" aria-label="${esc(colName(c))}" aria-pressed="${c===pColor}">${own ? `<img src="${esc(own)}" alt="" loading="lazy">` : ""}<i style="background:${SW[c]}"></i></button>`;
+  }).join("");
+  const note = !hasPhotosOf(p, pColor);
+  $("#pPhotoNote").hidden = !note;
+  if(note) $("#pPhotoNote").textContent = t("photoShows", {c: colName(photoColor(p)).toLowerCase()});
+  $("#pBarName").textContent = pName(p);
+  $("#pBarPrice").innerHTML = priceHtml(p);
   const sz = sizesOf(p);
   $("#pSizeBox").hidden = !sz.length;
   $("#pSizes").innerHTML = sz.map(s => `<button data-size="${s}" class="${s===pSize?"on":""}" ${(p.soldOut||[]).includes(s)?"disabled":""} aria-pressed="${s===pSize}">${s}</button>`).join("");
@@ -250,6 +268,22 @@ $("#pColors").addEventListener("click", e => { const b = e.target.closest("[data
 $("#pSizes").addEventListener("click", e => { const b = e.target.closest("[data-size]"); if(!b || b.disabled) return; pSize = b.dataset.size; $("#pErr").textContent = ""; $$("#pSizes button").forEach(x => { x.classList.toggle("on", x === b); x.setAttribute("aria-pressed", x === b); }); });
 $("#guideBtn").onclick = () => $("#guide").hidden = !$("#guide").hidden;
 $("#pFav").onclick = () => toggleFav(current.id);
+/* phone carousel: dots follow the swipe */
+$("#gal").addEventListener("scroll", () => {
+  const g = $("#gal"), i = Math.round(g.scrollLeft / Math.max(1, g.clientWidth));
+  $$("#galDots i").forEach((d, k) => d.classList.toggle("on", k === i));
+}, {passive: true});
+/* sticky bar: shown on phones while the main "Add to bag" button is out of view */
+if("IntersectionObserver" in window)
+  new IntersectionObserver(([e]) => $("#pBar").classList.toggle("show", !e.isIntersecting)).observe($("#pAdd"));
+$("#pBarAdd").onclick = () => {
+  if(sizesOf(current).length && !pSize){
+    $("#pSizes").scrollIntoView({behavior: "smooth", block: "center"});
+    $("#pErr").textContent = t("sizeFirst");
+    return;
+  }
+  $("#pAdd").click();
+};
 $("#pAdd").onclick = () => {
   if(sizesOf(current).length && !pSize){ $("#pErr").textContent = t("sizeFirst"); return; }
   addToBag(current.id, pColor, pSize, 1);
