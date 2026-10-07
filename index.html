@@ -185,12 +185,16 @@
 <section id="v-pdp" class="wrap page" hidden>
   <div class="crumbs" id="pdpCrumbs"></div>
   <div class="pdp">
-    <div class="gal" id="gal"></div>
+    <div>
+      <div class="gal" id="gal"></div>
+      <div class="dots" id="galDots" aria-hidden="true"></div>
+    </div>
     <div class="buy">
       <h1 id="pName"></h1>
       <div class="price" id="pPrice"></div>
       <div class="lbl"><span><span data-t="colour"></span>: <strong id="pColName"></strong></span></div>
       <div class="colors" id="pColors"></div>
+      <p class="fine photonote" id="pPhotoNote" hidden></p>
       <div id="pSizeBox">
         <div class="lbl"><span data-t="selSize"></span><button class="linkb" id="guideBtn" data-t="sizeGuide"></button></div>
         <div class="sizes" id="pSizes"></div>
@@ -213,6 +217,11 @@
   <div class="sec">
     <div class="sechead"><h2 data-t="alsoLike"></h2></div>
     <div class="rail" id="railRel"></div>
+  </div>
+  <!-- Phones: price and "Add to bag" stay reachable once the main button scrolls away -->
+  <div class="pdpbar" id="pBar">
+    <div class="t"><b id="pBarName"></b><span id="pBarPrice"></span></div>
+    <button class="btn" id="pBarAdd" data-t="add"></button>
   </div>
 </section>
 
