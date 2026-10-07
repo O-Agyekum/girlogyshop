@@ -1,6 +1,8 @@
 /* Translations for The Girlogist. Edit text here; keys must exist in en. */
 window.T = {
  "en": {
+  "madeToOrder2": "Made to order",
+  "shipInfo2": "Free delivery from 45 €. Made to order; the delivery time will be confirmed before orders open.",
   "photoTag": "Shown in {c}",
   "photoShows": "Photo shows the {c} colour. Photos of this colour are coming soon.",
   "imgN": "Image {i} of {n}",
@@ -238,6 +240,8 @@ window.T = {
   "orderRef": "Order reference"
  },
  "fr": {
+  "madeToOrder2": "Fabriqué à la commande",
+  "shipInfo2": "Livraison offerte dès 45 €. Fabriqué à la commande ; le délai de livraison sera confirmé avant l'ouverture des commandes.",
   "photoTag": "Coloris photo : {c}",
   "photoShows": "La photo montre le coloris {c}. Les photos de ce coloris arrivent bientôt.",
   "imgN": "Image {i} sur {n}",
@@ -475,6 +479,8 @@ window.T = {
   "orderRef": "Référence de commande"
  },
  "es": {
+  "madeToOrder2": "Fabricado bajo pedido",
+  "shipInfo2": "Envío gratis desde 45 €. Fabricado bajo pedido; el plazo de entrega se confirmará antes de abrir los pedidos.",
   "photoTag": "Color de la foto: {c}",
   "photoShows": "La foto muestra el color {c}. Pronto añadiremos fotos de este color.",
   "imgN": "Imagen {i} de {n}",

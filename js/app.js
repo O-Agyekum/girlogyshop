@@ -256,7 +256,10 @@ function renderPDP(){
   $("#guideBtn").hidden = !g;
   $("#pAdd").textContent = t("add");
   $("#pErr").textContent = "";
-  $("#pStock").textContent = "● " + t("madeToOrder");
+  /* Gelato makes the printed pieces; others (varsity jackets, tracksuits: "pod": false) have no supplier
+     delivery time yet, so no maker or delivery promise is shown for them */
+  $("#pStock").textContent = "● " + t(p.pod === false ? "madeToOrder2" : "madeToOrder");
+  $("#pShip").textContent = t(p.pod === false ? "shipInfo2" : "shipInfo");
   $("#pStock").style.color = "var(--ok)";
   $("#pDesc").textContent = pDesc(p);
   $("#pDetails").innerHTML = (p.det || []).map(d => `<li>${esc(d)}</li>`).join("");

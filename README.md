@@ -86,6 +86,13 @@ then switches the photos. A colour without photos shows a plain colour swatch an
 "Photo shows the cream colour", so customers are never shown the wrong colour as if it were theirs.
 Gelato's mockup generator can produce one photo per colour.
 
+## Products not made by Gelato
+
+Products with `"pod": false` in `data/catalog.json` (the varsity jackets and the couple
+tracksuits) are not print-on-demand. Their page says "Made to order" with no maker and no
+delivery time, instead of "Made to order by Gelato … shipped in 3 to 5 working days".
+Before opening orders, find a supplier for them and add their real delivery time, or remove them.
+
 ## Honest prices and badges (French consumer law)
 
 - **Crossed-out prices** (`"was"` in `data/catalog.json`): only use one when the crossed-out price is
