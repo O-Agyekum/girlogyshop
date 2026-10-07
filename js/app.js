@@ -96,6 +96,7 @@ function applyLang(){
   $("#sort").innerHTML = ["rec","new","low","high"].map(k => `<option value="${k}" ${sort===k?"selected":""}>${t("sort_"+k)}</option>`).join("");
   $("#co").innerHTML = T[lang].countries.map(c => `<option>${esc(c)}</option>`).join("");
   $("#faq").innerHTML = T[lang].faq.map(([q,a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("");
+  $("#lnFine").innerHTML = esc(t("launchFine")).replace("{priv}", `<a href="/legal/confidentialite.html">${esc(t("privacy").toLowerCase())}</a>`);
   $("#cgvLabel").innerHTML = esc(t("acceptCgv")).replace("{cgv}", `<a href="/legal/cgv.html" target="_blank" rel="noopener">${esc(t("cgv"))}</a>`).replace("{priv}", `<a href="/legal/confidentialite.html" target="_blank" rel="noopener">${esc(t("privacy").toLowerCase())}</a>`);
   const storyMap = [["new",null],["her","Tops"],["acc","Tech"],["acc","Accessories"],["her","Sets"],[hasSale()?"sale":"her",null,hasSale()?null:"low"],["plus",null]];
   const storyIds = ["dress-slit","crewneck-rust","laptop-bag-14","bracelets","gym-set","tote","po-cap"];
@@ -447,13 +448,17 @@ $("#contactForm").addEventListener("submit", async e => {
   catch(err){ msg($("#cMsg"), false, t("formErr")); }
 });
 ["cn","ce","cm"].forEach(id => $("#"+id).addEventListener("input", () => $("#cMsg").textContent = ""));
-$("#newsForm").addEventListener("submit", async e => {
-  e.preventDefault();
-  if(!/^\S+@\S+\.\S+$/.test($("#nlE").value.trim())){ msg($("#nlM"), false, t("errEmail")); return; }
-  try { await postForm(e.target); msg($("#nlM"), true, t("nlOk")); e.target.reset(); }
-  catch(err){ msg($("#nlM"), false, t("formErr")); }
+/* Newsletter sign-up: the footer form and the pre-launch page form go to the same list */
+[["#newsForm","#nlE","#nlM"], ["#launchForm","#lnE","#lnM"]].forEach(([f, input, out]) => {
+  $(f).addEventListener("submit", async e => {
+    e.preventDefault();
+    if(!/^\S+@\S+\.\S+$/.test($(input).value.trim())){ msg($(out), false, t("errEmail")); return; }
+    try { await postForm(e.target); msg($(out), true, t("nlOk")); e.target.reset(); }
+    catch(err){ msg($(out), false, t("formErr")); }
+  });
+  $(input).oninput = () => $(out).textContent = "";
 });
-$("#nlE").oninput = () => $("#nlM").textContent = "";
+$("#lnJoin").onclick = () => { window.scrollTo({top: 0, behavior: "smooth"}); $("#lnE").focus({preventScroll: true}); };
 
 /* ---------- addresses ----------
    Every page has its own address (/her/tops, /product/tee-black, /bag ...), so links can be
@@ -468,6 +473,8 @@ const catsOf = d => DEPT_CATS[d] || [...new Set(products.map(p => p.cat))];
 const SITE = (SHOP.siteUrl || location.origin).replace(/\/$/, "");
 
 function pathFor(v){
+  if(v === "launch") return "/";
+  if(v === "home") return ORDERS_OPEN ? "/" : "/shop";
   if(v === "pdp" && current) return "/product/" + current.id;
   if(v === "plp") return query ? "/search?q=" + encodeURIComponent(query) : "/" + DEPT_SLUG[dept] + (cat !== "all" ? "/" + slug(cat) : "");
   return VIEW_SLUG[v] ? "/" + VIEW_SLUG[v] : "/";
@@ -479,7 +486,8 @@ function syncUrl(replace){
 function routeFrom(loc){
   const parts = loc.pathname.split("/").filter(Boolean).map(x => { try { return decodeURIComponent(x); } catch(e){ return x; } });
   const opt = {push: false};
-  if(!parts.length) return go("home", opt);
+  if(!parts.length) return go("start", opt);
+  if(parts[0] === "shop" && parts.length === 1) return go("home", opt);
   if(parts[0] === "product" && parts.length === 2){
     current = byId(parts[1]);
     if(current && current.visible !== false){ pColor = current.colors[0]; pSize = null; return go("pdp", opt); }
@@ -508,6 +516,7 @@ function updateMeta(){
   if(view === "pdp" && current){ title = `${pName(current)} · ${brand}`; desc = pDesc(current); }
   else if(view === "plp"){ const h = query ? `"${query}"` : cat !== "all" ? `${catName(cat)} · ${t("d_"+dept)}` : t("d_"+dept); title = `${h} · ${brand}`; }
   else if(view === "nf") title = `${t("nfT")} · ${brand}`;
+  else if(view === "home" && !ORDERS_OPEN) title = `${t("shop")} · ${brand}`;
   else if(VIEW_SLUG[view]) title = `${t({favs:"favs", bag:"bag", checkout:"checkout", help:"help", about:"about"}[view])} · ${brand}`;
   document.title = title;
   const url = SITE + pathFor(view);
@@ -519,8 +528,9 @@ function updateMeta(){
 }
 
 /* ---------- routing ---------- */
-const VIEWS = ["home","plp","pdp","favs","bag","checkout","done","help","about","nf"];
+const VIEWS = ["launch","home","plp","pdp","favs","bag","checkout","done","help","about","nf"];
 function go(v, opt = {}){
+  if(v === "start") v = ORDERS_OPEN ? "home" : "launch";   /* the logo and the address "/" */
   if(v === "checkout" && (!cart.length || !ORDERS_OPEN)) v = "bag";
   view = v;
   VIEWS.forEach(x => $("#v-"+x).hidden = x !== v);
@@ -540,6 +550,7 @@ function refresh(){
     fill($("#gridBest"), [...shown()].sort((a,b)=>(b.rank||0)-(a.rank||0)).slice(0,8));
     $("#homeBundles").innerHTML = BUNDLES.map(bundleHtml).join("");
   }
+  if(view === "launch") fill($("#railLaunch"), [...shown()].sort((a,b)=>(b.rank||0)-(a.rank||0)).slice(0,8));
   if(view === "plp") renderPLP();
   if(view === "pdp" && current) renderPDP();
   if(view === "favs") fill($("#favGrid"), favs.map(byId).filter(Boolean), t("favsEmpty"));

@@ -55,6 +55,6 @@ export const config = {
     "/accessories", "/accessories/*",
     "/couples", "/couples/*",
     "/sale", "/sale/*",
-    "/favourites", "/bag", "/checkout", "/help", "/about", "/search"
+    "/shop", "/favourites", "/bag", "/checkout", "/help", "/about", "/search"
   ]
 };

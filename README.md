@@ -25,9 +25,12 @@ every order from `catalog.json` before sending the amount to Revolut.
 
 ## Orders switch
 
-Online orders are **closed** for now: visitors can browse and fill their bag, but the
-checkout button reads "Online orders opening soon". When Revolut is set up and tested,
-open orders by changing `ordersOpen: false` to `ordersOpen: true` in `js/config.js`.
+Online orders are **closed** for now: girlogyshop.com opens on a **pre-launch page**
+(illustration, story, collection preview and an email sign-up that goes to the
+`newsletter` list in Netlify Forms). The shop itself is at `/shop`; visitors can browse
+and fill their bag, but the checkout button reads "Online orders opening soon". When Revolut is set up and tested,
+open orders by changing `ordersOpen: false` to `ordersOpen: true` in `js/config.js`. The shop then becomes
+the homepage again and the pre-launch page is no longer shown.
 
 ## Put the site online (one time)
 
