@@ -86,6 +86,17 @@ then switches the photos. A colour without photos shows a plain colour swatch an
 "Photo shows the cream colour", so customers are never shown the wrong colour as if it were theirs.
 Gelato's mockup generator can produce one photo per colour.
 
+## Products not made by Gelato
+
+Products with `"pod": false` in `data/catalog.json` (the varsity jackets and the couple
+tracksuits) are not print-on-demand and have no supplier yet, so they are shown as
+**Coming soon**: a "Coming soon" badge on the tile, no size choice, a disabled button instead
+of "Add to bag", and no maker or delivery promise. A couples bundle that contains one of them
+is "Coming soon" too. Nothing with `"pod": false` can be added to the bag, even by an old link.
+Once a supplier and a real delivery time are confirmed, remove `"pod": false` (or set it to
+`true`) and the piece sells like the others. Selling something you cannot deliver on time is
+a breach of the Code de la consommation (article L216-1), so keep this until then.
+
 ## Honest prices and badges (French consumer law)
 
 - **Crossed-out prices** (`"was"` in `data/catalog.json`): only use one when the crossed-out price is

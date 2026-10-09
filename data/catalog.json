@@ -207,10 +207,13 @@
  "deptCats": {
   "her": [
    "Tops",
-   "Bottoms"
+   "Bottoms",
+   "Sets",
+   "Outerwear"
   ],
   "plus": [
    "Tops",
+   "Sets",
    "Headwear"
   ],
   "acc": [
@@ -725,6 +728,632 @@
     ]
    },
    "isNew": 1
+  },
+  {
+   "id": "varsity-jacket-noir",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "black"
+   ],
+   "sk": "apparel",
+   "price": 165,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Wool blend body",
+    "Contrast sleeves",
+    "Chenille lettering",
+    "Big G on the back"
+   ],
+   "rank": 210,
+   "txt": {
+    "en": [
+     "girlogy Varsity Jacket — Noir",
+     "Black wool, cream sleeves and lettering. Chenille girlogy across the chest, a heart under the y and a big G on the back."
+    ],
+    "fr": [
+     "Veste Varsity girlogy — Noir",
+     "Laine noire, manches et lettrage crème. girlogy en chenille sur la poitrine, un cœur sous le y et un grand G dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity girlogy — Negro",
+     "Lana negra, mangas y letras en crema. girlogy en chenilla en el pecho, un corazón bajo la y y una gran G en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-jacket-noir-1.webp",
+    "/images/products/varsity-jacket-noir-2.webp",
+    "/images/products/varsity-jacket-noir-3.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "varsity-jacket-cocoa",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": 165,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Wool blend body",
+    "Contrast sleeves",
+    "Chenille lettering",
+    "Big G on the back"
+   ],
+   "rank": 210,
+   "txt": {
+    "en": [
+     "girlogy Varsity Jacket — Cocoa",
+     "Chocolate wool, cream sleeves and lettering. Chenille girlogy across the chest, a heart under the y and a big G on the back."
+    ],
+    "fr": [
+     "Veste Varsity girlogy — Cacao",
+     "Laine chocolat, manches et lettrage crème. girlogy en chenille sur la poitrine, un cœur sous le y et un grand G dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity girlogy — Cacao",
+     "Lana chocolate, mangas y letras en crema. girlogy en chenilla en el pecho, un corazón bajo la y y una gran G en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-jacket-cocoa-1.webp",
+    "/images/products/varsity-jacket-cocoa-2.webp",
+    "/images/products/varsity-jacket-cocoa-3.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "varsity-jacket-sage",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "sage"
+   ],
+   "sk": "apparel",
+   "price": 165,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Wool blend body",
+    "Contrast sleeves",
+    "Chenille lettering",
+    "Big G on the back"
+   ],
+   "rank": 210,
+   "txt": {
+    "en": [
+     "girlogy Varsity Jacket — Sage",
+     "Sage wool, cream sleeves and lettering. Chenille girlogy across the chest, a heart under the y and a big G on the back."
+    ],
+    "fr": [
+     "Veste Varsity girlogy — Sauge",
+     "Laine sauge, manches et lettrage crème. girlogy en chenille sur la poitrine, un cœur sous le y et un grand G dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity girlogy — Salvia",
+     "Lana salvia, mangas y letras en crema. girlogy en chenilla en el pecho, un corazón bajo la y y una gran G en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-jacket-sage-1.webp",
+    "/images/products/varsity-jacket-sage-2.webp",
+    "/images/products/varsity-jacket-sage-3.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "varsity-jacket-blush",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "blush"
+   ],
+   "sk": "apparel",
+   "price": 165,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Wool blend body",
+    "Contrast sleeves",
+    "Chenille lettering",
+    "Big G on the back"
+   ],
+   "rank": 210,
+   "txt": {
+    "en": [
+     "girlogy Varsity Jacket — Blush",
+     "Blush wool, chocolate sleeves and lettering. Chenille girlogy across the chest, a heart under the y and a big G on the back."
+    ],
+    "fr": [
+     "Veste Varsity girlogy — Rose poudré",
+     "Laine rose poudré, manches et lettrage chocolat. girlogy en chenille sur la poitrine, un cœur sous le y et un grand G dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity girlogy — Rosa empolvado",
+     "Lana rosa empolvado, mangas y letras en chocolate. girlogy en chenilla en el pecho, un corazón bajo la y y una gran G en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-jacket-blush-1.webp",
+    "/images/products/varsity-jacket-blush-2.webp",
+    "/images/products/varsity-jacket-blush-3.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "varsity-jacket-butter",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "butter"
+   ],
+   "sk": "apparel",
+   "price": 165,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Wool blend body",
+    "Contrast sleeves",
+    "Chenille lettering",
+    "Big G on the back"
+   ],
+   "rank": 210,
+   "txt": {
+    "en": [
+     "girlogy Varsity Jacket — Butter",
+     "Butter wool, chocolate sleeves and lettering. Chenille girlogy across the chest, a heart under the y and a big G on the back."
+    ],
+    "fr": [
+     "Veste Varsity girlogy — Beurre",
+     "Laine jaune beurre, manches et lettrage chocolat. girlogy en chenille sur la poitrine, un cœur sous le y et un grand G dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity girlogy — Mantequilla",
+     "Lana amarillo mantequilla, mangas y letras en chocolate. girlogy en chenilla en el pecho, un corazón bajo la y y una gran G en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-jacket-butter-1.webp",
+    "/images/products/varsity-jacket-butter-2.webp",
+    "/images/products/varsity-jacket-butter-3.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "varsity-jacket-rust",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "rust"
+   ],
+   "sk": "apparel",
+   "price": 165,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Wool blend body",
+    "Contrast sleeves",
+    "Chenille lettering",
+    "Big G on the back"
+   ],
+   "rank": 210,
+   "txt": {
+    "en": [
+     "girlogy Varsity Jacket — Rust Inverse",
+     "Rust wool, cream sleeves — the original flipped. Chenille girlogy across the chest, a heart under the y and a big G on the back."
+    ],
+    "fr": [
+     "Veste Varsity girlogy — Rouille inversé",
+     "Laine rouille, manches crème : l'original inversé, lettrage crème. girlogy en chenille sur la poitrine, un cœur sous le y et un grand G dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity girlogy — Óxido invertido",
+     "Lana óxido, mangas crema: el original al revés, letras en crema. girlogy en chenilla en el pecho, un corazón bajo la y y una gran G en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-jacket-rust-1.webp",
+    "/images/products/varsity-jacket-rust-2.webp",
+    "/images/products/varsity-jacket-rust-3.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "varsity-jacket-mono",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "cream"
+   ],
+   "sk": "apparel",
+   "price": 165,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Wool blend body",
+    "Contrast sleeves",
+    "Chenille lettering",
+    "Big G on the back"
+   ],
+   "rank": 210,
+   "txt": {
+    "en": [
+     "girlogy Varsity Jacket — Mono",
+     "Cream wool, black sleeves and lettering. Chenille girlogy across the chest, a heart under the y and a big G on the back."
+    ],
+    "fr": [
+     "Veste Varsity girlogy — Mono",
+     "Laine crème, manches et lettrage noirs. girlogy en chenille sur la poitrine, un cœur sous le y et un grand G dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity girlogy — Mono",
+     "Lana crema, mangas y letras en negro. girlogy en chenilla en el pecho, un corazón bajo la y y una gran G en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-jacket-mono-1.webp",
+    "/images/products/varsity-jacket-mono-2.webp",
+    "/images/products/varsity-jacket-mono-3.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "varsity-jacket-denim",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "denim"
+   ],
+   "sk": "apparel",
+   "price": 165,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Wool blend body",
+    "Contrast sleeves",
+    "Chenille lettering",
+    "Big G on the back"
+   ],
+   "rank": 210,
+   "txt": {
+    "en": [
+     "girlogy Varsity Jacket — Denim Blue",
+     "Light denim blue wool, cream sleeves. Chenille girlogy across the chest, a heart under the y and a big G on the back."
+    ],
+    "fr": [
+     "Veste Varsity girlogy — Bleu denim",
+     "Laine bleu denim clair, manches crème. girlogy en chenille sur la poitrine, un cœur sous le y et un grand G dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity girlogy — Azul denim",
+     "Lana azul denim claro, mangas en crema. girlogy en chenilla en el pecho, un corazón bajo la y y una gran G en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-jacket-denim-1.webp",
+    "/images/products/varsity-jacket-denim-2.webp",
+    "/images/products/varsity-jacket-denim-3.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "duo-sage-women",
+   "dept": "her",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "sage"
+   ],
+   "sk": "apparel",
+   "price": 124,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Two-piece women's set: zip jacket + trousers",
+    "Cream contrast panels; wide-leg silhouette",
+    "Small girlogy chest and hip marks; heart at the back"
+   ],
+   "rank": 230,
+   "txt": {
+    "en": [
+     "Off-Duty Club — Women's Tracksuit",
+     "A sage ensemble survêtement with a waist-length stand-collar jacket and high-waist wide-leg trousers. Cream side panels and terracotta girlogy hearts coordinate with the men's Off-Duty Club set."
+    ],
+    "fr": [
+     "Off-Duty Club — Ensemble femme",
+     "Un ensemble survêtement sauge : veste zippée courte à col montant et pantalon large taille haute. Panneaux latéraux crème et cœurs girlogy terracotta, assorti à l'ensemble homme Off-Duty Club."
+    ],
+    "es": [
+     "Off-Duty Club — Chándal mujer",
+     "Un chándal salvia con chaqueta corta de cuello alto con cremallera y pantalón ancho de tiro alto. Paneles laterales crema y corazones girlogy terracota, a juego con el conjunto de hombre Off-Duty Club."
+    ]
+   },
+   "images": [
+    "/images/products/duo-sage-women-1.webp",
+    "/images/products/duo-sage-women-2.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "duo-sage-men",
+   "dept": "plus",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "sage"
+   ],
+   "sk": "mens",
+   "price": 128,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Two-piece men's set: zip jacket + trousers",
+    "Relaxed jacket and straight-leg drawcord trousers",
+    "Terracotta girlogy chest and hip marks; heart at the back"
+   ],
+   "rank": 230,
+   "txt": {
+    "en": [
+     "Off-Duty Club — Men's Tracksuit",
+     "A relaxed men's sage ensemble survêtement with a full-length stand-collar jacket, drawcord trousers and cream side panels. Match it with the women's Off-Duty Club set for a coordinated couple look."
+    ],
+    "fr": [
+     "Off-Duty Club — Ensemble homme",
+     "Un ensemble survêtement sauge décontracté : veste zippée longue à col montant, pantalon à cordon et panneaux latéraux crème. À associer à l'ensemble femme Off-Duty Club pour un look de couple coordonné."
+    ],
+    "es": [
+     "Off-Duty Club — Chándal hombre",
+     "Un chándal salvia relajado con chaqueta larga de cuello alto con cremallera, pantalón con cordón y paneles laterales crema. Combínalo con el conjunto de mujer Off-Duty Club para un look de pareja coordinado."
+    ]
+   },
+   "images": [
+    "/images/products/duo-sage-men-1.webp",
+    "/images/products/duo-sage-men-2.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "duo-noir-women",
+   "dept": "her",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "black"
+   ],
+   "sk": "apparel",
+   "price": 118,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Two-piece women's set: cropped hoodie + joggers",
+    "High-waist wide-leg trousers; rust piping",
+    "Cream girlogy marks and rust Off duty back lettering"
+   ],
+   "rank": 230,
+   "txt": {
+    "en": [
+     "After Hours — Women's Tracksuit",
+     "Off duty, together. A washed-charcoal women's hoodie and wide-leg jogger ensemble with rust piping, cream girlogy hearts and a quiet Off duty back print. Pairs with the men's After Hours tracksuit."
+    ],
+    "fr": [
+     "After Hours — Ensemble femme",
+     "Repos, à deux. Un sweat à capuche court et un jogging large anthracite délavé, passepoil rouille, cœurs girlogy crème et un discret « Off duty » dans le dos. Se porte avec l'ensemble homme After Hours."
+    ],
+    "es": [
+     "After Hours — Chándal mujer",
+     "Descanso, en pareja. Sudadera corta con capucha y jogger ancho en gris carbón lavado, con vivos óxido, corazones girlogy crema y un discreto «Off duty» en la espalda. Combina con el chándal de hombre After Hours."
+    ]
+   },
+   "images": [
+    "/images/products/duo-noir-women-1.webp",
+    "/images/products/duo-noir-women-2.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "duo-noir-men",
+   "dept": "plus",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "black"
+   ],
+   "sk": "mens",
+   "price": 122,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Two-piece men's set: relaxed hoodie + joggers",
+    "Drawcord waist and ribbed ankle cuffs",
+    "Cream girlogy marks and rust Off duty back lettering"
+   ],
+   "rank": 230,
+   "txt": {
+    "en": [
+     "After Hours — Men's Tracksuit",
+     "A washed-charcoal men's hoodie and tapered jogger ensemble with rust piping and cream girlogy hearts. The Off duty back print matches the women's After Hours set without copying its silhouette."
+    ],
+    "fr": [
+     "After Hours — Ensemble homme",
+     "Un sweat à capuche ample et un jogging fuselé anthracite délavé, passepoil rouille et cœurs girlogy crème. Le « Off duty » dans le dos répond à l'ensemble femme After Hours, sans copier sa coupe."
+    ],
+    "es": [
+     "After Hours — Chándal hombre",
+     "Sudadera amplia con capucha y jogger entallado en gris carbón lavado, con vivos óxido y corazones girlogy crema. El «Off duty» de la espalda combina con el conjunto de mujer After Hours sin copiar su corte."
+    ]
+   },
+   "images": [
+    "/images/products/duo-noir-men-1.webp",
+    "/images/products/duo-noir-men-2.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "duo-cocoa-women",
+   "dept": "her",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": 132,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Two-piece women's set: zip hoodie + flared trousers",
+    "Velour-look finish and cream twin side stripes",
+    "Cream girlogy chest and hip marks; small back heart"
+   ],
+   "rank": 230,
+   "txt": {
+    "en": [
+     "Cocoa Club — Women's Tracksuit",
+     "A chocolate velour ensemble survêtement with a waist-length zip hoodie and high-waist flared trousers. Cream twin stripes and girlogy hearts give it a retro club feel; pair with the men's Cocoa Club set."
+    ],
+    "fr": [
+     "Cocoa Club — Ensemble femme",
+     "Un ensemble survêtement chocolat effet velours : sweat zippé court à capuche et pantalon évasé taille haute. Doubles bandes crème et cœurs girlogy pour un esprit club rétro ; à associer à l'ensemble homme Cocoa Club."
+    ],
+    "es": [
+     "Cocoa Club — Chándal mujer",
+     "Un chándal chocolate efecto terciopelo: sudadera corta con capucha y cremallera y pantalón acampanado de tiro alto. Doble raya crema y corazones girlogy con aire retro; combínalo con el conjunto de hombre Cocoa Club."
+    ]
+   },
+   "images": [
+    "/images/products/duo-cocoa-women-1.webp",
+    "/images/products/duo-cocoa-women-2.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "duo-cocoa-men",
+   "dept": "plus",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "chocolate"
+   ],
+   "sk": "mens",
+   "price": 136,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Two-piece men's set: zip hoodie + trousers",
+    "Velour-look finish; relaxed straight-leg cut",
+    "Cream twin stripes, girlogy marks and small back heart"
+   ],
+   "rank": 230,
+   "txt": {
+    "en": [
+     "Cocoa Club — Men's Tracksuit",
+     "A chocolate men's ensemble survêtement with a relaxed zip hoodie and straight-leg drawcord trousers. Cream twin stripes and girlogy hearts coordinate with the women's Cocoa Club tracksuit."
+    ],
+    "fr": [
+     "Cocoa Club — Ensemble homme",
+     "Un ensemble survêtement chocolat : sweat zippé ample à capuche et pantalon droit à cordon. Doubles bandes crème et cœurs girlogy, assorti à l'ensemble femme Cocoa Club."
+    ],
+    "es": [
+     "Cocoa Club — Chándal hombre",
+     "Un chándal chocolate con sudadera amplia con capucha y cremallera y pantalón recto con cordón. Doble raya crema y corazones girlogy, a juego con el chándal de mujer Cocoa Club."
+    ]
+   },
+   "images": [
+    "/images/products/duo-cocoa-men-1.webp",
+    "/images/products/duo-cocoa-men-2.webp"
+   ],
+   "pod": false
+  },
+  {
+   "id": "big-g-tee",
+   "dept": "her",
+   "cat": "Tops",
+   "shape": "tee",
+   "colors": [
+    "chocolate",
+    "black",
+    "cream",
+    "rust"
+   ],
+   "sk": "apparel",
+   "price": 34,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Heavyweight cotton",
+    "Big G back print",
+    "Small chest heart"
+   ],
+   "rank": 300,
+   "txt": {
+    "en": [
+     "Big G Tee",
+     "The hoodie back as a tee. Large G on the back, small heart on the front chest."
+    ],
+    "fr": [
+     "T-shirt Grand G",
+     "Le dos du sweat en version t-shirt : grand G dans le dos, petit cœur sur la poitrine."
+    ],
+    "es": [
+     "Camiseta Gran G",
+     "La espalda de la sudadera en camiseta: gran G detrás y un pequeño corazón en el pecho."
+    ]
+   },
+   "images": [
+    "/images/products/big-g-tee-1.webp"
+   ]
+  },
+  {
+   "id": "ringer-baby-tee",
+   "dept": "her",
+   "cat": "Tops",
+   "shape": "tee",
+   "colors": [
+    "blush",
+    "cream",
+    "butter",
+    "denim"
+   ],
+   "sk": "crop",
+   "price": 30,
+   "badge": "b_new",
+   "isNew": 1,
+   "det": [
+    "Fitted cropped cut",
+    "Contrast ringer bands",
+    "Small G and heart on chest"
+   ],
+   "rank": 290,
+   "txt": {
+    "en": [
+     "Ringer Baby Tee",
+     "Fitted, cropped ringer tee with contrast collar and sleeve bands and a small G on the chest."
+    ],
+    "fr": [
+     "Baby Tee Ringer",
+     "T-shirt court et ajusté façon ringer, col et bords de manches contrastés, petit G sur la poitrine."
+    ],
+    "es": [
+     "Baby Tee Ringer",
+     "Camiseta corta y ajustada estilo ringer, cuello y mangas en contraste y una pequeña G en el pecho."
+    ]
+   },
+   "images": [
+    "/images/products/ringer-baby-tee-1.webp"
+   ]
   }
  ],
  "bundles": [
@@ -765,6 +1394,66 @@
     "es": [
      "Dúo Domingo Cozy",
      "Misma felpa, energías opuestas."
+    ]
+   }
+  },
+  {
+   "id": "bundle-off-duty",
+   "hers": "duo-sage-women",
+   "his": "duo-sage-men",
+   "price": 228,
+   "txt": {
+    "en": [
+     "Off-Duty Club Couple",
+     "Two complete sage tracksuits: her wide-leg set and his straight-leg set. Four pieces, one coordinated look."
+    ],
+    "fr": [
+     "Le Duo Off-Duty Club",
+     "Deux survêtements sauge complets : son ensemble large et le sien, coupe droite. Quatre pièces, un look coordonné."
+    ],
+    "es": [
+     "Pareja Off-Duty Club",
+     "Dos chándales salvia completos: el de ella de pierna ancha y el de él recto. Cuatro piezas, un look coordinado."
+    ]
+   }
+  },
+  {
+   "id": "bundle-after-hours",
+   "hers": "duo-noir-women",
+   "his": "duo-noir-men",
+   "price": 216,
+   "txt": {
+    "en": [
+     "After Hours Couple",
+     "Two complete charcoal tracksuits with rust piping: her cropped hoodie and wide legs, his relaxed hoodie and tapered joggers."
+    ],
+    "fr": [
+     "Le Duo After Hours",
+     "Deux survêtements anthracite complets à passepoil rouille : pour elle, sweat court et jambes larges ; pour lui, sweat ample et jogging fuselé."
+    ],
+    "es": [
+     "Pareja After Hours",
+     "Dos chándales carbón completos con vivos óxido: para ella, sudadera corta y pierna ancha; para él, sudadera amplia y jogger entallado."
+    ]
+   }
+  },
+  {
+   "id": "bundle-cocoa-club",
+   "hers": "duo-cocoa-women",
+   "his": "duo-cocoa-men",
+   "price": 242,
+   "txt": {
+    "en": [
+     "Cocoa Club Couple",
+     "Two complete chocolate velour tracksuits with cream twin stripes. Her flared trousers, his straight legs; matching zip hoodies."
+    ],
+    "fr": [
+     "Le Duo Cocoa Club",
+     "Deux survêtements chocolat effet velours à doubles bandes crème. Pantalon évasé pour elle, droit pour lui ; sweats zippés assortis."
+    ],
+    "es": [
+     "Pareja Cocoa Club",
+     "Dos chándales chocolate efecto terciopelo con doble raya crema. Pantalón acampanado para ella, recto para él; sudaderas con cremallera a juego."
     ]
    }
   }
