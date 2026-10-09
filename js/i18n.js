@@ -1,8 +1,6 @@
 /* Translations for The Girlogist. Edit text here; keys must exist in en. */
 window.T = {
  "en": {
-  "madeToOrder2": "Made to order",
-  "shipInfo2": "Free delivery from 45 €. Made to order; the delivery time will be confirmed before orders open.",
   "photoTag": "Shown in {c}",
   "photoShows": "Photo shows the {c} colour. Photos of this colour are coming soon.",
   "imgN": "Image {i} of {n}",
@@ -72,6 +70,8 @@ window.T = {
   "sort_new": "Newest",
   "sort_low": "Price, low to high",
   "sort_high": "Price, high to low",
+  "b_soon": "Coming soon",
+  "soonNote2": "Not orderable yet. We are confirming a maker and a delivery time; the newsletter will hear first.",
   "b_new": "New",
   "b_best": "Best seller",
   "b_lim": "Limited",
@@ -240,8 +240,6 @@ window.T = {
   "orderRef": "Order reference"
  },
  "fr": {
-  "madeToOrder2": "Fabriqué à la commande",
-  "shipInfo2": "Livraison offerte dès 45 €. Fabriqué à la commande ; le délai de livraison sera confirmé avant l'ouverture des commandes.",
   "photoTag": "Coloris photo : {c}",
   "photoShows": "La photo montre le coloris {c}. Les photos de ce coloris arrivent bientôt.",
   "imgN": "Image {i} sur {n}",
@@ -311,6 +309,8 @@ window.T = {
   "sort_new": "Nouveautés",
   "sort_low": "Prix croissant",
   "sort_high": "Prix décroissant",
+  "b_soon": "Bientôt disponible",
+  "soonNote2": "Pas encore commandable. Nous confirmons le fabricant et le délai de livraison ; la newsletter sera prévenue en premier.",
   "b_new": "Nouveau",
   "b_best": "Best-seller",
   "b_lim": "Édition limitée",
@@ -479,8 +479,6 @@ window.T = {
   "orderRef": "Référence de commande"
  },
  "es": {
-  "madeToOrder2": "Fabricado bajo pedido",
-  "shipInfo2": "Envío gratis desde 45 €. Fabricado bajo pedido; el plazo de entrega se confirmará antes de abrir los pedidos.",
   "photoTag": "Color de la foto: {c}",
   "photoShows": "La foto muestra el color {c}. Pronto añadiremos fotos de este color.",
   "imgN": "Imagen {i} de {n}",
@@ -550,6 +548,8 @@ window.T = {
   "sort_new": "Novedades",
   "sort_low": "Precio: de menor a mayor",
   "sort_high": "Precio: de mayor a menor",
+  "b_soon": "Muy pronto",
+  "soonNote2": "Aún no se puede pedir. Estamos confirmando el fabricante y el plazo de entrega; la newsletter lo sabrá primero.",
   "b_new": "Nuevo",
   "b_best": "Más vendido",
   "b_lim": "Edición limitada",

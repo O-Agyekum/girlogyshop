@@ -42,6 +42,10 @@ const colName = c => T[lang].cols[c] || c;
 const shown = () => products.filter(p => p.visible !== false);
 const sizesOf = p => SIZES[p.sk] || [];
 const hasSale = () => shown().some(p => p.was);
+/* "pod": false pieces (varsity jackets, tracksuits) have no supplier yet: shown as "Coming soon",
+   nothing can be added to the bag until a supplier and a delivery time are confirmed */
+const comingSoon = p => !!p && p.pod === false;
+const bundleSoon = b => comingSoon(byId(b.hers)) || comingSoon(byId(b.his));
 
 /* ---------- product images ---------- */
 function art(p, colorKey, mode){
@@ -58,7 +62,7 @@ function priceHtml(p){
 }
 function card(p){
   const on = favs.includes(p.id);
-  const badge = p.was ? `<span class="badge sale">−${Math.round((1-p.price/p.was)*100)}%</span>` : p.badge ? `<span class="badge">${t(p.badge)}</span>` : "";
+  const badge = comingSoon(p) ? `<span class="badge soon">${t("b_soon")}</span>` : p.was ? `<span class="badge sale">−${Math.round((1-p.price/p.was)*100)}%</span>` : p.badge ? `<span class="badge">${t(p.badge)}</span>` : "";
   const alt = (p.images || [])[1] ? `<div class="alt">${art(p, null, "zoom")}</div>` : "";
   return `<div class="pc">
     <button class="open" data-open="${p.id}">
@@ -81,8 +85,11 @@ function bundleHtml(b){
     <button class="im" data-open="${m.id}" style="border:0">${art(m)}</button>
     <div><h3>${esc(tx[0])}</h3><p class="fine" style="margin:0 0 8px">${esc(tx[1])}</p>
       <div class="pr"><span class="now">${eur(b.price)}</span><span class="was">${eur(full)}</span> <span class="fine">${t("bundleSave",{x:eur(full-b.price)})}</span></div>
-      <button class="btn" style="margin-top:10px;padding:10px 16px" data-bundle="${b.id}">${t("addBundle")}</button>
-      <p class="fine" style="margin:6px 0 0">${t("pickSizes")}</p></div>
+      ${bundleSoon(b)
+        ? `<button class="btn" style="margin-top:10px;padding:10px 16px" disabled>${t("b_soon")}</button>
+      <p class="fine" style="margin:6px 0 0">${t("soonNote2")}</p>`
+        : `<button class="btn" style="margin-top:10px;padding:10px 16px" data-bundle="${b.id}">${t("addBundle")}</button>
+      <p class="fine" style="margin:6px 0 0">${t("pickSizes")}</p>`}</div>
   </div>`;
 }
 
@@ -249,18 +256,22 @@ function renderPDP(){
   $("#pBarName").textContent = pName(p);
   $("#pBarPrice").innerHTML = priceHtml(p);
   const sz = sizesOf(p);
-  $("#pSizeBox").hidden = !sz.length;
   $("#pSizes").innerHTML = sz.map(s => `<button data-size="${s}" class="${s===pSize?"on":""}" ${(p.soldOut||[]).includes(s)?"disabled":""} aria-pressed="${s===pSize}">${s}</button>`).join("");
   const g = GUIDES[p.sk === "crop" || p.sk === "mens" ? "apparel" : p.sk];
   $("#guide").innerHTML = g ? `<table class="gtable"><tr>${g.h.map(h=>`<th>${h}</th>`).join("")}</tr>${g.r.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join("")}</tr>`).join("")}</table>` : "";
   $("#guideBtn").hidden = !g;
-  $("#pAdd").textContent = t("add");
+  const soon = comingSoon(p);
+  $("#pAdd").textContent = t(soon ? "b_soon" : "add");
+  $("#pAdd").disabled = soon;
+  $("#pBarAdd").textContent = t(soon ? "b_soon" : "add");
+  $("#pBarAdd").disabled = soon;
+  $("#pSizeBox").hidden = soon || !sz.length;
   $("#pErr").textContent = "";
-  /* Gelato makes the printed pieces; others (varsity jackets, tracksuits: "pod": false) have no supplier
-     delivery time yet, so no maker or delivery promise is shown for them */
-  $("#pStock").textContent = "● " + t(p.pod === false ? "madeToOrder2" : "madeToOrder");
-  $("#pShip").textContent = t(p.pod === false ? "shipInfo2" : "shipInfo");
-  $("#pStock").style.color = "var(--ok)";
+  /* Gelato makes the printed pieces; "pod": false pieces have no supplier yet, so they are
+     "Coming soon": no maker, no delivery promise, nothing to add to the bag */
+  $("#pStock").textContent = "● " + t(soon ? "b_soon" : "madeToOrder");
+  $("#pShip").textContent = t(soon ? "soonNote2" : "shipInfo");
+  $("#pStock").style.color = soon ? "var(--muted)" : "var(--ok)";
   $("#pDesc").textContent = pDesc(p);
   $("#pDetails").innerHTML = (p.det || []).map(d => `<li>${esc(d)}</li>`).join("");
   const on = favs.includes(p.id);
@@ -281,6 +292,7 @@ $("#gal").addEventListener("scroll", () => {
 if("IntersectionObserver" in window)
   new IntersectionObserver(([e]) => $("#pBar").classList.toggle("show", !e.isIntersecting)).observe($("#pAdd"));
 $("#pBarAdd").onclick = () => {
+  if(comingSoon(current)) return;
   if(sizesOf(current).length && !pSize){
     $("#pSizes").scrollIntoView({behavior: "smooth", block: "center"});
     $("#pErr").textContent = t("sizeFirst");
@@ -289,6 +301,7 @@ $("#pBarAdd").onclick = () => {
   $("#pAdd").click();
 };
 $("#pAdd").onclick = () => {
+  if(comingSoon(current)) return;
   if(sizesOf(current).length && !pSize){ $("#pErr").textContent = t("sizeFirst"); return; }
   addToBag(current.id, pColor, pSize, 1);
 };
@@ -297,12 +310,14 @@ $("#pAdd").onclick = () => {
    A cart line is either a product {key,id,color,size,qty}
    or a bundle {key,bundle,qty} sold at the bundle price.     */
 function addToBag(id, color, size, n){
+  if(comingSoon(byId(id))) return;
   const key = [id,color,size||""].join("|");
   const l = cart.find(x => x.key === key);
   if(l) l.qty += n; else cart.push({key,id,color,size,qty:n});
   saveCart(); toast(t("added"));
 }
 function addBundle(bid){
+  const b = bundleById(bid); if(!b || bundleSoon(b)) return;
   const key = "bundle|" + bid;
   const l = cart.find(x => x.key === key);
   if(l) l.qty += 1; else cart.push({key, bundle: bid, qty: 1});
