@@ -74,7 +74,18 @@ Every page has its own address, so the Back button works and links can be shared
   description and sharing image already in the HTML (for Google and WhatsApp/Instagram previews).
   An address that matches nothing returns "Page not found" (`404.html`).
 - `/sitemap.xml` is built automatically from `data/catalog.json`; `robots.txt` points to it.
-  Once the site is live, add it in Google Search Console (Sitemaps).
+
+### Google Search Console (so Google finds the shop)
+
+1. Go to https://search.google.com/search-console and add the property **URL prefix**
+   `https://girlogyshop.com/`.
+2. Pick the **HTML tag** method. Google shows a line like
+   `<meta name="google-site-verification" content="…">`. Paste it in `index.html` right
+   under the comment that says "Google Search Console", then deploy and click **Verify**.
+   (The DNS method at OVH works too and needs no code change.)
+3. In Search Console, open **Sitemaps** and submit `https://girlogyshop.com/sitemap.xml`.
+4. Keep the pre-launch page in mind: while orders are closed, `/` shows the launch page and
+   the shop is at `/shop`; both are in the sitemap.
 - Icons: `favicon.ico`, `favicon-192.png`, `apple-touch-icon.png`. Sharing image: `images/og-girlogy.jpg`.
 
 ## Product photos per colour
@@ -114,6 +125,22 @@ a breach of the Code de la consommation (article L216-1), so keep this until the
 Fill in every highlighted blank in `legal/` (name, SIREN, address, VAT mention,
 mediator, return address). French law requires these for any shop selling to consumers.
 Have them checked by a professional (CCI, lawyer or accountant).
+
+## Newsletter and contact forms (Netlify Forms)
+
+The newsletter (pre-launch page and footer), contact and order forms are Netlify Forms.
+Submissions appear in the Netlify dashboard under **Forms**. To make sure they reach you:
+
+1. Netlify project → **Project configuration → Forms** → make sure **form detection** is enabled
+   (new projects have it off), then redeploy once.
+2. **Project configuration → Notifications → Form submission notifications** → add an
+   **Email notification** for each form (`newsletter`, `contact`, `order`) to your address.
+3. Send yourself a test from the live site and check it arrives (also check spam).
+
+Under both newsletter forms the site says what the email is for and that people can
+unsubscribe anytime, with a link to the privacy page (GDPR information duty, art. 13).
+Netlify Forms has no unsubscribe link of its own: when you start sending newsletters,
+use a mailing tool (Brevo, Mailchimp…) that adds one, and honour every request by email.
 
 ## Fonts
 

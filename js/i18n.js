@@ -147,7 +147,7 @@ window.T = {
   "message": "Message",
   "send": "Send message",
   "cErr": "Fill in your name, a valid email and a message.",
-  "cOk": "Message sent. We reply within 24 hours on working days.",
+  "cOk": "Message sent. We reply within 2 working days.",
   "faq": [
    [
     "When will my order arrive?",
@@ -172,7 +172,8 @@ window.T = {
   "company": "The Girlogist",
   "follow": "Follow us",
   "newsT": "Newsletter",
-  "newsS": "New drops and early access. One email a week.",
+  "newsS": "New drops and early access, now and then.",
+  "newsFine": "Unsubscribe anytime. See our {priv}.",
   "subscribe": "Subscribe",
   "nlOk": "You're in. Watch your inbox.",
   "language": "Language",
@@ -386,7 +387,7 @@ window.T = {
   "message": "Message",
   "send": "Envoyer",
   "cErr": "Indique ton nom, un e-mail valide et un message.",
-  "cOk": "Message envoyé. On répond sous 24 h les jours ouvrés.",
+  "cOk": "Message envoyé. On répond sous 2 jours ouvrés.",
   "faq": [
    [
     "Quand vais-je recevoir ma commande ?",
@@ -411,7 +412,8 @@ window.T = {
   "company": "The Girlogist",
   "follow": "Suis-nous",
   "newsT": "Newsletter",
-  "newsS": "Nouveaux drops et accès en avant-première. Un e-mail par semaine.",
+  "newsS": "Nouveaux drops et accès en avant-première, de temps en temps.",
+  "newsFine": "Désinscription à tout moment. Voir notre {priv}.",
   "subscribe": "S'inscrire",
   "nlOk": "C'est fait. Surveille ta boîte mail.",
   "language": "Langue",
@@ -625,7 +627,7 @@ window.T = {
   "message": "Mensaje",
   "send": "Enviar mensaje",
   "cErr": "Indica tu nombre, un correo válido y un mensaje.",
-  "cOk": "Mensaje enviado. Respondemos en 24 horas en días laborables.",
+  "cOk": "Mensaje enviado. Respondemos en 2 días laborables.",
   "faq": [
    [
     "¿Cuándo llegará mi pedido?",
@@ -650,7 +652,8 @@ window.T = {
   "company": "The Girlogist",
   "follow": "Síguenos",
   "newsT": "Newsletter",
-  "newsS": "Nuevos lanzamientos y acceso anticipado. Un correo a la semana.",
+  "newsS": "Nuevos lanzamientos y acceso anticipado, de vez en cuando.",
+  "newsFine": "Puedes darte de baja cuando quieras. Consulta nuestra {priv}.",
   "subscribe": "Suscribirme",
   "nlOk": "Listo. Revisa tu bandeja de entrada.",
   "language": "Idioma",

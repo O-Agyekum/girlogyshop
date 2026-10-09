@@ -103,7 +103,9 @@ function applyLang(){
   $("#sort").innerHTML = ["rec","new","low","high"].map(k => `<option value="${k}" ${sort===k?"selected":""}>${t("sort_"+k)}</option>`).join("");
   $("#co").innerHTML = T[lang].countries.map(c => `<option>${esc(c)}</option>`).join("");
   $("#faq").innerHTML = T[lang].faq.map(([q,a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("");
-  $("#lnFine").innerHTML = esc(t("launchFine")).replace("{priv}", `<a href="/legal/confidentialite.html">${esc(t("privacy").toLowerCase())}</a>`);
+  const privLink = `<a href="/legal/confidentialite.html">${esc(t("privacy").toLowerCase())}</a>`;
+  $("#lnFine").innerHTML = esc(t("launchFine")).replace("{priv}", privLink);
+  $("#nlFine").innerHTML = esc(t("newsFine")).replace("{priv}", privLink);
   $("#cgvLabel").innerHTML = esc(t("acceptCgv")).replace("{cgv}", `<a href="/legal/cgv.html" target="_blank" rel="noopener">${esc(t("cgv"))}</a>`).replace("{priv}", `<a href="/legal/confidentialite.html" target="_blank" rel="noopener">${esc(t("privacy").toLowerCase())}</a>`);
   const storyMap = [["new",null],["her","Tops"],["acc","Accessories"],["her","Tops"],["her","Bottoms"],[hasSale()?"sale":"her",null,hasSale()?null:"low"],["plus",null]];
   const storyIds = ["heart-tee","crewneck-rust","mug","tee-colors","heart-sweatpants","tote","po-cap"];
