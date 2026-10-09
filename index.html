@@ -34,6 +34,7 @@
     <div class="util">
       <div class="l">
         <button data-go="help" data-t="help"></button>
+        <button data-go="collection" data-t="collection"></button>
         <button data-go="about" data-t="about"></button>
       </div>
       <div class="r">
@@ -80,7 +81,10 @@
         </form>
         <p class="err" id="lnM" role="status"></p>
         <p class="fine launchfine" id="lnFine"></p>
-        <button class="linkb launchlink" data-go="home" data-t="launchPreview"></button>
+        <div class="launchlinks">
+          <button class="linkb launchlink" data-go="home" data-t="launchPreview"></button>
+          <button class="linkb launchlink" data-go="collection" data-t="launchCollection"></button>
+        </div>
       </div>
       <div class="art" aria-hidden="true">
         <img class="heroimg" alt="" src="/images/hero-girlogy-1200.webp" srcset="/images/hero-girlogy-1200.webp 1200w, /images/hero-girlogy.webp 1920w" sizes="(max-width:820px) 190vw, 1200px">
@@ -346,6 +350,23 @@
 </section>
 
 <!-- ABOUT -->
+<!-- The Collection: every design concept from the 2026 design catalogue, as a lookbook.
+     Concept previews only: no prices, nothing for sale here. -->
+<section id="v-collection" class="wrap page collection" hidden>
+  <div class="colhead">
+    <p class="eyebrow" data-t="colEyebrow"></p>
+    <h1 class="serif" data-t="collection"></h1>
+    <p class="lead" data-t="colIntro"></p>
+    <p class="fine colnote" id="colNote"></p>
+    <nav class="coljump" id="colJump" aria-label="Categories"></nav>
+  </div>
+  <div id="colBody"></div>
+  <div class="colend">
+    <p data-t="colEnd"></p>
+    <button class="btn" id="colJoin" data-t="launchBtn"></button>
+  </div>
+</section>
+
 <section id="v-about" class="wrap page" hidden>
   <div class="duo" style="padding-top:0;align-items:center">
     <div>
@@ -367,7 +388,7 @@
     <div class="fc">
       <div><h4 data-t="shop"></h4><button class="fl" data-dept-go="her" data-t="d_her"></button><button class="fl" data-dept-go="plus" data-t="d_plus"></button><button class="fl" data-dept-go="acc" data-t="d_acc"></button><button class="fl" data-dept-go="couples" data-t="d_couples"></button><button class="fl" data-dept-go="sale" data-t="d_sale"></button></div>
       <div><h4 data-t="help"></h4><button class="fl" data-go="help" data-t="delRet"></button><button class="fl" data-go="help" data-t="sizeGuide"></button><button class="fl" data-go="help" data-t="writeUs"></button></div>
-      <div><h4 data-t="legal"></h4><a class="fl" href="/legal/mentions-legales.html" data-t="mentions"></a><a class="fl" href="/legal/cgv.html" data-t="cgv"></a><a class="fl" href="/legal/retractation.html" data-t="withdrawal"></a><a class="fl" href="/legal/confidentialite.html" data-t="privacy"></a><button class="fl" data-go="about" data-t="about"></button></div>
+      <div><h4 data-t="legal"></h4><a class="fl" href="/legal/mentions-legales.html" data-t="mentions"></a><a class="fl" href="/legal/cgv.html" data-t="cgv"></a><a class="fl" href="/legal/retractation.html" data-t="withdrawal"></a><a class="fl" href="/legal/confidentialite.html" data-t="privacy"></a><button class="fl" data-go="collection" data-t="collection"></button><button class="fl" data-go="about" data-t="about"></button></div>
       <div id="followCol"><h4 data-t="follow"></h4><div id="socialLinks"></div></div>
       <div>
         <h4 data-t="newsT"></h4>

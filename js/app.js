@@ -93,8 +93,37 @@ function bundleHtml(b){
   </div>`;
 }
 
+/* ---------- The Collection (lookbook) ----------
+   /data/collection.json holds every concept of the design catalogue: 40 categories,
+   each a list of {img, w, h, title, sub}. Loaded the first time the page is opened.
+   Design names stay in English; category names are translated (T[lang].colCats).  */
+let COL = null, colLang = null;
+async function renderCollection(){
+  if(!COL) COL = await fetch("/data/collection.json", {cache: "no-cache"}).then(r => r.json()).catch(() => ({cats: [], items: 0}));
+  if(view !== "collection" || colLang === lang) return;
+  colLang = lang;
+  const names = T[lang].colCats || T.en.colCats || {};
+  const colCatName = c => names[c.n] || c.title;
+  $("#colNote").textContent = t("colNote", {n: COL.items, c: COL.cats.length});
+  $("#colJump").innerHTML = COL.cats.map(c => `<a class="chipx" href="#col-${c.n}" data-col="${c.n}">${esc(colCatName(c))}</a>`).join("");
+  $("#colBody").innerHTML = COL.cats.map(c => `<section class="colcat" id="col-${c.n}">
+    <div class="sechead"><h2><span class="num">${String(c.n).padStart(2,"0")}</span> ${esc(colCatName(c))}</h2><span class="fine">${t("colItems", {n: c.items.length})}</span></div>
+    <div class="colgrid">${c.items.map(i => `<figure class="coltile">
+      <div class="im"><img src="${i.img}" width="${i.w}" height="${i.h}" alt="${esc(i.title)}" loading="lazy" decoding="async"></div>
+      <figcaption><b>${esc(i.title)}</b>${i.sub ? `<span>${esc(i.sub)}</span>` : ""}</figcaption>
+    </figure>`).join("")}</div>
+  </section>`).join("");
+}
+$("#colJump").addEventListener("click", e => {
+  const a = e.target.closest("[data-col]"); if(!a) return;
+  e.preventDefault();
+  const el = $("#col-" + a.dataset.col); if(el) el.scrollIntoView({behavior: "smooth", block: "start"});
+});
+$("#colJoin").onclick = () => { go("launch"); setTimeout(() => $("#lnE").focus({preventScroll: true}), 50); };
+
 /* ---------- static text ---------- */
 function applyLang(){
+  colLang = null; if(view === "collection") renderCollection();
   document.documentElement.lang = lang;
   $$("[data-t]").forEach(el => { const v = t(el.dataset.t); if(typeof v === "string") el.textContent = v; });
   $$("[data-tp]").forEach(el => el.placeholder = t(el.dataset.tp));
@@ -520,7 +549,7 @@ $("#lnJoin").onclick = () => { window.scrollTo({top: 0, behavior: "smooth"}); $(
    shared, the browser's Back button works and search engines can see each page.
    netlify/functions/page.mjs serves index.html for these addresses with the right title. */
 const DEPT_SLUG = {new:"new", her:"her", plus:"plus-one", acc:"accessories", couples:"couples", sale:"sale"};
-const VIEW_SLUG = {favs:"favourites", bag:"bag", checkout:"checkout", help:"help", about:"about"};
+const VIEW_SLUG = {favs:"favourites", bag:"bag", checkout:"checkout", help:"help", about:"about", collection:"collection"};
 const flip = o => Object.fromEntries(Object.entries(o).map(([k, v]) => [v, k]));
 const SLUG_DEPT = flip(DEPT_SLUG), SLUG_VIEW = flip(VIEW_SLUG);
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -572,7 +601,7 @@ function updateMeta(){
   else if(view === "plp"){ const h = query ? `"${query}"` : cat !== "all" ? `${catName(cat)} · ${t("d_"+dept)}` : t("d_"+dept); title = `${h} · ${brand}`; }
   else if(view === "nf") title = `${t("nfT")} · ${brand}`;
   else if(view === "home" && !ORDERS_OPEN) title = `${t("shop")} · ${brand}`;
-  else if(VIEW_SLUG[view]) title = `${t({favs:"favs", bag:"bag", checkout:"checkout", help:"help", about:"about"}[view])} · ${brand}`;
+  else if(VIEW_SLUG[view]){ title = `${t({favs:"favs", bag:"bag", checkout:"checkout", help:"help", about:"about", collection:"collection"}[view])} · ${brand}`; if(view === "collection") desc = t("colIntro"); }
   document.title = title;
   const url = SITE + pathFor(view);
   setMeta('meta[name="description"]', "content", desc);
@@ -583,7 +612,7 @@ function updateMeta(){
 }
 
 /* ---------- routing ---------- */
-const VIEWS = ["launch","home","plp","pdp","favs","bag","checkout","done","help","about","nf"];
+const VIEWS = ["launch","home","plp","pdp","favs","bag","checkout","done","help","about","collection","nf"];
 function go(v, opt = {}){
   if(v === "start") v = ORDERS_OPEN ? "home" : "launch";   /* the logo and the address "/" */
   if(v === "checkout" && (!cart.length || !ORDERS_OPEN)) v = "bag";
@@ -606,6 +635,7 @@ function refresh(){
     $("#homeBundles").innerHTML = BUNDLES.map(bundleHtml).join("");
   }
   if(view === "launch") fill($("#railLaunch"), [...shown()].sort((a,b)=>(b.rank||0)-(a.rank||0)).slice(0,8));
+  if(view === "collection") renderCollection();
   if(view === "plp") renderPLP();
   if(view === "pdp" && current) renderPDP();
   if(view === "favs") fill($("#favGrid"), favs.map(byId).filter(Boolean), t("favsEmpty"));
