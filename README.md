@@ -97,6 +97,15 @@ then switches the photos. A colour without photos shows a plain colour swatch an
 "Photo shows the cream colour", so customers are never shown the wrong colour as if it were theirs.
 Gelato's mockup generator can produce one photo per colour.
 
+## The Collection (lookbook)
+
+`/collection` shows every concept of the 2026 design catalogue (383 concepts in 40 categories)
+as a lookbook: `data/collection.json` lists them, `images/collection/` holds the small preview
+images taken from the catalogue PDF. It is a preview, not a shop page: no prices, nothing to add
+to the bag, and the page says so. Category names are translated in `js/i18n.js` (`colCats`);
+design names stay in English. To turn a concept into a real product, add it to
+`data/catalog.json` with full-size photos (the lookbook images are too small for product pages).
+
 ## Products not made by Gelato
 
 Products with `"pod": false` in `data/catalog.json` (the varsity jackets and the couple

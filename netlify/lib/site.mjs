@@ -21,7 +21,8 @@ export const VIEWS = {
   bag: "Shopping bag",
   checkout: "Checkout",
   help: "Customer service",
-  about: "Our story"
+  about: "Our story",
+  collection: "The Collection"
 };
 
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -38,7 +39,7 @@ export function allPaths() {
     for (const c of catalog.deptCats[d] || []) paths.push(`/${s}/${slug(c)}`);
   }
   for (const p of visible()) paths.push("/product/" + p.id);
-  paths.push("/help", "/about");
+  paths.push("/help", "/about", "/collection");
   return paths;
 }
 

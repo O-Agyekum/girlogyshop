@@ -1,0 +1,2926 @@
+{
+"items": 383,
+"cats": [
+{
+"n": 1,
+"title": "T-shirts",
+"items": [
+{
+"img": "/images/collection/c01-01.webp",
+"w": 175,
+"h": 205,
+"title": "01 The Essential",
+"sub": "Cream · Brown · Black"
+},
+{
+"img": "/images/collection/c01-02.webp",
+"w": 175,
+"h": 205,
+"title": "02 Coffee & Complicated Thoughts",
+"sub": "Cream · Pink · Black"
+},
+{
+"img": "/images/collection/c01-03.webp",
+"w": 175,
+"h": 205,
+"title": "03 Mentally in 37 Places",
+"sub": "Brown · Black · Cream"
+},
+{
+"img": "/images/collection/c01-04.webp",
+"w": 175,
+"h": 205,
+"title": "04 Girlogy University",
+"sub": "Cream · Burgundy · Brown"
+},
+{
+"img": "/images/collection/c01-05.webp",
+"w": 175,
+"h": 205,
+"title": "05 Soft Girl Energy",
+"sub": "Pink · Cream · Brown"
+},
+{
+"img": "/images/collection/c01-06.webp",
+"w": 175,
+"h": 205,
+"title": "06 The Overthink Club",
+"sub": "Black · Cream · Pink"
+},
+{
+"img": "/images/collection/c01-07.webp",
+"w": 175,
+"h": 205,
+"title": "07 Good Girls Go Everywhere",
+"sub": "Cream · Brown · Pink"
+},
+{
+"img": "/images/collection/c01-08.webp",
+"w": 98,
+"h": 155,
+"title": "The Essential — Front",
+"sub": "Front & back design series"
+},
+{
+"img": "/images/collection/c01-09.webp",
+"w": 104,
+"h": 155,
+"title": "Coffee & Complicated Thoughts — Back",
+"sub": "Large illustration back print"
+},
+{
+"img": "/images/collection/c01-10.webp",
+"w": 104,
+"h": 155,
+"title": "Mentally in 37 Places — Front",
+"sub": "Checklist typography"
+},
+{
+"img": "/images/collection/c01-11.webp",
+"w": 112,
+"h": 155,
+"title": "Good Girls Go Everywhere — Back",
+"sub": "Vintage travel illustration"
+},
+{
+"img": "/images/collection/c01-12.webp",
+"w": 212,
+"h": 145,
+"title": "T01 Coffee Girl — Front & Back",
+"sub": "Cream · Brown"
+},
+{
+"img": "/images/collection/c01-13.webp",
+"w": 222,
+"h": 145,
+"title": "T02 37 Places — Front & Back",
+"sub": "Brown · Cream · Pink"
+},
+{
+"img": "/images/collection/c01-14.webp",
+"w": 212,
+"h": 145,
+"title": "T03 Good Girls — Front & Back",
+"sub": "Pink · Cream · Brown"
+},
+{
+"img": "/images/collection/c01-15.webp",
+"w": 232,
+"h": 145,
+"title": "T04 Overthink Club — Front & Back",
+"sub": "Black · Cream · Pink"
+},
+{
+"img": "/images/collection/c01-16.webp",
+"w": 222,
+"h": 145,
+"title": "T05 University — Front & Back",
+"sub": "Cream · Black · Pink"
+},
+{
+"img": "/images/collection/c01-17.webp",
+"w": 114,
+"h": 145,
+"title": "Same Girl, More Chapters — Back",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c01-18.webp",
+"w": 217,
+"h": 130,
+"title": "T06 Same Girl, More Chapters — Front & Back",
+"sub": "Burgundy"
+},
+{
+"img": "/images/collection/c01-19.webp",
+"w": 470,
+"h": 180,
+"title": "Front & back tees — lifestyle board",
+"sub": "Cream · Brown"
+}
+]
+},
+{
+"n": 2,
+"title": "Men's +1 — T-shirts",
+"items": [
+{
+"img": "/images/collection/c02-01.webp",
+"w": 250,
+"h": 158,
+"title": "M01 Good Company",
+"sub": "Front: small +1 | Back: text"
+},
+{
+"img": "/images/collection/c02-02.webp",
+"w": 250,
+"h": 140,
+"title": "M06 Gym, Good Food, Big Goals, Better Us",
+"sub": "Front: +1 | Back: text"
+},
+{
+"img": "/images/collection/c02-03.webp",
+"w": 245,
+"h": 158,
+"title": "M02 Better Together",
+"sub": "Front: small text | Back: text"
+},
+{
+"img": "/images/collection/c02-04.webp",
+"w": 245,
+"h": 140,
+"title": "M07 The +1 Globe",
+"sub": "Front: text | Back: image"
+},
+{
+"img": "/images/collection/c02-05.webp",
+"w": 250,
+"h": 158,
+"title": "M03 Heart / +1",
+"sub": "Front: icon | Back: icon"
+},
+{
+"img": "/images/collection/c02-06.webp",
+"w": 250,
+"h": 140,
+"title": "M08 Support · Protect · Provide · Grow Together",
+"sub": "Front: heart | Back: text"
+},
+{
+"img": "/images/collection/c02-07.webp",
+"w": 245,
+"h": 158,
+"title": "M04 Same Team, Different Roles",
+"sub": "Front: text | Back: image + text"
+},
+{
+"img": "/images/collection/c02-08.webp",
+"w": 245,
+"h": 140,
+"title": "M09 Better Days Together",
+"sub": "Front: +1 | Back: image + text"
+},
+{
+"img": "/images/collection/c02-09.webp",
+"w": 250,
+"h": 158,
+"title": "M05 Discipline Builds Freedom",
+"sub": "Front: mountains | Back: text"
+},
+{
+"img": "/images/collection/c02-10.webp",
+"w": 250,
+"h": 140,
+"title": "M10 Different Path, Same Direction",
+"sub": "Front: heart | Back: image + text"
+},
+{
+"img": "/images/collection/c02-11.webp",
+"w": 200,
+"h": 135,
+"title": "+1 Series — Good Company",
+"sub": "Front & back"
+},
+{
+"img": "/images/collection/c02-12.webp",
+"w": 205,
+"h": 135,
+"title": "+1 Series — Better Together",
+"sub": "Front & back"
+},
+{
+"img": "/images/collection/c02-13.webp",
+"w": 205,
+"h": 135,
+"title": "+1 Series — Same Team, Different Roles",
+"sub": "Front & back"
+}
+]
+},
+{
+"n": 3,
+"title": "Men's +1 — Hoodies & Sweatshirts",
+"items": [
+{
+"img": "/images/collection/c03-01.webp",
+"w": 255,
+"h": 155,
+"title": "H01 Classic Hoodie",
+"sub": "Better Together"
+},
+{
+"img": "/images/collection/c03-02.webp",
+"w": 240,
+"h": 155,
+"title": "H02 Globe Hoodie",
+"sub": "Same Team Different Roles"
+},
+{
+"img": "/images/collection/c03-03.webp",
+"w": 260,
+"h": 155,
+"title": "H03 Motivation Hoodie",
+"sub": "Discipline Builds Freedom"
+},
+{
+"img": "/images/collection/c03-04.webp",
+"w": 240,
+"h": 155,
+"title": "H04 Crewneck",
+"sub": "Good Company +1"
+},
+{
+"img": "/images/collection/c03-05.webp",
+"w": 250,
+"h": 155,
+"title": "H05 Mountain Crewneck",
+"sub": "Higher Together"
+}
+]
+},
+{
+"n": 4,
+"title": "Men's +1 — Joggers & Denim",
+"items": [
+{
+"img": "/images/collection/c04-01.webp",
+"w": 122,
+"h": 172,
+"title": "J01 Classic Joggers",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-02.webp",
+"w": 127,
+"h": 172,
+"title": "J02 +1 Joggers",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-03.webp",
+"w": 127,
+"h": 172,
+"title": "J03 Logo Joggers",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-04.webp",
+"w": 127,
+"h": 172,
+"title": "J04 Essential Joggers",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-05.webp",
+"w": 162,
+"h": 172,
+"title": "J05 Cargo Pants",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-06.webp",
+"w": 112,
+"h": 172,
+"title": "D01 Classic Straight",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-07.webp",
+"w": 97,
+"h": 172,
+"title": "D02 Relaxed Fit",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-08.webp",
+"w": 97,
+"h": 172,
+"title": "D03 Wide Leg",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-09.webp",
+"w": 102,
+"h": 172,
+"title": "D04 Denim Cargo",
+"sub": ""
+},
+{
+"img": "/images/collection/c04-10.webp",
+"w": 112,
+"h": 172,
+"title": "D05 Baggy Fit",
+"sub": ""
+}
+]
+},
+{
+"n": 5,
+"title": "Tees — Front Image + Text",
+"items": [
+{
+"img": "/images/collection/c05-01.webp",
+"w": 112,
+"h": 165,
+"title": "Caffeine & Complicated Thoughts",
+"sub": "Front design"
+},
+{
+"img": "/images/collection/c05-02.webp",
+"w": 112,
+"h": 165,
+"title": "Same Girl, More Chapters",
+"sub": "Front design"
+},
+{
+"img": "/images/collection/c05-03.webp",
+"w": 112,
+"h": 165,
+"title": "Good Girls Go Everywhere",
+"sub": "Front design"
+},
+{
+"img": "/images/collection/c05-04.webp",
+"w": 112,
+"h": 165,
+"title": "Soft Girl, Hard Plans",
+"sub": "Front design"
+},
+{
+"img": "/images/collection/c05-05.webp",
+"w": 112,
+"h": 165,
+"title": "The Overthink Club",
+"sub": "Front design"
+},
+{
+"img": "/images/collection/c05-06.webp",
+"w": 112,
+"h": 165,
+"title": "Mentally in 37 Places",
+"sub": "Front design"
+},
+{
+"img": "/images/collection/c05-07.webp",
+"w": 530,
+"h": 165,
+"title": "Small front text / icon options",
+"sub": "Wordmark · heart · cup · bow"
+},
+{
+"img": "/images/collection/c05-08.webp",
+"w": 100,
+"h": 165,
+"title": "Coffee Girl",
+"sub": "Image only (front)"
+},
+{
+"img": "/images/collection/c05-09.webp",
+"w": 100,
+"h": 165,
+"title": "Bow",
+"sub": "Image only (front)"
+},
+{
+"img": "/images/collection/c05-10.webp",
+"w": 100,
+"h": 165,
+"title": "Car",
+"sub": "Image only (front)"
+},
+{
+"img": "/images/collection/c05-11.webp",
+"w": 100,
+"h": 165,
+"title": "Headphones & Coffee",
+"sub": "Image only (front)"
+},
+{
+"img": "/images/collection/c05-12.webp",
+"w": 100,
+"h": 165,
+"title": "Girl with Books",
+"sub": "Image only (front)"
+},
+{
+"img": "/images/collection/c05-13.webp",
+"w": 100,
+"h": 165,
+"title": "Laptop & Headphones",
+"sub": "Image only (front)"
+},
+{
+"img": "/images/collection/c05-14.webp",
+"w": 335,
+"h": 92,
+"title": "Colour variations — Caffeine & Complicated Thoughts",
+"sub": "Cream · Pink · Brown · Black"
+}
+]
+},
+{
+"n": 6,
+"title": "Tees — Back Designs",
+"items": [
+{
+"img": "/images/collection/c06-01.webp",
+"w": 110,
+"h": 165,
+"title": "Coffee Girl",
+"sub": "Back image only"
+},
+{
+"img": "/images/collection/c06-02.webp",
+"w": 110,
+"h": 165,
+"title": "Bow",
+"sub": "Back image only"
+},
+{
+"img": "/images/collection/c06-03.webp",
+"w": 110,
+"h": 165,
+"title": "Headphones & Coffee",
+"sub": "Back image only"
+},
+{
+"img": "/images/collection/c06-04.webp",
+"w": 110,
+"h": 165,
+"title": "Laptop & Sneakers",
+"sub": "Back image only"
+},
+{
+"img": "/images/collection/c06-05.webp",
+"w": 110,
+"h": 165,
+"title": "Car & Hearts",
+"sub": "Back image only"
+},
+{
+"img": "/images/collection/c06-06.webp",
+"w": 110,
+"h": 165,
+"title": "Girl with Books",
+"sub": "Back image only"
+},
+{
+"img": "/images/collection/c06-07.webp",
+"w": 100,
+"h": 165,
+"title": "Good Energy, Bigger Goals",
+"sub": "Back text only"
+},
+{
+"img": "/images/collection/c06-08.webp",
+"w": 100,
+"h": 165,
+"title": "Overthink, Overdress, Over Plan, Still Cute",
+"sub": "Back text only"
+},
+{
+"img": "/images/collection/c06-09.webp",
+"w": 100,
+"h": 165,
+"title": "That Girl Energy",
+"sub": "Back text only"
+},
+{
+"img": "/images/collection/c06-10.webp",
+"w": 100,
+"h": 165,
+"title": "Soft Heart, Strong Standards",
+"sub": "Back text only"
+},
+{
+"img": "/images/collection/c06-11.webp",
+"w": 100,
+"h": 165,
+"title": "In My Own Lane",
+"sub": "Back text only"
+},
+{
+"img": "/images/collection/c06-12.webp",
+"w": 100,
+"h": 165,
+"title": "Discipline Looks Good On You",
+"sub": "Back text only"
+},
+{
+"img": "/images/collection/c06-13.webp",
+"w": 110,
+"h": 165,
+"title": "Good Girls Go Everywhere",
+"sub": "Back text + image"
+},
+{
+"img": "/images/collection/c06-14.webp",
+"w": 110,
+"h": 165,
+"title": "Mentally in 37 Places",
+"sub": "Back text + image"
+},
+{
+"img": "/images/collection/c06-15.webp",
+"w": 110,
+"h": 165,
+"title": "Same Girl, More Chapters",
+"sub": "Back text + image"
+},
+{
+"img": "/images/collection/c06-16.webp",
+"w": 110,
+"h": 165,
+"title": "The Overthink Club",
+"sub": "Back text + image"
+},
+{
+"img": "/images/collection/c06-17.webp",
+"w": 110,
+"h": 165,
+"title": "More Coffee, More Progress",
+"sub": "Back text + image"
+},
+{
+"img": "/images/collection/c06-18.webp",
+"w": 110,
+"h": 165,
+"title": "More Done Anyway",
+"sub": "Back text + image"
+}
+]
+},
+{
+"n": 7,
+"title": "Tees — Lifestyle & Quotes",
+"items": [
+{
+"img": "/images/collection/c07-01.webp",
+"w": 110,
+"h": 160,
+"title": "Booked, Busy, Blessed",
+"sub": "Lifestyle & mood"
+},
+{
+"img": "/images/collection/c07-02.webp",
+"w": 110,
+"h": 160,
+"title": "Romanticizing My Life",
+"sub": "Lifestyle & mood"
+},
+{
+"img": "/images/collection/c07-03.webp",
+"w": 110,
+"h": 160,
+"title": "Self Love Looks Good On You",
+"sub": "Lifestyle & mood"
+},
+{
+"img": "/images/collection/c07-04.webp",
+"w": 110,
+"h": 160,
+"title": "More Coffee, More Self Love",
+"sub": "Lifestyle & mood"
+},
+{
+"img": "/images/collection/c07-05.webp",
+"w": 110,
+"h": 160,
+"title": "A Little Busy Being Her",
+"sub": "Lifestyle & mood"
+},
+{
+"img": "/images/collection/c07-06.webp",
+"w": 110,
+"h": 160,
+"title": "Big Dreams, Soft Life",
+"sub": "Lifestyle & mood"
+},
+{
+"img": "/images/collection/c07-07.webp",
+"w": 100,
+"h": 160,
+"title": "Kind People Are My Kind Of People",
+"sub": "Quote-only minimal"
+},
+{
+"img": "/images/collection/c07-08.webp",
+"w": 100,
+"h": 160,
+"title": "Progress Over Perfection",
+"sub": "Quote-only minimal"
+},
+{
+"img": "/images/collection/c07-09.webp",
+"w": 100,
+"h": 160,
+"title": "Main Character Mood",
+"sub": "Quote-only minimal"
+},
+{
+"img": "/images/collection/c07-10.webp",
+"w": 100,
+"h": 160,
+"title": "Girls Support Girls",
+"sub": "Quote-only minimal"
+},
+{
+"img": "/images/collection/c07-11.webp",
+"w": 100,
+"h": 160,
+"title": "Everything Happens For A Reason",
+"sub": "Quote-only minimal"
+},
+{
+"img": "/images/collection/c07-12.webp",
+"w": 100,
+"h": 160,
+"title": "More Love, More Coffee, More Good Days",
+"sub": "Quote-only minimal"
+}
+]
+},
+{
+"n": 8,
+"title": "Tees — Travel & City",
+"items": [
+{
+"img": "/images/collection/c08-01.webp",
+"w": 110,
+"h": 135,
+"title": "Paris",
+"sub": "Travel & city series"
+},
+{
+"img": "/images/collection/c08-02.webp",
+"w": 110,
+"h": 135,
+"title": "New York",
+"sub": "Travel & city series"
+},
+{
+"img": "/images/collection/c08-03.webp",
+"w": 110,
+"h": 135,
+"title": "London",
+"sub": "Travel & city series"
+},
+{
+"img": "/images/collection/c08-04.webp",
+"w": 110,
+"h": 135,
+"title": "Tokyo",
+"sub": "Travel & city series"
+},
+{
+"img": "/images/collection/c08-05.webp",
+"w": 110,
+"h": 135,
+"title": "Ghana",
+"sub": "Travel & city series"
+},
+{
+"img": "/images/collection/c08-06.webp",
+"w": 110,
+"h": 135,
+"title": "Somewhere New Soon",
+"sub": "Travel & city series"
+}
+]
+},
+{
+"n": 9,
+"title": "Hoodies & Sweatshirts",
+"items": [
+{
+"img": "/images/collection/c09-01.webp",
+"w": 165,
+"h": 185,
+"title": "01 Classic Hoodie",
+"sub": "Cream · Brown · Black"
+},
+{
+"img": "/images/collection/c09-02.webp",
+"w": 165,
+"h": 185,
+"title": "02 Coffee Hoodie",
+"sub": "Brown · Cream · Pink"
+},
+{
+"img": "/images/collection/c09-03.webp",
+"w": 165,
+"h": 185,
+"title": "03 Heart Hoodie",
+"sub": "Pink · Cream · Brown"
+},
+{
+"img": "/images/collection/c09-04.webp",
+"w": 165,
+"h": 185,
+"title": "04 37 Places Hoodie",
+"sub": "Black · Cream · Brown"
+},
+{
+"img": "/images/collection/c09-05.webp",
+"w": 165,
+"h": 185,
+"title": "05 University Hoodie",
+"sub": "Cream · Burgundy · Brown"
+},
+{
+"img": "/images/collection/c09-06.webp",
+"w": 165,
+"h": 185,
+"title": "06 Self Love Crewneck",
+"sub": "Oatmeal · Pink · Brown"
+},
+{
+"img": "/images/collection/c09-07.webp",
+"w": 240,
+"h": 255,
+"title": "Styling — Brown Hoodie",
+"sub": ""
+},
+{
+"img": "/images/collection/c09-08.webp",
+"w": 242,
+"h": 178,
+"title": "Hoodie line-up",
+"sub": "Cream · Brown · Pink"
+},
+{
+"img": "/images/collection/c09-09.webp",
+"w": 112,
+"h": 140,
+"title": "H01 Classic",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c09-10.webp",
+"w": 117,
+"h": 140,
+"title": "H02 Coffee Girl",
+"sub": "Brown"
+},
+{
+"img": "/images/collection/c09-11.webp",
+"w": 112,
+"h": 140,
+"title": "H03 Heart",
+"sub": "Pink"
+},
+{
+"img": "/images/collection/c09-12.webp",
+"w": 125,
+"h": 140,
+"title": "H04 37 Places",
+"sub": "Black"
+},
+{
+"img": "/images/collection/c09-13.webp",
+"w": 345,
+"h": 165,
+"title": "Hoodie range — spec sheet",
+"sub": "Cream · Brown · Pink · Black"
+},
+{
+"img": "/images/collection/c09-14.webp",
+"w": 325,
+"h": 195,
+"title": "Hoodie trio",
+"sub": "Cream · Brown · Pink"
+}
+]
+},
+{
+"n": 10,
+"title": "Varsity Jackets",
+"items": [
+{
+"img": "/images/collection/c10-01.webp",
+"w": 175,
+"h": 180,
+"title": "01 Classic Varsity",
+"sub": "Brown · Cream"
+},
+{
+"img": "/images/collection/c10-02.webp",
+"w": 175,
+"h": 180,
+"title": "02 Burgundy Varsity",
+"sub": "Burgundy · Cream"
+},
+{
+"img": "/images/collection/c10-03.webp",
+"w": 175,
+"h": 180,
+"title": "03 Black Varsity",
+"sub": "Black · Cream"
+},
+{
+"img": "/images/collection/c10-04.webp",
+"w": 175,
+"h": 180,
+"title": "Back Detail",
+"sub": "Wordmark + tagline"
+},
+{
+"img": "/images/collection/c10-05.webp",
+"w": 205,
+"h": 238,
+"title": "Styling — Her",
+"sub": "Burgundy varsity"
+},
+{
+"img": "/images/collection/c10-06.webp",
+"w": 198,
+"h": 238,
+"title": "Styling — Him",
+"sub": "Black varsity"
+},
+{
+"img": "/images/collection/c10-07.webp",
+"w": 169,
+"h": 238,
+"title": "Chenille Patch Detail",
+"sub": "G letter + script logo"
+},
+{
+"img": "/images/collection/c10-08.webp",
+"w": 186,
+"h": 210,
+"title": "Varsity — jackets & patch details",
+"sub": "Burgundy · Black · chenille G"
+},
+{
+"img": "/images/collection/c10-09.webp",
+"w": 112,
+"h": 140,
+"title": "V01 Burgundy",
+"sub": ""
+},
+{
+"img": "/images/collection/c10-10.webp",
+"w": 112,
+"h": 140,
+"title": "V02 Black",
+"sub": ""
+},
+{
+"img": "/images/collection/c10-11.webp",
+"w": 94,
+"h": 140,
+"title": "V03 Cream Brown",
+"sub": "Back view"
+},
+{
+"img": "/images/collection/c10-12.webp",
+"w": 70,
+"h": 160,
+"title": "Varsity details",
+"sub": "Collar, sleeve, chenille G"
+},
+{
+"img": "/images/collection/c10-13.webp",
+"w": 325,
+"h": 165,
+"title": "Varsity range — spec sheet",
+"sub": "Burgundy · Black · Cream back"
+},
+{
+"img": "/images/collection/c10-14.webp",
+"w": 82,
+"h": 220,
+"title": "Varsity trims",
+"sub": "Chenille G, embroidery, cuffs"
+},
+{
+"img": "/images/collection/c10-15.webp",
+"w": 235,
+"h": 195,
+"title": "Varsity — Brown & Pink",
+"sub": "New pink colourway"
+}
+]
+},
+{
+"n": 11,
+"title": "Jogger Sets — Women",
+"items": [
+{
+"img": "/images/collection/c11-01.webp",
+"w": 118,
+"h": 263,
+"title": "01 Classic Cream",
+"sub": ""
+},
+{
+"img": "/images/collection/c11-02.webp",
+"w": 115,
+"h": 263,
+"title": "02 Chocolate Brown",
+"sub": ""
+},
+{
+"img": "/images/collection/c11-03.webp",
+"w": 110,
+"h": 263,
+"title": "03 Dusty Pink",
+"sub": ""
+},
+{
+"img": "/images/collection/c11-04.webp",
+"w": 110,
+"h": 263,
+"title": "04 Black",
+"sub": ""
+},
+{
+"img": "/images/collection/c11-05.webp",
+"w": 197,
+"h": 187,
+"title": "Jogger sets — styled",
+"sub": "Cream · Brown · Black"
+},
+{
+"img": "/images/collection/c11-06.webp",
+"w": 97,
+"h": 140,
+"title": "J01 Cream",
+"sub": ""
+},
+{
+"img": "/images/collection/c11-07.webp",
+"w": 98,
+"h": 140,
+"title": "J02 Brown",
+"sub": ""
+},
+{
+"img": "/images/collection/c11-08.webp",
+"w": 107,
+"h": 140,
+"title": "J03 Dusty Pink",
+"sub": ""
+},
+{
+"img": "/images/collection/c11-09.webp",
+"w": 108,
+"h": 140,
+"title": "J04 Black",
+"sub": ""
+},
+{
+"img": "/images/collection/c11-10.webp",
+"w": 255,
+"h": 160,
+"title": "Jogger sets — styled",
+"sub": "Cream · Brown · Pink · Black"
+},
+{
+"img": "/images/collection/c11-11.webp",
+"w": 67,
+"h": 160,
+"title": "Jogger set — technical sketch",
+"sub": "Hoodie + jogger flats"
+}
+]
+},
+{
+"n": 12,
+"title": "Jogger Sets — Men (+1)",
+"items": [
+{
+"img": "/images/collection/c12-01.webp",
+"w": 102,
+"h": 263,
+"title": "01 Cream",
+"sub": ""
+},
+{
+"img": "/images/collection/c12-02.webp",
+"w": 102,
+"h": 263,
+"title": "02 Brown",
+"sub": ""
+},
+{
+"img": "/images/collection/c12-03.webp",
+"w": 102,
+"h": 263,
+"title": "03 Black",
+"sub": ""
+},
+{
+"img": "/images/collection/c12-04.webp",
+"w": 102,
+"h": 263,
+"title": "04 Grey",
+"sub": ""
+}
+]
+},
+{
+"n": 13,
+"title": "Jeans & Pants",
+"items": [
+{
+"img": "/images/collection/c13-01.webp",
+"w": 72,
+"h": 187,
+"title": "Wide-leg jeans",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c13-02.webp",
+"w": 74,
+"h": 187,
+"title": "Cargo / utility pants",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c13-03.webp",
+"w": 74,
+"h": 187,
+"title": "Straight-leg jeans",
+"sub": "Vintage blue"
+},
+{
+"img": "/images/collection/c13-04.webp",
+"w": 80,
+"h": 162,
+"title": "P01 Wide Leg",
+"sub": "Mid blue"
+},
+{
+"img": "/images/collection/c13-05.webp",
+"w": 78,
+"h": 162,
+"title": "P02 Straight",
+"sub": "Vintage blue"
+},
+{
+"img": "/images/collection/c13-06.webp",
+"w": 78,
+"h": 162,
+"title": "P03 Cargo",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c13-07.webp",
+"w": 78,
+"h": 162,
+"title": "P04 Flare",
+"sub": "Black"
+},
+{
+"img": "/images/collection/c13-08.webp",
+"w": 74,
+"h": 162,
+"title": "P05 Relaxed",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c13-09.webp",
+"w": 125,
+"h": 190,
+"title": "Denim details",
+"sub": "Heart stitch, button, leather patch"
+},
+{
+"img": "/images/collection/c13-10.webp",
+"w": 330,
+"h": 160,
+"title": "Jeans range — spec sheet",
+"sub": "Blue · Black · Cream · Brown"
+},
+{
+"img": "/images/collection/c13-11.webp",
+"w": 220,
+"h": 195,
+"title": "Jeans trio",
+"sub": "Blue · Brown · Cream"
+}
+]
+},
+{
+"n": 14,
+"title": "Dresses",
+"items": [
+{
+"img": "/images/collection/c14-01.webp",
+"w": 66,
+"h": 185,
+"title": "The Dinner Dress",
+"sub": "Espresso, side slit"
+},
+{
+"img": "/images/collection/c14-02.webp",
+"w": 67,
+"h": 185,
+"title": "The Going-Out Mini",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c14-03.webp",
+"w": 71,
+"h": 185,
+"title": "The Soft Knit Dress",
+"sub": "Cream, strappy"
+},
+{
+"img": "/images/collection/c14-04.webp",
+"w": 70,
+"h": 185,
+"title": "Side-slit Midi",
+"sub": "Black"
+},
+{
+"img": "/images/collection/c14-05.webp",
+"w": 66,
+"h": 185,
+"title": "Night-Out Mini",
+"sub": "Burgundy"
+},
+{
+"img": "/images/collection/c14-06.webp",
+"w": 66,
+"h": 162,
+"title": "D01 Ribbed Mini",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c14-07.webp",
+"w": 66,
+"h": 162,
+"title": "D02 Bodycon",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c14-08.webp",
+"w": 66,
+"h": 162,
+"title": "D03 Ruched Midi",
+"sub": "Dusty pink"
+},
+{
+"img": "/images/collection/c14-09.webp",
+"w": 66,
+"h": 162,
+"title": "D04 Slit Maxi",
+"sub": "Black"
+},
+{
+"img": "/images/collection/c14-10.webp",
+"w": 67,
+"h": 162,
+"title": "D05 Satin Slip",
+"sub": "Burgundy"
+},
+{
+"img": "/images/collection/c14-11.webp",
+"w": 315,
+"h": 160,
+"title": "Dress range — spec sheet",
+"sub": "Brown · Black · Pink · Cream · Burgundy"
+},
+{
+"img": "/images/collection/c14-12.webp",
+"w": 385,
+"h": 210,
+"title": "Dresses — outing & special occasions",
+"sub": "Brown · Cream · Pink · Black"
+}
+]
+},
+{
+"n": 15,
+"title": "Skirts & Shorts",
+"items": [
+{
+"img": "/images/collection/c15-01.webp",
+"w": 70,
+"h": 185,
+"title": "Tennis skirt",
+"sub": "Cream pleated, built-in shorts"
+},
+{
+"img": "/images/collection/c15-02.webp",
+"w": 68,
+"h": 185,
+"title": "Pleated everyday skirt",
+"sub": "Dusty pink"
+},
+{
+"img": "/images/collection/c15-03.webp",
+"w": 70,
+"h": 185,
+"title": "Cargo / utility skirt",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c15-04.webp",
+"w": 70,
+"h": 185,
+"title": "Sport shorts",
+"sub": "Black, contrast piping"
+},
+{
+"img": "/images/collection/c15-05.webp",
+"w": 80,
+"h": 162,
+"title": "S01 Tennis Skirt",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c15-06.webp",
+"w": 80,
+"h": 162,
+"title": "S02 Pleated Mini",
+"sub": "Dusty pink"
+},
+{
+"img": "/images/collection/c15-07.webp",
+"w": 80,
+"h": 162,
+"title": "S03 Cargo Skirt",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c15-08.webp",
+"w": 80,
+"h": 162,
+"title": "S04 Slit Midi",
+"sub": "Black"
+},
+{
+"img": "/images/collection/c15-09.webp",
+"w": 78,
+"h": 162,
+"title": "S05 Denim Skirt",
+"sub": "Blue"
+},
+{
+"img": "/images/collection/c15-10.webp",
+"w": 300,
+"h": 115,
+"title": "Skirts & shorts — flat lay",
+"sub": "Cream · Pink · Brown · Black"
+},
+{
+"img": "/images/collection/c15-11.webp",
+"w": 225,
+"h": 210,
+"title": "Skirts — tennis, pleated, slit midi",
+"sub": "Cream · Pink · Brown"
+}
+]
+},
+{
+"n": 16,
+"title": "Couples Collection",
+"items": [
+{
+"img": "/images/collection/c16-01.webp",
+"w": 263,
+"h": 170,
+"title": "01 Matching Hoodies",
+"sub": "Cream & Brown"
+},
+{
+"img": "/images/collection/c16-02.webp",
+"w": 185,
+"h": 140,
+"title": "02 Matching Tees",
+"sub": "Cream & Brown"
+},
+{
+"img": "/images/collection/c16-03.webp",
+"w": 185,
+"h": 140,
+"title": "03 Good Company",
+"sub": "Black & Pink"
+},
+{
+"img": "/images/collection/c16-04.webp",
+"w": 185,
+"h": 140,
+"title": "04 Better Together",
+"sub": "Cream & Black"
+},
+{
+"img": "/images/collection/c16-05.webp",
+"w": 196,
+"h": 263,
+"title": "Couples Set — Dusty Pink",
+"sub": "Matching joggers"
+},
+{
+"img": "/images/collection/c16-06.webp",
+"w": 199,
+"h": 263,
+"title": "Couples Set — Cream & Brown",
+"sub": "Matching joggers"
+},
+{
+"img": "/images/collection/c16-07.webp",
+"w": 188,
+"h": 185,
+"title": "Her + Him — matching hoodies",
+"sub": "Cream & Brown"
+},
+{
+"img": "/images/collection/c16-08.webp",
+"w": 70,
+"h": 185,
+"title": "\"The Girlogist\" hoodie",
+"sub": "Her"
+},
+{
+"img": "/images/collection/c16-09.webp",
+"w": 64,
+"h": 185,
+"title": "\"The +1\" hoodie",
+"sub": "Him"
+},
+{
+"img": "/images/collection/c16-10.webp",
+"w": 280,
+"h": 160,
+"title": "The Girlogist / The +1",
+"sub": "Cream, back print"
+},
+{
+"img": "/images/collection/c16-11.webp",
+"w": 230,
+"h": 195,
+"title": "Jogger sets — Her + Him",
+"sub": "Brown & Cream"
+},
+{
+"img": "/images/collection/c16-12.webp",
+"w": 230,
+"h": 210,
+"title": "Couples hoodies — lifestyle",
+"sub": "Cream & Brown"
+},
+{
+"img": "/images/collection/c16-13.webp",
+"w": 247,
+"h": 102,
+"title": "Tees C01 Matching Text — The Original / The Perfect Match",
+"sub": ""
+},
+{
+"img": "/images/collection/c16-14.webp",
+"w": 237,
+"h": 102,
+"title": "Tees C02 Front Text — Queen / King",
+"sub": ""
+},
+{
+"img": "/images/collection/c16-15.webp",
+"w": 247,
+"h": 102,
+"title": "Tees C03 Image + Text — Her Side / His Side",
+"sub": ""
+},
+{
+"img": "/images/collection/c16-16.webp",
+"w": 242,
+"h": 102,
+"title": "Tees C04 Minimal Front",
+"sub": ""
+},
+{
+"img": "/images/collection/c16-17.webp",
+"w": 262,
+"h": 102,
+"title": "Tees C05 Matching Back Text — Different Energy, Same Love",
+"sub": ""
+},
+{
+"img": "/images/collection/c16-18.webp",
+"w": 172,
+"h": 122,
+"title": "Hoodies C01 Matching Text",
+"sub": "Better Together"
+},
+{
+"img": "/images/collection/c16-19.webp",
+"w": 167,
+"h": 122,
+"title": "Hoodies C02 Front Text",
+"sub": "girlogy / +1"
+},
+{
+"img": "/images/collection/c16-20.webp",
+"w": 162,
+"h": 122,
+"title": "Hoodies C03 Image + Text",
+"sub": "Bow / +1"
+},
+{
+"img": "/images/collection/c16-21.webp",
+"w": 267,
+"h": 122,
+"title": "Couple Jogger Sets",
+"sub": "Cream · Brown · Pink · Black"
+},
+{
+"img": "/images/collection/c16-22.webp",
+"w": 116,
+"h": 122,
+"title": "Outfit 01 Classic Set",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c16-23.webp",
+"w": 116,
+"h": 122,
+"title": "Outfit 02 Mocha Set",
+"sub": "Brown"
+},
+{
+"img": "/images/collection/c16-24.webp",
+"w": 116,
+"h": 122,
+"title": "Outfit 03 Blush Set",
+"sub": "Pink"
+},
+{
+"img": "/images/collection/c16-25.webp",
+"w": 116,
+"h": 122,
+"title": "Outfit 04 Black Set",
+"sub": "Black"
+}
+]
+},
+{
+"n": 17,
+"title": "Sportswear — Women",
+"items": [
+{
+"img": "/images/collection/c17-01.webp",
+"w": 112,
+"h": 215,
+"title": "01 Sports Bra + Leggings",
+"sub": ""
+},
+{
+"img": "/images/collection/c17-02.webp",
+"w": 113,
+"h": 215,
+"title": "02 Crop Top + Leggings",
+"sub": ""
+},
+{
+"img": "/images/collection/c17-03.webp",
+"w": 113,
+"h": 215,
+"title": "03 Zipper Top + Leggings",
+"sub": ""
+},
+{
+"img": "/images/collection/c17-04.webp",
+"w": 117,
+"h": 215,
+"title": "Back Detail",
+"sub": ""
+},
+{
+"img": "/images/collection/c17-05.webp",
+"w": 66,
+"h": 185,
+"title": "Sports bra + leggings",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c17-06.webp",
+"w": 66,
+"h": 185,
+"title": "Zip top + leggings",
+"sub": "Black"
+},
+{
+"img": "/images/collection/c17-07.webp",
+"w": 70,
+"h": 185,
+"title": "Crop + cycling shorts",
+"sub": "Brown"
+},
+{
+"img": "/images/collection/c17-08.webp",
+"w": 64,
+"h": 185,
+"title": "Zip jacket + leggings",
+"sub": "Dusty pink"
+},
+{
+"img": "/images/collection/c17-09.webp",
+"w": 76,
+"h": 130,
+"title": "A01 Sports Bra",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c17-10.webp",
+"w": 76,
+"h": 130,
+"title": "A02 Leggings",
+"sub": "Brown"
+},
+{
+"img": "/images/collection/c17-11.webp",
+"w": 76,
+"h": 130,
+"title": "A03 Shorts",
+"sub": "Black"
+},
+{
+"img": "/images/collection/c17-12.webp",
+"w": 76,
+"h": 130,
+"title": "A04 Crop Top",
+"sub": "Dusty pink"
+},
+{
+"img": "/images/collection/c17-13.webp",
+"w": 76,
+"h": 130,
+"title": "A05 Training Set",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c17-14.webp",
+"w": 250,
+"h": 115,
+"title": "Activewear — spec sheet",
+"sub": "Brown · Black · Pink · Cream"
+},
+{
+"img": "/images/collection/c17-15.webp",
+"w": 370,
+"h": 210,
+"title": "Sportswear — Her + Him",
+"sub": "Brown · Pink · Black · Grey"
+}
+]
+},
+{
+"n": 18,
+"title": "Sportswear — Men (+1)",
+"items": [
+{
+"img": "/images/collection/c18-01.webp",
+"w": 102,
+"h": 215,
+"title": "01 Training Set",
+"sub": ""
+},
+{
+"img": "/images/collection/c18-02.webp",
+"w": 102,
+"h": 215,
+"title": "02 Zip Set",
+"sub": ""
+},
+{
+"img": "/images/collection/c18-03.webp",
+"w": 102,
+"h": 215,
+"title": "03 T-Shirt + Joggers",
+"sub": ""
+},
+{
+"img": "/images/collection/c18-04.webp",
+"w": 102,
+"h": 215,
+"title": "04 Shorts Set",
+"sub": ""
+}
+]
+},
+{
+"n": 19,
+"title": "Loungewear & Pyjamas",
+"items": [
+{
+"img": "/images/collection/c19-01.webp",
+"w": 250,
+"h": 205,
+"title": "Pyjama Set · Robe · Sleepwear · Slippers",
+"sub": "Cream · Brown · Pink"
+},
+{
+"img": "/images/collection/c19-02.webp",
+"w": 100,
+"h": 180,
+"title": "Satin pyjama set",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c19-03.webp",
+"w": 74,
+"h": 180,
+"title": "Satin pyjama set",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c19-04.webp",
+"w": 58,
+"h": 180,
+"title": "Satin pyjama set",
+"sub": "Dusty pink"
+},
+{
+"img": "/images/collection/c19-05.webp",
+"w": 72,
+"h": 180,
+"title": "Lounge set",
+"sub": "Cream & pink"
+},
+{
+"img": "/images/collection/c19-06.webp",
+"w": 158,
+"h": 180,
+"title": "Sleep set + eye mask",
+"sub": "Cream · Pink"
+}
+]
+},
+{
+"n": 20,
+"title": "Outerwear",
+"items": [
+{
+"img": "/images/collection/c20-01.webp",
+"w": 250,
+"h": 205,
+"title": "Puffer · Denim Jacket · Overshirt · Windbreaker",
+"sub": "Brown · Cream · Black · Pink"
+},
+{
+"img": "/images/collection/c20-02.webp",
+"w": 57,
+"h": 175,
+"title": "Trench coat",
+"sub": "Camel"
+},
+{
+"img": "/images/collection/c20-03.webp",
+"w": 74,
+"h": 175,
+"title": "Puffer jacket",
+"sub": "Black"
+},
+{
+"img": "/images/collection/c20-04.webp",
+"w": 72,
+"h": 175,
+"title": "Denim jacket",
+"sub": "Mid-blue"
+},
+{
+"img": "/images/collection/c20-05.webp",
+"w": 77,
+"h": 175,
+"title": "Puffer jacket",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c20-06.webp",
+"w": 100,
+"h": 175,
+"title": "Puffer jacket",
+"sub": "Espresso"
+}
+]
+},
+{
+"n": 21,
+"title": "Knitwear & Basics",
+"items": [
+{
+"img": "/images/collection/c21-01.webp",
+"w": 222,
+"h": 205,
+"title": "Cardigan · Knit Set · Ribbed Tops",
+"sub": "Cream · Brown · Pink · Black"
+},
+{
+"img": "/images/collection/c21-02.webp",
+"w": 74,
+"h": 175,
+"title": "Cardigan + knit set",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c21-03.webp",
+"w": 73,
+"h": 175,
+"title": "Ribbed button top",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c21-04.webp",
+"w": 74,
+"h": 175,
+"title": "Fitted long-sleeve",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c21-05.webp",
+"w": 275,
+"h": 210,
+"title": "Knitwear — cardigan, knit top, striped sweater",
+"sub": "Cream · Brown · G patch"
+}
+]
+},
+{
+"n": 22,
+"title": "Swimwear",
+"items": [
+{
+"img": "/images/collection/c22-01.webp",
+"w": 82,
+"h": 130,
+"title": "SW01 One-Piece",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c22-02.webp",
+"w": 82,
+"h": 130,
+"title": "SW02 Bikini Set",
+"sub": "Dusty pink"
+},
+{
+"img": "/images/collection/c22-03.webp",
+"w": 92,
+"h": 130,
+"title": "SW03 Men's Swim Shorts",
+"sub": "Espresso"
+}
+]
+},
+{
+"n": 23,
+"title": "Maternity & Nursing",
+"items": [
+{
+"img": "/images/collection/c23-01.webp",
+"w": 82,
+"h": 130,
+"title": "M01 Nursing Bra + Shorts",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c23-02.webp",
+"w": 112,
+"h": 130,
+"title": "M02 Maternity Tee",
+"sub": "Espresso tee + leggings"
+},
+{
+"img": "/images/collection/c23-03.webp",
+"w": 136,
+"h": 130,
+"title": "M03 Nursing Tee",
+"sub": "Cream · Brown"
+}
+]
+},
+{
+"n": 24,
+"title": "Underwear & Intimates — Women",
+"items": [
+{
+"img": "/images/collection/c24-01.webp",
+"w": 172,
+"h": 140,
+"title": "Everyday Bras",
+"sub": "Cream · Brown · Black · Pink"
+},
+{
+"img": "/images/collection/c24-02.webp",
+"w": 122,
+"h": 140,
+"title": "Everyday Panties",
+"sub": "Cream · Brown · Pink · Black"
+},
+{
+"img": "/images/collection/c24-03.webp",
+"w": 160,
+"h": 140,
+"title": "Thongs / Tanga",
+"sub": "Pink · Brown · Cream · Black"
+},
+{
+"img": "/images/collection/c24-04.webp",
+"w": 146,
+"h": 140,
+"title": "Matching Sets",
+"sub": "Brown · Pink"
+},
+{
+"img": "/images/collection/c24-05.webp",
+"w": 82,
+"h": 140,
+"title": "Everyday Bras",
+"sub": "Cream · Brown"
+},
+{
+"img": "/images/collection/c24-06.webp",
+"w": 76,
+"h": 140,
+"title": "Matching Sets",
+"sub": "Pink · Brown"
+},
+{
+"img": "/images/collection/c24-07.webp",
+"w": 72,
+"h": 140,
+"title": "Panties",
+"sub": "Brown · Cream"
+},
+{
+"img": "/images/collection/c24-08.webp",
+"w": 68,
+"h": 140,
+"title": "Thongs / Tangas",
+"sub": "Pink"
+},
+{
+"img": "/images/collection/c24-09.webp",
+"w": 86,
+"h": 130,
+"title": "Everyday Bras",
+"sub": "Cream · Brown"
+},
+{
+"img": "/images/collection/c24-10.webp",
+"w": 88,
+"h": 130,
+"title": "Panties",
+"sub": "Brown · Pink · Black"
+},
+{
+"img": "/images/collection/c24-11.webp",
+"w": 102,
+"h": 130,
+"title": "Thongs / Tanga",
+"sub": "Pink · Brown"
+},
+{
+"img": "/images/collection/c24-12.webp",
+"w": 252,
+"h": 115,
+"title": "Intimates — flat lay",
+"sub": "Cream · Brown · Pink · Black"
+},
+{
+"img": "/images/collection/c24-13.webp",
+"w": 375,
+"h": 155,
+"title": "Intimate sets",
+"sub": "Cream · Brown · Pink · Burgundy"
+}
+]
+},
+{
+"n": 25,
+"title": "Underwear — Men (+1)",
+"items": [
+{
+"img": "/images/collection/c25-01.webp",
+"w": 275,
+"h": 132,
+"title": "Boxer Briefs · Trunks · Classic Boxers",
+"sub": "Cream · Brown · Grey · Black"
+},
+{
+"img": "/images/collection/c25-02.webp",
+"w": 212,
+"h": 165,
+"title": "Boxer Briefs & Trunks",
+"sub": "Cream · Brown · Pink · Black · Grey"
+},
+{
+"img": "/images/collection/c25-03.webp",
+"w": 232,
+"h": 68,
+"title": "Boxer Briefs · Trunks · Classic Boxers",
+"sub": "Cream · Brown · Black · Pink"
+},
+{
+"img": "/images/collection/c25-04.webp",
+"w": 225,
+"h": 115,
+"title": "Boxers & trunks — flat lay",
+"sub": "Black · Grey · Brown · Cream"
+},
+{
+"img": "/images/collection/c25-05.webp",
+"w": 220,
+"h": 155,
+"title": "Boxers & trunks",
+"sub": "Cream · Brown · Grey · Black · Pink"
+}
+]
+},
+{
+"n": 26,
+"title": "Socks",
+"items": [
+{
+"img": "/images/collection/c26-01.webp",
+"w": 165,
+"h": 135,
+"title": "Crew Socks (Unisex)",
+"sub": "Cream · Brown · Pink · Black"
+},
+{
+"img": "/images/collection/c26-02.webp",
+"w": 127,
+"h": 165,
+"title": "Crew Socks (Unisex)",
+"sub": "Cream · Pink · Black"
+},
+{
+"img": "/images/collection/c26-03.webp",
+"w": 140,
+"h": 66,
+"title": "Crew Socks (Unisex)",
+"sub": "Cream · Brown · Pink"
+},
+{
+"img": "/images/collection/c26-04.webp",
+"w": 195,
+"h": 115,
+"title": "Crew socks — spec sheet",
+"sub": "Cream · Brown · Black · Pink"
+},
+{
+"img": "/images/collection/c26-05.webp",
+"w": 220,
+"h": 155,
+"title": "Crew socks with hearts",
+"sub": "Cream · Burgundy · Pink · Black"
+}
+]
+},
+{
+"n": 27,
+"title": "Footwear",
+"items": [
+{
+"img": "/images/collection/c27-01.webp",
+"w": 190,
+"h": 64,
+"title": "Slides",
+"sub": "Cream · Brown · Pink"
+},
+{
+"img": "/images/collection/c27-02.webp",
+"w": 190,
+"h": 70,
+"title": "Plush Slippers",
+"sub": "Cream · Brown · Pink"
+},
+{
+"img": "/images/collection/c27-03.webp",
+"w": 300,
+"h": 85,
+"title": "Slides — flat lay",
+"sub": "Cream · Brown"
+},
+{
+"img": "/images/collection/c27-04.webp",
+"w": 250,
+"h": 85,
+"title": "Plush slippers — flat lay",
+"sub": "Cream · Brown"
+},
+{
+"img": "/images/collection/c27-05.webp",
+"w": 225,
+"h": 155,
+"title": "Slides",
+"sub": "Cream · Brown · Black"
+},
+{
+"img": "/images/collection/c27-06.webp",
+"w": 210,
+"h": 155,
+"title": "Plush slippers",
+"sub": "Cream · Brown"
+}
+]
+},
+{
+"n": 28,
+"title": "Headwear",
+"items": [
+{
+"img": "/images/collection/c28-01.webp",
+"w": 190,
+"h": 78,
+"title": "Baseball Caps",
+"sub": "Brown · Cream · Black"
+},
+{
+"img": "/images/collection/c28-02.webp",
+"w": 200,
+"h": 72,
+"title": "Baseball Cap & Bucket Hat",
+"sub": "Cream · Pink · Black"
+}
+]
+},
+{
+"n": 29,
+"title": "Accessories",
+"items": [
+{
+"img": "/images/collection/c29-01.webp",
+"w": 100,
+"h": 85,
+"title": "Cap",
+"sub": "Brown · Cream · Pink"
+},
+{
+"img": "/images/collection/c29-02.webp",
+"w": 100,
+"h": 85,
+"title": "Tote Bag",
+"sub": "Cream · Brown · Pink"
+},
+{
+"img": "/images/collection/c29-03.webp",
+"w": 100,
+"h": 85,
+"title": "Tumbler / Cup",
+"sub": "Brown · Cream · Pink"
+},
+{
+"img": "/images/collection/c29-04.webp",
+"w": 100,
+"h": 85,
+"title": "Socks",
+"sub": "Cream · Brown"
+},
+{
+"img": "/images/collection/c29-05.webp",
+"w": 100,
+"h": 70,
+"title": "Notebook",
+"sub": "Brown · Pink · Cream"
+},
+{
+"img": "/images/collection/c29-06.webp",
+"w": 100,
+"h": 70,
+"title": "Phone Case",
+"sub": "Cream · Brown · Pink"
+},
+{
+"img": "/images/collection/c29-07.webp",
+"w": 100,
+"h": 70,
+"title": "Keychain",
+"sub": "Gold · Brown · Pink"
+},
+{
+"img": "/images/collection/c29-08.webp",
+"w": 100,
+"h": 70,
+"title": "Scrunchie",
+"sub": "Brown · Pink · Cream"
+},
+{
+"img": "/images/collection/c29-09.webp",
+"w": 232,
+"h": 180,
+"title": "Accessories Set",
+"sub": "Cap, tote, tumbler, scrunchie, notebook, keychain"
+},
+{
+"img": "/images/collection/c29-10.webp",
+"w": 88,
+"h": 90,
+"title": "Caps",
+"sub": "Brown · Pink"
+},
+{
+"img": "/images/collection/c29-11.webp",
+"w": 170,
+"h": 90,
+"title": "Tote Bags",
+"sub": "Cream"
+},
+{
+"img": "/images/collection/c29-12.webp",
+"w": 88,
+"h": 90,
+"title": "Bags",
+"sub": "Espresso bow bag"
+},
+{
+"img": "/images/collection/c29-13.webp",
+"w": 92,
+"h": 90,
+"title": "Phone Cases",
+"sub": "Cream · Pink"
+},
+{
+"img": "/images/collection/c29-14.webp",
+"w": 66,
+"h": 90,
+"title": "Tumblers",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c29-15.webp",
+"w": 80,
+"h": 90,
+"title": "Keychains",
+"sub": "Gold · Brown · Pink"
+},
+{
+"img": "/images/collection/c29-16.webp",
+"w": 118,
+"h": 90,
+"title": "Sunglasses",
+"sub": "Brown · Black"
+},
+{
+"img": "/images/collection/c29-17.webp",
+"w": 102,
+"h": 90,
+"title": "Sunglasses",
+"sub": "Brown"
+},
+{
+"img": "/images/collection/c29-18.webp",
+"w": 85,
+"h": 90,
+"title": "Notebooks",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c29-19.webp",
+"w": 302,
+"h": 68,
+"title": "Accessories & Extras",
+"sub": "Scrunchies, claw clips, sunglasses, phone case, keychains"
+},
+{
+"img": "/images/collection/c29-20.webp",
+"w": 367,
+"h": 76,
+"title": "Accessories & Extras",
+"sub": "Totes, scrunchies, claw clips, phone cases, tumblers"
+},
+{
+"img": "/images/collection/c29-21.webp",
+"w": 455,
+"h": 135,
+"title": "Accessories",
+"sub": "Cap · bucket hat · beanie · phone case · notebook · tumbler"
+}
+]
+},
+{
+"n": 30,
+"title": "Gift Bundles",
+"items": [
+{
+"img": "/images/collection/c30-01.webp",
+"w": 145,
+"h": 58,
+"title": "Her + Him Bundle",
+"sub": ""
+},
+{
+"img": "/images/collection/c30-02.webp",
+"w": 125,
+"h": 58,
+"title": "Comfort Box",
+"sub": ""
+},
+{
+"img": "/images/collection/c30-03.webp",
+"w": 135,
+"h": 58,
+"title": "Self Care Box",
+"sub": ""
+},
+{
+"img": "/images/collection/c30-04.webp",
+"w": 130,
+"h": 58,
+"title": "Gift Card",
+"sub": ""
+}
+]
+},
+{
+"n": 31,
+"title": "Back Views",
+"items": [
+{
+"img": "/images/collection/c31-01.webp",
+"w": 195,
+"h": 56,
+"title": "T-Shirt Back Examples",
+"sub": "Coffee Girl · 37 Places · Good Girls"
+},
+{
+"img": "/images/collection/c31-02.webp",
+"w": 105,
+"h": 56,
+"title": "Varsity Jacket Back",
+"sub": "Burgundy / cream"
+},
+{
+"img": "/images/collection/c31-03.webp",
+"w": 293,
+"h": 165,
+"title": "T-shirt back-print grid",
+"sub": "37 Places · Good Girls · Overthink · Essential · Same Girl"
+},
+{
+"img": "/images/collection/c31-04.webp",
+"w": 422,
+"h": 345,
+"title": "Hoodie — Back Artwork",
+"sub": "Coffee Girl · Caffeine & Thoughts · Bow"
+},
+{
+"img": "/images/collection/c31-05.webp",
+"w": 422,
+"h": 345,
+"title": "Joggers — Back Detail",
+"sub": "Pocket heart + wordmark"
+},
+{
+"img": "/images/collection/c31-06.webp",
+"w": 420,
+"h": 345,
+"title": "Outerwear — Back Graphic",
+"sub": "Puffer wordmark · denim illustration · heart"
+}
+]
+},
+{
+"n": 32,
+"title": "Men's +1 Extensions",
+"items": [
+{
+"img": "/images/collection/c32-01.webp",
+"w": 243,
+"h": 265,
+"title": "Men's Overshirt",
+"sub": "Espresso, back wordmark +1"
+},
+{
+"img": "/images/collection/c32-02.webp",
+"w": 250,
+"h": 265,
+"title": "Men's Crew Knit",
+"sub": "Oatmeal, +1 heart"
+},
+{
+"img": "/images/collection/c32-03.webp",
+"w": 253,
+"h": 265,
+"title": "Men's Lounge Set",
+"sub": "Espresso tee + shorts"
+},
+{
+"img": "/images/collection/c32-04.webp",
+"w": 250,
+"h": 265,
+"title": "Men's Relaxed Jeans",
+"sub": "Leather patch, pocket heart"
+},
+{
+"img": "/images/collection/c32-05.webp",
+"w": 232,
+"h": 265,
+"title": "Men's Going-Out Shirt",
+"sub": "Burgundy, \"+1 Good Company\""
+}
+]
+},
+{
+"n": 33,
+"title": "Fit Guide",
+"items": [
+{
+"img": "/images/collection/c33-01.webp",
+"w": 375,
+"h": 255,
+"title": "Fit Guide — Tees",
+"sub": "Baby · Regular · Oversized · side & back"
+},
+{
+"img": "/images/collection/c33-02.webp",
+"w": 325,
+"h": 255,
+"title": "Fit Guide — Hoodies & Sets",
+"sub": "Front · side · back"
+},
+{
+"img": "/images/collection/c33-03.webp",
+"w": 262,
+"h": 92,
+"title": "Fit options — Regular · Oversized · Baby Tee",
+"sub": ""
+}
+]
+},
+{
+"n": 34,
+"title": "Seasonal Colourways",
+"items": [
+{
+"img": "/images/collection/c34-01.webp",
+"w": 170,
+"h": 185,
+"title": "Essential Tee — Sage",
+"sub": "Front & back"
+},
+{
+"img": "/images/collection/c34-02.webp",
+"w": 170,
+"h": 185,
+"title": "Classic Hoodie — Butter",
+"sub": "Front & back (bow)"
+},
+{
+"img": "/images/collection/c34-03.webp",
+"w": 170,
+"h": 185,
+"title": "Jogger Set — Sage",
+"sub": ""
+}
+]
+},
+{
+"n": 35,
+"title": "Bags & Travel",
+"items": [
+{
+"img": "/images/collection/c35-01.webp",
+"w": 430,
+"h": 112,
+"title": "Tote · Mini Bag · Backpack · Travel Pouch · Toiletry Bag · Luggage Tag",
+"sub": "Cream · Brown · Black · Pink"
+},
+{
+"img": "/images/collection/c35-02.webp",
+"w": 85,
+"h": 90,
+"title": "Passport Holder",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c35-03.webp",
+"w": 110,
+"h": 90,
+"title": "Laptop Sleeve",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c35-04.webp",
+"w": 118,
+"h": 90,
+"title": "Travel Pouch",
+"sub": "Dusty pink"
+},
+{
+"img": "/images/collection/c35-05.webp",
+"w": 245,
+"h": 85,
+"title": "Bags & travel set",
+"sub": "Espresso"
+},
+{
+"img": "/images/collection/c35-06.webp",
+"w": 430,
+"h": 135,
+"title": "Bags & travel",
+"sub": "Tote · crossbody · backpack · pouch · tag"
+}
+]
+},
+{
+"n": 36,
+"title": "Beauty & Hair Accessories",
+"items": [
+{
+"img": "/images/collection/c36-01.webp",
+"w": 300,
+"h": 112,
+"title": "Scrunchies · Claw Clip · Satin Bonnet · Headband",
+"sub": ""
+},
+{
+"img": "/images/collection/c36-02.webp",
+"w": 90,
+"h": 90,
+"title": "Scrunchies & Hair Clips",
+"sub": "Brown · Cream"
+},
+{
+"img": "/images/collection/c36-03.webp",
+"w": 245,
+"h": 85,
+"title": "Scrunchies — flat lay",
+"sub": "Cream · Brown · Pink · Burgundy"
+},
+{
+"img": "/images/collection/c36-04.webp",
+"w": 220,
+"h": 155,
+"title": "Satin scrunchies",
+"sub": "Cream · Pink · Burgundy"
+}
+]
+},
+{
+"n": 37,
+"title": "Jewellery & Extras",
+"items": [
+{
+"img": "/images/collection/c37-01.webp",
+"w": 255,
+"h": 112,
+"title": "Necklaces · Bracelets · Earrings · Rings",
+"sub": "Gold · Rose Gold · Silver"
+},
+{
+"img": "/images/collection/c37-02.webp",
+"w": 110,
+"h": 90,
+"title": "Jewellery",
+"sub": "Gold heart necklaces"
+},
+{
+"img": "/images/collection/c37-03.webp",
+"w": 184,
+"h": 90,
+"title": "Others",
+"sub": "Earrings · notebooks · cards"
+},
+{
+"img": "/images/collection/c37-04.webp",
+"w": 195,
+"h": 85,
+"title": "Jewellery & extras",
+"sub": "Gold · cap · keychain"
+},
+{
+"img": "/images/collection/c37-05.webp",
+"w": 190,
+"h": 135,
+"title": "Jewellery",
+"sub": "Gold heart necklace · hoops · bracelet"
+}
+]
+},
+{
+"n": 38,
+"title": "The Essential Tee",
+"items": [
+{
+"img": "/images/collection/c38-01.webp",
+"w": 612,
+"h": 740,
+"title": "Hero — front & back",
+"sub": "Cream, embroidered logo"
+},
+{
+"img": "/images/collection/c38-02.webp",
+"w": 280,
+"h": 248,
+"title": "Embroidered logo (chest)",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-03.webp",
+"w": 280,
+"h": 250,
+"title": "Back detail",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-04.webp",
+"w": 280,
+"h": 228,
+"title": "Signature tab detail",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-05.webp",
+"w": 184,
+"h": 230,
+"title": "Brown",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-06.webp",
+"w": 184,
+"h": 230,
+"title": "Black",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-07.webp",
+"w": 184,
+"h": 230,
+"title": "Dusty Pink",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-08.webp",
+"w": 350,
+"h": 400,
+"title": "Everyday fit",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-09.webp",
+"w": 335,
+"h": 400,
+"title": "The Men — Same Energy",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-10.webp",
+"w": 335,
+"h": 400,
+"title": "Couple Look",
+"sub": ""
+},
+{
+"img": "/images/collection/c38-11.webp",
+"w": 339,
+"h": 400,
+"title": "Full Collection",
+"sub": ""
+}
+]
+},
+{
+"n": 39,
+"title": "Capsule Collection",
+"items": [
+{
+"img": "/images/collection/c39-01.webp",
+"w": 280,
+"h": 295,
+"title": "01 The Essential",
+"sub": "Oversized Tee — front & back"
+},
+{
+"img": "/images/collection/c39-02.webp",
+"w": 255,
+"h": 295,
+"title": "02 Coffee & Thoughts",
+"sub": "Oversized Tee / Hoodie"
+},
+{
+"img": "/images/collection/c39-03.webp",
+"w": 260,
+"h": 295,
+"title": "03 Mentally in 37 Places",
+"sub": "Oversized Tee / Hoodie"
+},
+{
+"img": "/images/collection/c39-04.webp",
+"w": 250,
+"h": 295,
+"title": "04 Girlogy University",
+"sub": "Hoodie / Sweatshirt"
+},
+{
+"img": "/images/collection/c39-05.webp",
+"w": 242,
+"h": 295,
+"title": "05 Soft Girl Energy",
+"sub": "Oversized Tee / Baby Tee"
+},
+{
+"img": "/images/collection/c39-06.webp",
+"w": 280,
+"h": 335,
+"title": "The Essential — worn",
+"sub": ""
+},
+{
+"img": "/images/collection/c39-07.webp",
+"w": 255,
+"h": 335,
+"title": "Coffee & Thoughts — worn",
+"sub": ""
+},
+{
+"img": "/images/collection/c39-08.webp",
+"w": 260,
+"h": 335,
+"title": "Mentally in 37 Places — worn",
+"sub": ""
+},
+{
+"img": "/images/collection/c39-09.webp",
+"w": 250,
+"h": 335,
+"title": "Girlogy University — worn",
+"sub": ""
+},
+{
+"img": "/images/collection/c39-10.webp",
+"w": 242,
+"h": 335,
+"title": "Soft Girl Energy — worn",
+"sub": ""
+},
+{
+"img": "/images/collection/c39-11.webp",
+"w": 135,
+"h": 160,
+"title": "Hoodie (Classic)",
+"sub": ""
+},
+{
+"img": "/images/collection/c39-12.webp",
+"w": 125,
+"h": 160,
+"title": "Sweatshirt (Everyday)",
+"sub": ""
+},
+{
+"img": "/images/collection/c39-13.webp",
+"w": 125,
+"h": 160,
+"title": "Baby Tee (Fitted)",
+"sub": ""
+}
+]
+},
+{
+"n": 40,
+"title": "Details & Branding",
+"items": [
+{
+"img": "/images/collection/c40-01.webp",
+"w": 100,
+"h": 125,
+"title": "Embroidered Logo",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-02.webp",
+"w": 100,
+"h": 125,
+"title": "Woven Neck Label",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-03.webp",
+"w": 100,
+"h": 125,
+"title": "Branded Hang Tag",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-04.webp",
+"w": 100,
+"h": 125,
+"title": "Signature Patch",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-05.webp",
+"w": 105,
+"h": 125,
+"title": "Elastic Waistband",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-06.webp",
+"w": 150,
+"h": 125,
+"title": "Packaging Box",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-07.webp",
+"w": 142,
+"h": 150,
+"title": "Embroidered Logo (chest or sleeve)",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-08.webp",
+"w": 142,
+"h": 150,
+"title": "Woven Neck Label (premium feel)",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-09.webp",
+"w": 142,
+"h": 150,
+"title": "Signature Tab (subtle detail)",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-10.webp",
+"w": 142,
+"h": 150,
+"title": "Branded Hang Tag (recycled paper)",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-11.webp",
+"w": 86,
+"h": 70,
+"title": "Embroidered logo",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-12.webp",
+"w": 86,
+"h": 70,
+"title": "Woven label",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-13.webp",
+"w": 80,
+"h": 70,
+"title": "Signature patch",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-14.webp",
+"w": 88,
+"h": 70,
+"title": "Print example (back)",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-15.webp",
+"w": 78,
+"h": 70,
+"title": "Packaging box",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-16.webp",
+"w": 82,
+"h": 70,
+"title": "Hang tag",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-17.webp",
+"w": 100,
+"h": 70,
+"title": "Woven Neck Label",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-18.webp",
+"w": 90,
+"h": 70,
+"title": "Hang Tag",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-19.webp",
+"w": 105,
+"h": 70,
+"title": "Packaging Box",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-20.webp",
+"w": 112,
+"h": 70,
+"title": "Embossed Logo",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-21.webp",
+"w": 265,
+"h": 50,
+"title": "Logo & brand elements",
+"sub": "Wordmark · heart · g · outline heart"
+},
+{
+"img": "/images/collection/c40-22.webp",
+"w": 175,
+"h": 160,
+"title": "Lifestyle — branded cup",
+"sub": ""
+},
+{
+"img": "/images/collection/c40-23.webp",
+"w": 93,
+"h": 92,
+"title": "Sleeve Text",
+"sub": "Tee detail option"
+},
+{
+"img": "/images/collection/c40-24.webp",
+"w": 93,
+"h": 92,
+"title": "Sleeve Heart",
+"sub": "Tee detail option"
+},
+{
+"img": "/images/collection/c40-25.webp",
+"w": 93,
+"h": 92,
+"title": "Sleeve Icon",
+"sub": "Tee detail option"
+},
+{
+"img": "/images/collection/c40-26.webp",
+"w": 93,
+"h": 92,
+"title": "Sleeve Bow",
+"sub": "Tee detail option"
+},
+{
+"img": "/images/collection/c40-27.webp",
+"w": 93,
+"h": 92,
+"title": "Back Neck Icon",
+"sub": "Tee detail option"
+},
+{
+"img": "/images/collection/c40-28.webp",
+"w": 93,
+"h": 92,
+"title": "Back Neck Text",
+"sub": "Tee detail option"
+},
+{
+"img": "/images/collection/c40-29.webp",
+"w": 93,
+"h": 92,
+"title": "Woven Label",
+"sub": "Tee detail option"
+}
+]
+}
+]
+}
