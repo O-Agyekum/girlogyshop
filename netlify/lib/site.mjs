@@ -29,12 +29,14 @@ const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-");
 const visible = () => catalog.products.filter(p => p.visible !== false);
 export const hasSale = () => visible().some(p => p.was);
 const catsOf = d => catalog.deptCats[d] || [...new Set(catalog.products.map(p => p.cat))];
+/* departments currently open (catalog "depts"); "sale" only while a visible product has a "was" price */
+const deptOn = d => d === "sale" ? hasSale() : (catalog.depts || Object.keys(DEPTS)).includes(d);
 
 /** Every public address of the shop (for the sitemap). */
 export function allPaths() {
   const paths = ["/", "/shop"];
   for (const [d, { slug: s }] of Object.entries(DEPTS)) {
-    if (d === "sale" && !hasSale()) continue;
+    if (!deptOn(d)) continue;
     paths.push("/" + s);
     for (const c of catalog.deptCats[d] || []) paths.push(`/${s}/${slug(c)}`);
   }
@@ -67,7 +69,7 @@ export function describe(pathname) {
   const entry = Object.entries(DEPTS).find(([, v]) => v.slug === parts[0]);
   if (entry && parts.length <= 2) {
     const [d, { name }] = entry;
-    if (d === "sale" && !hasSale()) return null;
+    if (!deptOn(d)) return null;
     const c = parts[1] ? catsOf(d).find(x => slug(x) === parts[1]) : "all";
     if (!c) return null;
     return { ...base, title: `${c === "all" ? name : `${c} · ${name}`} · ${BRAND}` };

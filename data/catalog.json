@@ -17,7 +17,9 @@
   "butter": "#F2DFA0",
   "denim": "#B9CDE0",
   "white": "#FAF7F3",
-  "gold": "#C9A227"
+  "gold": "#C9A227",
+  "burgundy": "#6E232F",
+  "oatmeal": "#D9CFC1"
  },
  "sizes": {
   "apparel": [
@@ -206,8 +208,8 @@
  },
  "deptCats": {
   "her": [
-   "Tops",
-   "Bottoms",
+   "T-shirts",
+   "Hoodies",
    "Sets",
    "Outerwear"
   ],
@@ -258,7 +260,8 @@
     "/images/products/tee-black-1.webp",
     "/images/products/tee-black-2.webp",
     "/images/products/tee-black-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "tee-colors",
@@ -298,7 +301,8 @@
     "/images/products/tee-colors-1.webp",
     "/images/products/tee-colors-2.webp",
     "/images/products/tee-colors-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "hoodie-cream",
@@ -337,7 +341,8 @@
     "/images/products/hoodie-cream-1.webp",
     "/images/products/hoodie-cream-2.webp",
     "/images/products/hoodie-cream-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "crewneck-rust",
@@ -374,7 +379,8 @@
     "/images/products/crewneck-rust-1.webp",
     "/images/products/crewneck-rust-2.webp",
     "/images/products/crewneck-rust-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "tote",
@@ -410,7 +416,8 @@
     "/images/products/tote-1.webp",
     "/images/products/tote-2.webp",
     "/images/products/tote-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "mug",
@@ -446,7 +453,8 @@
     "/images/products/mug-1.webp",
     "/images/products/mug-2.webp",
     "/images/products/mug-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "po-tee",
@@ -483,7 +491,8 @@
     "/images/products/po-tee-1.webp",
     "/images/products/po-tee-2.webp",
     "/images/products/po-tee-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "po-hoodie",
@@ -520,7 +529,8 @@
     "/images/products/po-hoodie-1.webp",
     "/images/products/po-hoodie-2.webp",
     "/images/products/po-hoodie-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "po-cap",
@@ -556,7 +566,8 @@
     "/images/products/po-cap-1.webp",
     "/images/products/po-cap-2.webp",
     "/images/products/po-cap-3.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "heart-tee",
@@ -613,7 +624,8 @@
      "/images/products/heart-tee-3.webp"
     ]
    },
-   "isNew": 1
+   "isNew": 1,
+   "visible": false
   },
   {
    "id": "heart-hoodie",
@@ -670,7 +682,8 @@
      "/images/products/heart-hoodie-3.webp"
     ]
    },
-   "isNew": 1
+   "isNew": 1,
+   "visible": false
   },
   {
    "id": "heart-sweatpants",
@@ -727,7 +740,8 @@
      "/images/products/heart-sweatpants-3.webp"
     ]
    },
-   "isNew": 1
+   "isNew": 1,
+   "visible": false
   },
   {
    "id": "varsity-jacket-noir",
@@ -767,7 +781,8 @@
     "/images/products/varsity-jacket-noir-2.webp",
     "/images/products/varsity-jacket-noir-3.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "varsity-jacket-cocoa",
@@ -807,7 +822,8 @@
     "/images/products/varsity-jacket-cocoa-2.webp",
     "/images/products/varsity-jacket-cocoa-3.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "varsity-jacket-sage",
@@ -847,7 +863,8 @@
     "/images/products/varsity-jacket-sage-2.webp",
     "/images/products/varsity-jacket-sage-3.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "varsity-jacket-blush",
@@ -887,7 +904,8 @@
     "/images/products/varsity-jacket-blush-2.webp",
     "/images/products/varsity-jacket-blush-3.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "varsity-jacket-butter",
@@ -927,7 +945,8 @@
     "/images/products/varsity-jacket-butter-2.webp",
     "/images/products/varsity-jacket-butter-3.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "varsity-jacket-rust",
@@ -967,7 +986,8 @@
     "/images/products/varsity-jacket-rust-2.webp",
     "/images/products/varsity-jacket-rust-3.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "varsity-jacket-mono",
@@ -1007,7 +1027,8 @@
     "/images/products/varsity-jacket-mono-2.webp",
     "/images/products/varsity-jacket-mono-3.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "varsity-jacket-denim",
@@ -1047,7 +1068,8 @@
     "/images/products/varsity-jacket-denim-2.webp",
     "/images/products/varsity-jacket-denim-3.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "duo-sage-women",
@@ -1085,7 +1107,8 @@
     "/images/products/duo-sage-women-1.webp",
     "/images/products/duo-sage-women-2.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "duo-sage-men",
@@ -1123,7 +1146,8 @@
     "/images/products/duo-sage-men-1.webp",
     "/images/products/duo-sage-men-2.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "duo-noir-women",
@@ -1161,7 +1185,8 @@
     "/images/products/duo-noir-women-1.webp",
     "/images/products/duo-noir-women-2.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "duo-noir-men",
@@ -1199,7 +1224,8 @@
     "/images/products/duo-noir-men-1.webp",
     "/images/products/duo-noir-men-2.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "duo-cocoa-women",
@@ -1237,7 +1263,8 @@
     "/images/products/duo-cocoa-women-1.webp",
     "/images/products/duo-cocoa-women-2.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "duo-cocoa-men",
@@ -1275,7 +1302,8 @@
     "/images/products/duo-cocoa-men-1.webp",
     "/images/products/duo-cocoa-men-2.webp"
    ],
-   "pod": false
+   "pod": false,
+   "visible": false
   },
   {
    "id": "big-g-tee",
@@ -1314,7 +1342,8 @@
    },
    "images": [
     "/images/products/big-g-tee-1.webp"
-   ]
+   ],
+   "visible": false
   },
   {
    "id": "ringer-baby-tee",
@@ -1353,109 +1382,811 @@
    },
    "images": [
     "/images/products/ringer-baby-tee-1.webp"
+   ],
+   "visible": false
+  },
+  {
+   "id": "tee-essential",
+   "dept": "her",
+   "cat": "T-shirts",
+   "shape": "tee",
+   "colors": [
+    "cream",
+    "chocolate",
+    "black"
+   ],
+   "sk": "apparel",
+   "price": 32,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 400,
+   "photoColor": "cream",
+   "det": [
+    "Heavyweight cotton, relaxed fit",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "The Essential Tee",
+     "The girlogy wordmark on the chest, \"the study of being a girl\" underneath. The one you reach for every day."
+    ],
+    "fr": [
+     "Le T-shirt Essentiel",
+     "Le logo girlogy sur la poitrine, « the study of being a girl » juste en dessous. Celui qu'on porte tous les jours."
+    ],
+    "es": [
+     "La Camiseta Esencial",
+     "El logo girlogy en el pecho, «the study of being a girl» debajo. La de todos los días."
+    ]
+   },
+   "images": [
+    "/images/products/tee-essential-1.webp",
+    "/images/products/tee-essential-2.webp"
+   ]
+  },
+  {
+   "id": "tee-coffee",
+   "dept": "her",
+   "cat": "T-shirts",
+   "shape": "tee",
+   "colors": [
+    "cream",
+    "blush",
+    "black"
+   ],
+   "sk": "apparel",
+   "price": 32,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 398,
+   "photoColor": "cream",
+   "det": [
+    "Heavyweight cotton, relaxed fit",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "Caffeine & Complicated Thoughts Tee",
+     "Coffee girl illustration with the title above, and the large illustration printed on the back."
+    ],
+    "fr": [
+     "T-shirt Caffeine & Complicated Thoughts",
+     "Illustration coffee girl avec le titre au-dessus, et la grande illustration imprimée dans le dos."
+    ],
+    "es": [
+     "Camiseta Caffeine & Complicated Thoughts",
+     "Ilustración coffee girl con el título encima, y la ilustración grande impresa en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/tee-coffee-1.webp",
+    "/images/products/tee-coffee-2.webp"
+   ]
+  },
+  {
+   "id": "tee-37-places",
+   "dept": "her",
+   "cat": "T-shirts",
+   "shape": "tee",
+   "colors": [
+    "chocolate",
+    "black",
+    "cream"
+   ],
+   "sk": "apparel",
+   "price": 32,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 396,
+   "photoColor": "chocolate",
+   "det": [
+    "Heavyweight cotton, relaxed fit",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "Mentally in 37 Places Tee",
+     "The checklist: coffee, career, travel, money, overthinking, happiness, and… Illustration on the back."
+    ],
+    "fr": [
+     "T-shirt Mentally in 37 Places",
+     "La checklist : coffee, career, travel, money, overthinking, happiness, and… Illustration dans le dos."
+    ],
+    "es": [
+     "Camiseta Mentally in 37 Places",
+     "La checklist: coffee, career, travel, money, overthinking, happiness, and… Ilustración en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/tee-37-places-1.webp",
+    "/images/products/tee-37-places-2.webp"
+   ]
+  },
+  {
+   "id": "tee-university",
+   "dept": "her",
+   "cat": "T-shirts",
+   "shape": "tee",
+   "colors": [
+    "cream",
+    "burgundy",
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": 32,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 394,
+   "photoColor": "cream",
+   "det": [
+    "Heavyweight cotton, relaxed fit",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "Girlogy University Tee",
+     "Collegiate crest: Department of Feelings, Fashion & Figuring It Out."
+    ],
+    "fr": [
+     "T-shirt Girlogy University",
+     "Blason universitaire : Department of Feelings, Fashion & Figuring It Out."
+    ],
+    "es": [
+     "Camiseta Girlogy University",
+     "Escudo universitario: Department of Feelings, Fashion & Figuring It Out."
+    ]
+   },
+   "images": [
+    "/images/products/tee-university-1.webp"
+   ]
+  },
+  {
+   "id": "tee-soft-girl",
+   "dept": "her",
+   "cat": "T-shirts",
+   "shape": "tee",
+   "colors": [
+    "blush",
+    "cream",
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": 32,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 392,
+   "photoColor": "blush",
+   "det": [
+    "Heavyweight cotton, relaxed fit",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "Soft Girl Energy Tee",
+     "\"Soft Girl, Strong Opinions.\" with a little bow. Says it all."
+    ],
+    "fr": [
+     "T-shirt Soft Girl Energy",
+     "« Soft Girl, Strong Opinions. » avec un petit nœud. Tout est dit."
+    ],
+    "es": [
+     "Camiseta Soft Girl Energy",
+     "«Soft Girl, Strong Opinions.» con un lacito. Lo dice todo."
+    ]
+   },
+   "images": [
+    "/images/products/tee-soft-girl-1.webp"
+   ]
+  },
+  {
+   "id": "tee-overthink",
+   "dept": "her",
+   "cat": "T-shirts",
+   "shape": "tee",
+   "colors": [
+    "black",
+    "cream",
+    "blush"
+   ],
+   "sk": "apparel",
+   "price": 32,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 390,
+   "photoColor": "black",
+   "det": [
+    "Heavyweight cotton, relaxed fit",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "The Overthink Club Tee",
+     "Membership is automatic. Small girlogy under the title."
+    ],
+    "fr": [
+     "T-shirt The Overthink Club",
+     "L'adhésion est automatique. Petit girlogy sous le titre."
+    ],
+    "es": [
+     "Camiseta The Overthink Club",
+     "La inscripción es automática. Pequeño girlogy bajo el título."
+    ]
+   },
+   "images": [
+    "/images/products/tee-overthink-1.webp"
+   ]
+  },
+  {
+   "id": "tee-good-girls",
+   "dept": "her",
+   "cat": "T-shirts",
+   "shape": "tee",
+   "colors": [
+    "cream",
+    "chocolate",
+    "blush"
+   ],
+   "sk": "apparel",
+   "price": 32,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 388,
+   "photoColor": "cream",
+   "det": [
+    "Heavyweight cotton, relaxed fit",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "Good Girls Go Everywhere Tee",
+     "Vintage car illustration under the title; the travel illustration printed large on the back."
+    ],
+    "fr": [
+     "T-shirt Good Girls Go Everywhere",
+     "Voiture vintage sous le titre ; l'illustration voyage imprimée en grand dans le dos."
+    ],
+    "es": [
+     "Camiseta Good Girls Go Everywhere",
+     "Coche vintage bajo el título; la ilustración de viaje impresa en grande en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/tee-good-girls-1.webp",
+    "/images/products/tee-good-girls-2.webp"
+   ]
+  },
+  {
+   "id": "hoodie-classic",
+   "dept": "her",
+   "cat": "Hoodies",
+   "shape": "hoodie",
+   "colors": [
+    "cream",
+    "chocolate",
+    "black"
+   ],
+   "sk": "apparel",
+   "price": 68,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 380,
+   "photoColor": "cream",
+   "det": [
+    "Brushed fleece, relaxed fit",
+    "Hood with drawcord, kangaroo pocket",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "The Classic Hoodie",
+     "The girlogy wordmark, big on the chest, with the tagline underneath. Warm thoughts for cooler days."
+    ],
+    "fr": [
+     "Le Hoodie Classique",
+     "Le logo girlogy en grand sur la poitrine, la signature en dessous. Des pensées chaudes pour les jours frais."
+    ],
+    "es": [
+     "La Sudadera Clásica",
+     "El logo girlogy grande en el pecho, con el lema debajo. Pensamientos cálidos para días frescos."
+    ]
+   },
+   "images": [
+    "/images/products/hoodie-classic-1.webp",
+    "/images/products/hoodie-classic-2.webp",
+    "/images/products/hoodie-classic-3.webp"
+   ]
+  },
+  {
+   "id": "hoodie-coffee",
+   "dept": "her",
+   "cat": "Hoodies",
+   "shape": "hoodie",
+   "colors": [
+    "chocolate",
+    "cream",
+    "blush"
+   ],
+   "sk": "apparel",
+   "price": 68,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 378,
+   "photoColor": "chocolate",
+   "det": [
+    "Brushed fleece, relaxed fit",
+    "Hood with drawcord, kangaroo pocket",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "Coffee Hoodie",
+     "The Caffeine & Complicated Thoughts illustration, full front."
+    ],
+    "fr": [
+     "Hoodie Coffee",
+     "L'illustration Caffeine & Complicated Thoughts, en grand sur le devant."
+    ],
+    "es": [
+     "Sudadera Coffee",
+     "La ilustración Caffeine & Complicated Thoughts, a toda la parte delantera."
+    ]
+   },
+   "images": [
+    "/images/products/hoodie-coffee-1.webp",
+    "/images/products/hoodie-coffee-2.webp"
+   ]
+  },
+  {
+   "id": "hoodie-heart",
+   "dept": "her",
+   "cat": "Hoodies",
+   "shape": "hoodie",
+   "colors": [
+    "blush",
+    "cream",
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": 68,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 376,
+   "photoColor": "blush",
+   "det": [
+    "Brushed fleece, relaxed fit",
+    "Hood with drawcord, kangaroo pocket",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "Heart Hoodie",
+     "Small girlogy on the chest with hearts. Quiet and soft."
+    ],
+    "fr": [
+     "Hoodie Cœur",
+     "Petit girlogy sur la poitrine avec des cœurs. Discret et doux."
+    ],
+    "es": [
+     "Sudadera Corazón",
+     "Pequeño girlogy en el pecho con corazones. Discreta y suave."
+    ]
+   },
+   "images": [
+    "/images/products/hoodie-heart-1.webp"
+   ]
+  },
+  {
+   "id": "hoodie-37-places",
+   "dept": "her",
+   "cat": "Hoodies",
+   "shape": "hoodie",
+   "colors": [
+    "black",
+    "cream",
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": 68,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 374,
+   "photoColor": "black",
+   "det": [
+    "Brushed fleece, relaxed fit",
+    "Hood with drawcord, kangaroo pocket",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "37 Places Hoodie",
+     "\"Mentally in 37 Places.\" across the chest. For the days with too many tabs open."
+    ],
+    "fr": [
+     "Hoodie 37 Places",
+     "« Mentally in 37 Places. » sur la poitrine. Pour les jours à trop d'onglets ouverts."
+    ],
+    "es": [
+     "Sudadera 37 Places",
+     "«Mentally in 37 Places.» en el pecho. Para los días con demasiadas pestañas abiertas."
+    ]
+   },
+   "images": [
+    "/images/products/hoodie-37-places-1.webp"
+   ]
+  },
+  {
+   "id": "hoodie-university",
+   "dept": "her",
+   "cat": "Hoodies",
+   "shape": "hoodie",
+   "colors": [
+    "cream",
+    "burgundy",
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": 68,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 372,
+   "photoColor": "cream",
+   "det": [
+    "Brushed fleece, relaxed fit",
+    "Hood with drawcord, kangaroo pocket",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "University Hoodie",
+     "The Girlogy University crest, large on the front."
+    ],
+    "fr": [
+     "Hoodie University",
+     "Le blason Girlogy University, en grand sur le devant."
+    ],
+    "es": [
+     "Sudadera University",
+     "El escudo Girlogy University, grande en la parte delantera."
+    ]
+   },
+   "images": [
+    "/images/products/hoodie-university-1.webp"
+   ]
+  },
+  {
+   "id": "crewneck-self-love",
+   "dept": "her",
+   "cat": "Hoodies",
+   "shape": "hoodie",
+   "colors": [
+    "oatmeal",
+    "blush",
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": 62,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 370,
+   "photoColor": "oatmeal",
+   "det": [
+    "Brushed fleece, relaxed fit",
+    "Ribbed cuffs and hem",
+    "Printed to order",
+    "Machine wash cold, hang to dry"
+   ],
+   "txt": {
+    "en": [
+     "Self Love Crewneck",
+     "\"self love looks good on you.\" Crewneck sweatshirt, no hood."
+    ],
+    "fr": [
+     "Sweat Self Love",
+     "« self love looks good on you. » Sweat col rond, sans capuche."
+    ],
+    "es": [
+     "Sudadera Self Love",
+     "«self love looks good on you.» Sudadera de cuello redondo, sin capucha."
+    ]
+   },
+   "images": [
+    "/images/products/crewneck-self-love-1.webp"
+   ]
+  },
+  {
+   "id": "jogger-set-cream",
+   "dept": "her",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "cream"
+   ],
+   "sk": "apparel",
+   "price": null,
+   "pod": false,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 300,
+   "photoColor": "cream",
+   "det": [
+    "Hoodie + joggers",
+    "Embroidered girlogy",
+    "Details and sizes confirmed at launch"
+   ],
+   "txt": {
+    "en": [
+     "Jogger Set — Classic Cream",
+     "Hoodie and joggers in cream, girlogy on the chest and a heart on the leg."
+    ],
+    "fr": [
+     "Ensemble Jogging — Crème",
+     "Hoodie et jogging crème, girlogy sur la poitrine et un cœur sur la jambe."
+    ],
+    "es": [
+     "Conjunto Jogger — Crema",
+     "Sudadera y jogger en crema, girlogy en el pecho y un corazón en la pierna."
+    ]
+   },
+   "images": [
+    "/images/products/jogger-set-cream-1.webp",
+    "/images/products/jogger-set-cream-2.webp"
+   ]
+  },
+  {
+   "id": "jogger-set-brown",
+   "dept": "her",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": null,
+   "pod": false,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 298,
+   "photoColor": "chocolate",
+   "det": [
+    "Hoodie + joggers",
+    "Embroidered girlogy",
+    "Details and sizes confirmed at launch"
+   ],
+   "txt": {
+    "en": [
+     "Jogger Set — Chocolate Brown",
+     "Hoodie and joggers in chocolate brown, cream girlogy on the chest."
+    ],
+    "fr": [
+     "Ensemble Jogging — Chocolat",
+     "Hoodie et jogging chocolat, girlogy crème sur la poitrine."
+    ],
+    "es": [
+     "Conjunto Jogger — Chocolate",
+     "Sudadera y jogger en chocolate, girlogy crema en el pecho."
+    ]
+   },
+   "images": [
+    "/images/products/jogger-set-brown-1.webp"
+   ]
+  },
+  {
+   "id": "jogger-set-pink",
+   "dept": "her",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "blush"
+   ],
+   "sk": "apparel",
+   "price": null,
+   "pod": false,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 296,
+   "photoColor": "blush",
+   "det": [
+    "Cropped hoodie + joggers",
+    "Embroidered girlogy",
+    "Details and sizes confirmed at launch"
+   ],
+   "txt": {
+    "en": [
+     "Jogger Set — Dusty Pink",
+     "Cropped hoodie and joggers in dusty pink."
+    ],
+    "fr": [
+     "Ensemble Jogging — Rose poudré",
+     "Hoodie court et jogging rose poudré."
+    ],
+    "es": [
+     "Conjunto Jogger — Rosa empolvado",
+     "Sudadera corta y jogger en rosa empolvado."
+    ]
+   },
+   "images": [
+    "/images/products/jogger-set-pink-1.webp"
+   ]
+  },
+  {
+   "id": "jogger-set-black",
+   "dept": "her",
+   "cat": "Sets",
+   "shape": "set",
+   "colors": [
+    "black"
+   ],
+   "sk": "apparel",
+   "price": null,
+   "pod": false,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 294,
+   "photoColor": "black",
+   "det": [
+    "Cropped hoodie + joggers",
+    "Embroidered girlogy",
+    "Details and sizes confirmed at launch"
+   ],
+   "txt": {
+    "en": [
+     "Jogger Set — Black",
+     "Cropped hoodie and joggers in black, cream girlogy."
+    ],
+    "fr": [
+     "Ensemble Jogging — Noir",
+     "Hoodie court et jogging noirs, girlogy crème."
+    ],
+    "es": [
+     "Conjunto Jogger — Negro",
+     "Sudadera corta y jogger en negro, girlogy crema."
+    ]
+   },
+   "images": [
+    "/images/products/jogger-set-black-1.webp"
+   ]
+  },
+  {
+   "id": "varsity-classic",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "chocolate"
+   ],
+   "sk": "apparel",
+   "price": null,
+   "pod": false,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 290,
+   "photoColor": "chocolate",
+   "det": [
+    "Contrast sleeves, striped rib trims",
+    "Chenille G patch, embroidered girlogy",
+    "Back wordmark + tagline",
+    "Details and sizes confirmed at launch"
+   ],
+   "txt": {
+    "en": [
+     "Classic Varsity Jacket",
+     "Brown body, cream sleeves, chenille G and girlogy with a heart on the chest. GIRLOGY and the tagline across the back."
+    ],
+    "fr": [
+     "Veste Varsity Classique",
+     "Corps marron, manches crème, G en chenille et girlogy avec un cœur sur la poitrine. GIRLOGY et la signature dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity Clásica",
+     "Cuerpo marrón, mangas crema, G de chenilla y girlogy con un corazón en el pecho. GIRLOGY y el lema en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-classic-1.webp",
+    "/images/products/varsity-classic-2.webp",
+    "/images/products/varsity-classic-3.webp",
+    "/images/products/varsity-classic-4.webp"
+   ]
+  },
+  {
+   "id": "varsity-burgundy",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "burgundy"
+   ],
+   "sk": "apparel",
+   "price": null,
+   "pod": false,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 288,
+   "photoColor": "burgundy",
+   "det": [
+    "Contrast sleeves, striped rib trims",
+    "Chenille G patch, embroidered girlogy",
+    "Back wordmark + tagline",
+    "Details and sizes confirmed at launch"
+   ],
+   "txt": {
+    "en": [
+     "Burgundy Varsity Jacket",
+     "Burgundy body, cream sleeves, chenille G on the chest, GIRLOGY across the back."
+    ],
+    "fr": [
+     "Veste Varsity Bordeaux",
+     "Corps bordeaux, manches crème, G en chenille sur la poitrine, GIRLOGY dans le dos."
+    ],
+    "es": [
+     "Chaqueta Varsity Burdeos",
+     "Cuerpo burdeos, mangas crema, G de chenilla en el pecho, GIRLOGY en la espalda."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-burgundy-1.webp",
+    "/images/products/varsity-burgundy-2.webp",
+    "/images/products/varsity-burgundy-3.webp",
+    "/images/products/varsity-burgundy-4.webp",
+    "/images/products/varsity-burgundy-5.webp"
+   ]
+  },
+  {
+   "id": "varsity-black",
+   "dept": "her",
+   "cat": "Outerwear",
+   "shape": "jacket",
+   "colors": [
+    "black"
+   ],
+   "sk": "apparel",
+   "price": null,
+   "pod": false,
+   "badge": "b_new",
+   "isNew": 1,
+   "rank": 286,
+   "photoColor": "black",
+   "det": [
+    "Contrast sleeves, striped rib trims",
+    "Chenille G patch, embroidered girlogy",
+    "Details and sizes confirmed at launch"
+   ],
+   "txt": {
+    "en": [
+     "Black Varsity Jacket",
+     "Black body, cream sleeves, chenille G on the chest."
+    ],
+    "fr": [
+     "Veste Varsity Noire",
+     "Corps noir, manches crème, G en chenille sur la poitrine."
+    ],
+    "es": [
+     "Chaqueta Varsity Negra",
+     "Cuerpo negro, mangas crema, G de chenilla en el pecho."
+    ]
+   },
+   "images": [
+    "/images/products/varsity-black-1.webp",
+    "/images/products/varsity-black-2.webp",
+    "/images/products/varsity-black-3.webp"
    ]
   }
  ],
- "bundles": [
-  {
-   "id": "b-tees",
-   "hers": "tee-black",
-   "his": "po-tee",
-   "price": 58,
-   "txt": {
-    "en": [
-     "The Matching Tees",
-     "One wears the theory, one wears the consequence."
-    ],
-    "fr": [
-     "Les T-shirts Assortis",
-     "L'une porte la théorie, l'autre les conséquences."
-    ],
-    "es": [
-     "Las Camisetas a Juego",
-     "Una lleva la teoría, el otro las consecuencias."
-    ]
-   }
-  },
-  {
-   "id": "b-cozy",
-   "hers": "hoodie-cream",
-   "his": "po-hoodie",
-   "price": 104,
-   "txt": {
-    "en": [
-     "Cozy Sunday Duo",
-     "Matching fleece, opposite energy."
-    ],
-    "fr": [
-     "Duo Dimanche Cocooning",
-     "Même molleton, énergies opposées."
-    ],
-    "es": [
-     "Dúo Domingo Cozy",
-     "Misma felpa, energías opuestas."
-    ]
-   }
-  },
-  {
-   "id": "bundle-off-duty",
-   "hers": "duo-sage-women",
-   "his": "duo-sage-men",
-   "price": 228,
-   "txt": {
-    "en": [
-     "Off-Duty Club Couple",
-     "Two complete sage tracksuits: her wide-leg set and his straight-leg set. Four pieces, one coordinated look."
-    ],
-    "fr": [
-     "Le Duo Off-Duty Club",
-     "Deux survêtements sauge complets : son ensemble large et le sien, coupe droite. Quatre pièces, un look coordonné."
-    ],
-    "es": [
-     "Pareja Off-Duty Club",
-     "Dos chándales salvia completos: el de ella de pierna ancha y el de él recto. Cuatro piezas, un look coordinado."
-    ]
-   }
-  },
-  {
-   "id": "bundle-after-hours",
-   "hers": "duo-noir-women",
-   "his": "duo-noir-men",
-   "price": 216,
-   "txt": {
-    "en": [
-     "After Hours Couple",
-     "Two complete charcoal tracksuits with rust piping: her cropped hoodie and wide legs, his relaxed hoodie and tapered joggers."
-    ],
-    "fr": [
-     "Le Duo After Hours",
-     "Deux survêtements anthracite complets à passepoil rouille : pour elle, sweat court et jambes larges ; pour lui, sweat ample et jogging fuselé."
-    ],
-    "es": [
-     "Pareja After Hours",
-     "Dos chándales carbón completos con vivos óxido: para ella, sudadera corta y pierna ancha; para él, sudadera amplia y jogger entallado."
-    ]
-   }
-  },
-  {
-   "id": "bundle-cocoa-club",
-   "hers": "duo-cocoa-women",
-   "his": "duo-cocoa-men",
-   "price": 242,
-   "txt": {
-    "en": [
-     "Cocoa Club Couple",
-     "Two complete chocolate velour tracksuits with cream twin stripes. Her flared trousers, his straight legs; matching zip hoodies."
-    ],
-    "fr": [
-     "Le Duo Cocoa Club",
-     "Deux survêtements chocolat effet velours à doubles bandes crème. Pantalon évasé pour elle, droit pour lui ; sweats zippés assortis."
-    ],
-    "es": [
-     "Pareja Cocoa Club",
-     "Dos chándales chocolate efecto terciopelo con doble raya crema. Pantalón acampanado para ella, recto para él; sudaderas con cremallera a juego."
-    ]
-   }
-  }
+ "bundles": [],
+ "depts": [
+  "new",
+  "her"
  ]
 }
