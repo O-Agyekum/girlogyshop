@@ -60,6 +60,7 @@ export function priceCart({ items, promo, shipping }) {
 
     const p = catalog.products.find(x => x.id === it.id && x.visible !== false);
     if (!p) throw new Error("unknown product");
+    if (p.pod === false || p.price == null) throw new Error("not for sale yet");
     if (!p.colors.includes(it.color)) throw new Error("unknown colour");
     const sizes = catalog.sizes[p.sk] || [];
     if (sizes.length) {

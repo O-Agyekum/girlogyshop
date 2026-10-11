@@ -12,6 +12,10 @@ const CAT = await fetch("/data/catalog.json", {cache: "no-cache"}).then(r => r.j
 const SW = CAT.swatches, SIZES = CAT.sizes, GUIDES = CAT.guides, DEPT_CATS = CAT.deptCats;
 const BUNDLES = CAT.bundles, SHIP = CAT.shipping;
 const products = CAT.products;
+/* Departments currently open (data/catalog.json "depts"); the others are hidden everywhere.
+   "sale" shows itself whenever a visible product has a "was" price. */
+const DEPTS_ON = CAT.depts || ["new","her","plus","acc","couples"];
+const deptOn = d => DEPTS_ON.includes(d) || (d === "sale" && hasSale());
 const ORDERS_OPEN = SHOP.ordersOpen === true;
 
 /* ---------- state ---------- */
@@ -58,6 +62,7 @@ function art(p, colorKey, mode){
 const heartIcon = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>`;
 
 function priceHtml(p){
+  if(p.price == null) return "";          /* "Coming soon" pieces without a price yet */
   return p.was ? `<span class="now">${eur(p.price)}</span><span class="was">${eur(p.was)}</span>` : eur(p.price);
 }
 function card(p){
@@ -136,13 +141,18 @@ function applyLang(){
   $("#lnFine").innerHTML = esc(t("launchFine")).replace("{priv}", privLink);
   $("#nlFine").innerHTML = esc(t("newsFine")).replace("{priv}", privLink);
   $("#cgvLabel").innerHTML = esc(t("acceptCgv")).replace("{cgv}", `<a href="/legal/cgv.html" target="_blank" rel="noopener">${esc(t("cgv"))}</a>`).replace("{priv}", `<a href="/legal/confidentialite.html" target="_blank" rel="noopener">${esc(t("privacy").toLowerCase())}</a>`);
-  const storyMap = [["new",null],["her","Tops"],["acc","Accessories"],["her","Tops"],["her","Bottoms"],[hasSale()?"sale":"her",null,hasSale()?null:"low"],["plus",null]];
-  const storyIds = ["heart-tee","crewneck-rust","mug","tee-colors","heart-sweatpants","tote","po-cap"];
+  /* home page "stories": one per part of the range; the last one opens The Collection */
+  const storyMap = [["new",null],["her","T-shirts"],["her","Hoodies"],["her","Sets"],["her","Outerwear"],[null,null,null,"collection"]];
+  const storyIds = ["tee-essential","tee-coffee","hoodie-classic","jogger-set-cream","varsity-burgundy","hoodie-heart"];
   $("#heroImg").src = CAT.heroImage;
-  $("#stories").innerHTML = T[lang].stories.map((s,i) => { const p = byId(storyIds[i]); return `<button class="story" data-dept-go="${storyMap[i][0]}" ${storyMap[i][1]?`data-cat-go="${storyMap[i][1]}"`:""} ${storyMap[i][2]?`data-sort-go="${storyMap[i][2]}"`:""}><span class="ring"><span class="dot">${p ? art(p) : ""}</span></span>${esc(s)}</button>`; }).join("");
-  const tA = byId("heart-hoodie"), tB = byId("po-hoodie"), ab = byId("hoodie-cream");
+  $("#stories").innerHTML = T[lang].stories.map((s,i) => { const p = byId(storyIds[i]); const m = storyMap[i] || []; return `<button class="story" ${m[3]?`data-go="${m[3]}"`:`data-dept-go="${m[0]}"`} ${m[1]?`data-cat-go="${m[1]}"`:""} ${m[2]?`data-sort-go="${m[2]}"`:""}><span class="ring"><span class="dot">${p ? art(p) : ""}</span></span>${esc(s)}</button>`; }).join("");
+  const tA = byId("hoodie-classic") || byId("heart-hoodie"), ab = byId("hoodie-classic") || byId("hoodie-cream");
   $("#tileA").innerHTML = tA ? art(tA) : "";
+  /* second home tile: Plus One when that department is open, otherwise The Collection */
+  const tileB = $("#tileB").closest(".tile"), tB = deptOn("plus") ? byId("po-hoodie") : byId("varsity-burgundy");
+  if(!deptOn("plus")){ tileB.removeAttribute("data-dept-go"); tileB.dataset.go = "collection"; const cap = tileB.querySelector("[data-t]"); cap.dataset.t = "collection"; cap.textContent = t("collection"); }
   $("#tileB").innerHTML = tB ? art(tB) : "";
+  $$("#depts > button, .fl[data-dept-go]").forEach(b => b.hidden = !deptOn(b.dataset.dept || b.dataset.deptGo));
   $("#aboutArt").innerHTML = ab ? art(ab, null, "plain") : "";
   buildMobileNav();
   refresh();
@@ -165,8 +175,8 @@ function megaFor(d){
   if(d === "new" || d === "sale" || d === "couples"){ $("#mega").classList.remove("open"); return; }
   const cats = DEPT_CATS[d];
   const colsHtml = `<div><h4>${t("d_"+d)}</h4><button data-dept-go="${d}">${t("seeAll")}</button>${cats.map(c => `<button data-dept-go="${d}" data-cat-go="${c}">${catName(c)}</button>`).join("")}</div>`;
-  const hl = `<div><h4>${t("newIn")}</h4><button data-dept-go="new">${t("d_new")}</button>${hasSale()?`<button data-dept-go="sale">${t("d_sale")}</button>`:""}<button data-dept-go="couples">${t("d_couples")}</button></div>`;
-  const cols = `<div><h4>${t("colours")}</h4>${["rust","cream","chocolate","sage","black"].map(c=>`<button data-dept-go="${d}" data-col-go="${c}">${colName(c)}</button>`).join("")}</div>`;
+  const hl = `<div><h4>${t("newIn")}</h4><button data-dept-go="new">${t("d_new")}</button>${hasSale()?`<button data-dept-go="sale">${t("d_sale")}</button>`:""}${deptOn("couples")?`<button data-dept-go="couples">${t("d_couples")}</button>`:""}</div>`;
+  const cols = `<div><h4>${t("colours")}</h4>${[...new Set(shown().filter(p => p.dept === d).flatMap(p => p.colors))].slice(0,6).map(c=>`<button data-dept-go="${d}" data-col-go="${c}">${colName(c)}</button>`).join("")}</div>`;
   const help = `<div><h4>${t("help")}</h4><button data-go="help">${t("sizeGuide")}</button><button data-go="help">${t("delRet")}</button><button data-go="help">${t("writeUs")}</button></div>`;
   $("#megaIn").innerHTML = colsHtml + hl + cols + help + `<button class="feat" data-dept-go="${d}" style="border:0;text-align:left"><b>${d==="plus"?t("tileB"):d==="acc"?t("d_acc"):t("tileA")}</b><span style="text-decoration:underline;margin-top:8px">${t("shopNow")}</span></button>`;
   $("#mega").classList.add("open");
@@ -180,7 +190,7 @@ $("header").addEventListener("mouseleave", () => { megaTimer = setTimeout(() => 
 $("#mega").addEventListener("mouseenter", () => clearTimeout(megaTimer));
 
 function buildMobileNav(){
-  $("#mList").innerHTML = ["new","her","plus","acc","couples"].concat(hasSale()?["sale"]:[]).map(d =>
+  $("#mList").innerHTML = ["new","her","plus","acc","couples"].filter(deptOn).concat(hasSale()?["sale"]:[]).map(d =>
     `<button class="it" data-dept-go="${d}" ${d==="sale"?'style="color:var(--rust)"':""}>${t("d_"+d)}<span>›</span></button>` +
     (DEPT_CATS[d] ? DEPT_CATS[d].map(c => `<button class="sub" data-dept-go="${d}" data-cat-go="${c}">${catName(c)}</button>`).join("") : "")
   ).join("") + `<button class="it" data-go="favs">${t("favs")}<span>›</span></button><button class="it" data-go="help">${t("help")}<span>›</span></button><button class="it" data-go="about">${t("about")}<span>›</span></button>`;
@@ -201,7 +211,7 @@ function listFor(){
   if(cat !== "all") l = l.filter(p => p.cat === cat);
   if(fColors.length) l = l.filter(p => p.colors.some(c => fColors.includes(c)));
   if(fSizes.length) l = l.filter(p => sizesOf(p).some(s => fSizes.includes(s)));
-  const s = {rec:(a,b)=>(b.rank||0)-(a.rank||0), low:(a,b)=>a.price-b.price, high:(a,b)=>b.price-a.price, new:(a,b)=>(b.isNew?1:0)-(a.isNew?1:0)||(b.rank||0)-(a.rank||0)};
+  const s = {rec:(a,b)=>(b.rank||0)-(a.rank||0), low:(a,b)=>(a.price??Infinity)-(b.price??Infinity), high:(a,b)=>(b.price??-1)-(a.price??-1), new:(a,b)=>(b.isNew?1:0)-(a.isNew?1:0)||(b.rank||0)-(a.rank||0)};
   return [...l].sort(s[sort]);
 }
 function renderPLP(){
@@ -583,7 +593,7 @@ function routeFrom(loc){
     return go(query ? "plp" : "home", opt);
   }
   const d = SLUG_DEPT[parts[0]];
-  if(d && parts.length <= 2 && (d !== "sale" || hasSale())){
+  if(d && deptOn(d) && parts.length <= 2){
     const c = parts[1] ? catsOf(d).find(x => slug(x) === parts[1]) : "all";
     if(c){ dept = d; cat = c; fSizes = []; fColors = []; query = ""; $("#q").value = ""; return go("plp", opt); }
   }
@@ -633,6 +643,7 @@ function refresh(){
     fill($("#railNew"), shown().filter(p => p.isNew));
     fill($("#gridBest"), [...shown()].sort((a,b)=>(b.rank||0)-(a.rank||0)).slice(0,8));
     $("#homeBundles").innerHTML = BUNDLES.map(bundleHtml).join("");
+    $("#homeBundles").closest(".sec").hidden = !BUNDLES.length;
   }
   if(view === "launch") fill($("#railLaunch"), [...shown()].sort((a,b)=>(b.rank||0)-(a.rank||0)).slice(0,8));
   if(view === "collection") renderCollection();

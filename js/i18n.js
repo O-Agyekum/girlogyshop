@@ -193,14 +193,15 @@ window.T = {
   "pickSizes": "Set sold in the colours shown, size M where sizes apply. For other sizes, add each piece separately.",
   "stories": [
    "Latest drops",
-   "Social battery",
-   "Adulting",
-   "Overthinking",
-   "Fitness",
-   "Budgeting",
-   "Plus One"
+   "T-shirts",
+   "Hoodies",
+   "Jogger sets",
+   "Varsity jackets",
+   "The Collection"
   ],
   "cats": {
+   "T-shirts": "T-shirts",
+   "Hoodies": "Hoodies & sweatshirts",
    "Tops": "Tops",
    "Bottoms": "Bottoms",
    "Dresses": "Dresses",
@@ -213,6 +214,8 @@ window.T = {
    "Accessories": "Accessories"
   },
   "cols": {
+   "burgundy": "Burgundy",
+   "oatmeal": "Oatmeal",
    "rust": "Rust",
    "cream": "Cream",
    "black": "Black",
@@ -441,14 +444,15 @@ window.T = {
   "pickSizes": "Ensemble vendu dans les coloris présentés, en taille M pour les articles à taille. Pour d'autres tailles, ajoutez chaque pièce séparément.",
   "stories": [
    "Derniers drops",
-   "Batterie sociale",
-   "Vie d'adulte",
-   "Overthinking",
-   "Fitness",
-   "Budget",
-   "Plus One"
+   "T-shirts",
+   "Hoodies",
+   "Ensembles jogging",
+   "Vestes varsity",
+   "La Collection"
   ],
   "cats": {
+   "T-shirts": "T-shirts",
+   "Hoodies": "Hoodies & sweats",
    "Tops": "Hauts",
    "Bottoms": "Bas",
    "Dresses": "Robes",
@@ -461,6 +465,8 @@ window.T = {
    "Accessories": "Accessoires"
   },
   "cols": {
+   "burgundy": "Bordeaux",
+   "oatmeal": "Avoine",
    "rust": "Rouille",
    "cream": "Crème",
    "black": "Noir",
@@ -689,14 +695,15 @@ window.T = {
   "pickSizes": "Conjunto vendido en los colores mostrados, talla M en las prendas con talla. Para otras tallas, añade cada pieza por separado.",
   "stories": [
    "Últimos lanzamientos",
-   "Batería social",
-   "Vida adulta",
-   "Overthinking",
-   "Fitness",
-   "Presupuesto",
-   "Plus One"
+   "Camisetas",
+   "Sudaderas",
+   "Conjuntos jogger",
+   "Chaquetas varsity",
+   "La Colección"
   ],
   "cats": {
+   "T-shirts": "Camisetas",
+   "Hoodies": "Sudaderas",
    "Tops": "Tops",
    "Bottoms": "Pantalones y faldas",
    "Dresses": "Vestidos",
@@ -709,6 +716,8 @@ window.T = {
    "Accessories": "Accesorios"
   },
   "cols": {
+   "burgundy": "Burdeos",
+   "oatmeal": "Avena",
    "rust": "Óxido",
    "cream": "Crudo",
    "black": "Negro",
