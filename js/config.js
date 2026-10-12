@@ -3,7 +3,7 @@
   Leave a social link empty ("") to hide it.
 */
 window.SHOP = {
-  name: "The Girlogist",
+  name: "Girlogy",
   /* Main address of the shop, used for links shared on social media and search engines */
   siteUrl: "https://girlogyshop.com",
   contactEmail: "contact@girlogyshop.com",
