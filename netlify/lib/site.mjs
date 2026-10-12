@@ -5,7 +5,7 @@
 import { catalog } from "./pricing.mjs";
 
 export const SITE = (process.env.URL || "https://girlogyshop.com").replace(/\/$/, "");
-export const BRAND = "The Girlogist";
+export const BRAND = "Girlogy";
 
 export const DEPTS = {
   new: { slug: "new", name: "New in" },

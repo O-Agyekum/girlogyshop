@@ -99,17 +99,17 @@ Gelato's mockup generator can produce one photo per colour.
 
 ## The range on sale (sample catalogue, women only)
 
-The shop sells the 32-design sample catalogue (`Girlogy_Sample_Catalogue.pdf`): 7 tees and
+The shop sells the tote and the mug (Accessories) and the 32-design sample catalogue (`Girlogy_Sample_Catalogue.pdf`): 7 tees and
 6 hoodies/sweatshirts (printed to order), 4 jogger sets and 3 varsity jackets ("Coming soon",
 no price until a maker is confirmed). Photos come from the catalogue (`images/products/`).
 `"photoColor"` says which colour the photos show; the product page tells visitors when
 another colour has no photo yet.
 
-- **Departments**: `"depts"` in `data/catalog.json` lists the open departments (`new`, `her`).
-  Plus One, Accessories and Couples are hidden everywhere (menus, footer, addresses, sitemap)
+- **Departments**: `"depts"` in `data/catalog.json` lists the open departments (`new`, `her`, `acc`).
+  Plus One and Couples are hidden everywhere (menus, footer, addresses, sitemap)
   until they are added back to that list. `"sale"` appears by itself when a product has a `was` price.
-- **The earlier products** (heart set, Lovable varsity colours, tracksuits, Big G, Ringer, tote,
-  mug, Plus One pieces) are still in the file with `"visible": false`, and the bundles list is
+- **The earlier products** (heart set, Lovable varsity colours, tracksuits, Big G, Ringer,
+  Plus One pieces) are still in the file with `"visible": false`, and the bundles list is
   empty. Set `"visible": true` to bring one back.
 - A product with `"price": null` shows no price; the server refuses to sell anything with
   `"pod": false` or no price.

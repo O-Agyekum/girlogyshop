@@ -417,7 +417,8 @@
     "/images/products/tote-2.webp",
     "/images/products/tote-3.webp"
    ],
-   "visible": false
+   "visible": true,
+   "isNew": 0
   },
   {
    "id": "mug",
@@ -454,7 +455,8 @@
     "/images/products/mug-2.webp",
     "/images/products/mug-3.webp"
    ],
-   "visible": false
+   "visible": true,
+   "isNew": 0
   },
   {
    "id": "po-tee",
@@ -2187,6 +2189,7 @@
  "bundles": [],
  "depts": [
   "new",
-  "her"
+  "her",
+  "acc"
  ]
 }
